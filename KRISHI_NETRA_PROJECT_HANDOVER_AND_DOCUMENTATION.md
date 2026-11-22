@@ -4,7 +4,11 @@
 > **Founder & Lead Developer:** Reyaansh Gupta  
 > **Institution:** Apeejay School, Pitampura, New Delhi (Class 9)  
 > **Core Technologies:** PyTorch, MobileNetV3-Large, Grad-CAM, Streamlit, OpenCV, Single-Page Web Architecture  
-> **License & Citations:** PlantVillage (CC BY-SA 3.0), PlantDoc (CC BY 4.0)
+> **License & Citations:** PlantVillage (CC BY-SA 3.0), PlantDoc (CC BY 4.0)  
+> 
+> 🌐 **Live Showcase Website (Render):** [https://krishi-netra-website.onrender.com/](https://krishi-netra-website.onrender.com/)  
+> 🔬 **Live Streamlit AI Webapp (Streamlit Cloud):** [https://krishi-netra.streamlit.app/](https://krishi-netra.streamlit.app/)  
+> 💻 **GitHub Repository:** [https://github.com/neha86gupta/krishi-netra](https://github.com/neha86gupta/krishi-netra)
 
 ---
 
@@ -350,3 +354,24 @@ python run_demo.py
 - `check_setup.py`: **18/18 checks passed** (`READY for the demo`)
 - Knowledge Base: **38/38 classes fully verified** in both English & Hindi
 - Streamlit Navigation: Clean 6-page navigation (`diagnose`, `info`, `perf`, `history`, `insights`, `labs`)
+
+---
+
+## 10. Session 5 — Production Cloud Deployment & Cross-Platform Integration
+
+**Date:** 2026-11-22  
+**Status:** 🚀 **LIVE & PUBLIC ON THE INTERNET**
+
+### Official Public Deployments
+- **Showcase Website:** [https://krishi-netra-website.onrender.com/](https://krishi-netra-website.onrender.com/)  
+  *Hosted on Render as a high-speed Static Site with global CDN distribution.*
+- **AI Web Application:** [https://krishi-netra.streamlit.app/](https://krishi-netra.streamlit.app/)  
+  *Hosted on Streamlit Community Cloud with 1GB+ dedicated container memory for MobileNetV3 + Grad-CAM inference.*
+- **GitHub Repository:** [https://github.com/neha86gupta/krishi-netra](https://github.com/neha86gupta/krishi-netra)
+
+### Architectural Integration Details
+1. **Live App Linkage:** Configured `KRISHI_NETRA_CONFIG.appUrl` to point directly to `https://krishi-netra.streamlit.app/`. Every "Launch App ↗" button across the entire website now opens the live Streamlit AI app in a new tab.
+2. **Dynamic LAN / Hostname Routing:** `getActiveUrl()` automatically adapts if accessed from local Wi-Fi (`http://192.168.1.14:8080`) or live production cloud.
+3. **Streamlined UI / Dashboard:** Performance view simplified into 3 clean, verified benchmark cards with a zero-confusion comparison table.
+4. **Immediate Hero CTA:** "Test Krishi Netra on a leaf photograph" moved directly under the hero section on the home page for instant user engagement.
+5. **Cleaned Claims:** Removed all fabricated/bloated metrics (140M+, 731+), strictly preserving verified scientific and empirical data.
