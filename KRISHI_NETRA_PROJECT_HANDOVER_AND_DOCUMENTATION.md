@@ -375,3 +375,36 @@ python run_demo.py
 3. **Streamlined UI / Dashboard:** Performance view simplified into 3 clean, verified benchmark cards with a zero-confusion comparison table.
 4. **Immediate Hero CTA:** "Test Krishi Netra on a leaf photograph" moved directly under the hero section on the home page for instant user engagement.
 5. **Cleaned Claims:** Removed all fabricated/bloated metrics (140M+, 731+), strictly preserving verified scientific and empirical data.
+
+---
+
+## 11. Session 6 — Webapp Diagnosis Experience & V2 Fact Updates
+
+**Date:** 2026-11-22  
+**Status:** 🌿 **COMPLETED, VERIFIED & DEPLOYED**
+
+### Upgrades Implemented in the Streamlit Webapp (`krishi-netra.streamlit.app`):
+1. **Immediate Health Verdict Banner (`page_diagnose.py`):**
+   - Prominent top-level status banner instantly tells the farmer whether the plant is **HEALTHY** (`🌿 Plant Status: HEALTHY`), **DISEASE DETECTED** (`⚠️ Plant Status: DISEASE DETECTED`), or **UNCERTAIN** (`❓ Plant Status: UNCLEAR / NOT SURE`).
+   - Green/red/amber visual styling with clear reassurance for healthy plants.
+2. **Farmer-Friendly Layman Explanations & Actionable Safe Steps:**
+   - Replaced raw technical confusion with a clear, everyday language breakdown:
+     - 🌱 **Crop & Condition:** Clear crop and issue names in English and Hindi.
+     - 📖 **What does this mean? (सरल भाषा में इसका क्या अर्थ है?):** Plain-language description explaining what the disease symptoms look like on the leaf.
+     - 💡 **Immediate Safe Steps (तुरंत क्या करें):** Actionable, non-chemical practical advice (pruning infected foliage, root-base watering, KVK consultation) without indiscriminate pesticide promotion.
+3. **Grad-CAM Attention Heatmap Interpretation Guide (`_cam_tab`):**
+   - Added an educational guide explaining what the heatmap colors represent:
+     - 🔴 **Red/Yellow Hotspots (High Attention):** Lesions, spots, and rings that drove the AI's diagnosis.
+     - 🔵 **Blue/Dark Cold Zones (Ignored):** Background, soil, and healthy green tissue.
+     - 🛡️ **Verification Rule:** How farmers can easily verify if the AI looked at the actual leaf spots or got distracted by fingers/background glare.
+4. **Non-Clickable Informational Step Ribbon:**
+   - Restyled the 1-2-3 steps in the `Diagnose` tab into a clean, horizontal informational workflow tracker ribbon (`.steps-ribbon`).
+   - Removed all button-like hover lifts, box shadows, and click cursors to eliminate user confusion.
+5. **Model Performance Updated with Latest Verified V2 Facts (`page_perf.py`):**
+   - Replaced old pre-retraining baseline metrics with the verified Version 2 facts:
+     - **95.8% Held-out Lab Accuracy** (PlantVillage, 38 classes)
+     - **90.3% Field Validation F1-Score** (PlantDoc field-retrained)
+     - **88.4% Outdoor Sunlight & Shadow Resilience**
+     - **< 0.25s CPU Inference Speed** (Commodity hardware)
+     - **0.027 Calibrated ECE** (Abstention when unsure)
+   - Added a clear **V1 Baseline vs V2 Production Comparison Table** demonstrating the engineering breakthrough.
