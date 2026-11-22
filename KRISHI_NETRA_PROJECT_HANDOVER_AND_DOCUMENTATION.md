@@ -408,3 +408,8 @@ python run_demo.py
      - **< 0.25s CPU Inference Speed** (Commodity hardware)
      - **0.027 Calibrated ECE** (Abstention when unsure)
    - Added a clear **V1 Baseline vs V2 Production Comparison Table** demonstrating the engineering breakthrough.
+
+### Website Tab Switching Bug Diagnosis & Permanent Fix
+- **Root Cause:** In `website/index.html`, lines 3252 and 3419 contained an unassigned identifier `hero_` left behind from a previous metric cleanup. This triggered an unhandled `SyntaxError: Unexpected identifier 'hero_stat1_title'` during initial JavaScript compilation, causing browsers to abort script execution before `switchRoute` and `initSingleFileRouter` could attach.
+- **Automated Headless CDP Verification:** Tested via Microsoft Edge DevTools Protocol (`msedge.exe --headless=new --remote-debugging-port=9222`). Verified that all 8 views (`home`, `about`, `how-it-works`, `features`, `technology`, `performance`, `datasets`, `contact`) now switch instantaneously with zero console errors.
+- **Deploy Status:** Pushed to `origin/main` (`d1859f9`), auto-deployed to Render (`https://krishi-netra-website.onrender.com/`).
