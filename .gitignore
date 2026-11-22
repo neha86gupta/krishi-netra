@@ -1,0 +1,23 @@
+# Ignore Python artifacts and virtual environment
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Ignore local scratch / temporary files
+*.tmp
+*.log
+
+# Keep required model artifacts for deployment (17MB fits within GitHub's 100MB limit)
+!models/best.pt
+!models/centroids.pt
+!models/calibration.json
+
+# Keep class info
+!data/processed/class_info.json
+
+# Ignore raw datasets and local database / thumbnails
+data/raw/*
+data/field_test/*
+data/history.db
+data/thumbs/*

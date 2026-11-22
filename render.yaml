@@ -1,0 +1,18 @@
+services:
+  # Streamlit AI App
+  - type: web
+    name: krishi-netra-app
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true --browser.gatherUsageStats false
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+
+  # Showcase Website (Free Static Site)
+  - type: web
+    name: krishi-netra-website
+    runtime: static
+    plan: free
+    staticPublishPath: ./website

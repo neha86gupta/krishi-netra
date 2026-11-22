@@ -1,0 +1,37 @@
+{
+  "n": 10809,
+  "accuracy": 0.9586455731334999,
+  "macro_precision": 0.9427173508748253,
+  "macro_recall": 0.9634030576935222,
+  "macro_f1": 0.9509532920657278,
+  "ece_calibrated": 0.003518560905566611,
+  "mean_confidence": 0.9601054191589355,
+  "not_sure_rate": 0.06402072347118143,
+  "accuracy_when_answering": 0.977562518533162,
+  "ece_uncalibrated": 0.09817072322654292,
+  "temperature": 0.5226653218269348,
+  "thresholds": {
+    "conf": 0.6890389323234558,
+    "entropy": 1.1545788049697876,
+    "feature_similarity": 0.691378653049469
+  },
+  "crop_reliance_probes": {
+    "patch_shuffle": {
+      "n": 1500,
+      "accuracy_original": 0.956,
+      "crop_id_accuracy_original": 0.9906666666666667,
+      "accuracy_shuffled": 0.7553333333333333,
+      "crop_id_accuracy_shuffled": 0.842
+    },
+    "gradcam_mean_enrichment": 1.2031850235836903,
+    "gradcam_enrichment_correct": 1.2045781795136212,
+    "gradcam_enrichment_wrong": 1.126561447437481,
+    "crops_with_single_kind_only": [
+      "Blueberry",
+      "Orange",
+      "Raspberry",
+      "Soybean",
+      "Squash"
+    ]
+  }
+}

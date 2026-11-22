@@ -1,0 +1,45 @@
+{
+  "n_manifest": 54305,
+  "n_corrupt": 0,
+  "image_sizes_top5": [
+    [
+      "256x256",
+      54305
+    ]
+  ],
+  "n_classes_raw": 38,
+  "exact_duplicates_removed": 21,
+  "label_conflict_images_removed": 0,
+  "n_after_cleaning": 54284,
+  "grouping": "near-duplicate components (dHash<=6)",
+  "largest_group": 110,
+  "split_mode": "own group-aware split",
+  "splits": {
+    "train": 37997,
+    "test": 10809,
+    "val": 5409
+  },
+  "crop_kinds": {
+    "Apple": "mixed",
+    "Blueberry": "healthy_only",
+    "Cherry (including sour)": "mixed",
+    "Corn (maize)": "mixed",
+    "Grape": "mixed",
+    "Orange": "disease_only",
+    "Peach": "mixed",
+    "Pepper, bell": "mixed",
+    "Potato": "mixed",
+    "Raspberry": "healthy_only",
+    "Soybean": "healthy_only",
+    "Squash": "disease_only",
+    "Strawberry": "mixed",
+    "Tomato": "mixed"
+  },
+  "plantvillage_vs_plantdoc": {
+    "n_plantdoc": 2578,
+    "unreadable": 0,
+    "exact_duplicates_of_pv": 0,
+    "near_duplicates_of_pv": 15,
+    "excluded_from_field_eval": 15
+  }
+}

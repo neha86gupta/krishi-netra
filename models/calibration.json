@@ -1,0 +1,13 @@
+{
+  "temperature": 0.6905920505523682,
+  "conf_threshold": 0.5,
+  "entropy_threshold": 1.7033101320266724,
+  "sim_threshold": 0.40772730112075806,
+  "target_acc": 0.9,
+  "fit_on": "validation split (lab-style images)",
+  "val_acc": 0.901528000831604,
+  "val_ece_uncalibrated": 0.09407167398403024,
+  "val_ece_calibrated": 0.015299921428288857,
+  "val_coverage": 0.9202037453651428,
+  "val_accuracy_when_answering": 0.9376384019851685
+}

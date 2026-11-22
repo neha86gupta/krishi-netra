@@ -1,0 +1,260 @@
+{
+  "classes": [
+    "Apple___Apple_scab",
+    "Apple___Black_rot",
+    "Apple___Cedar_apple_rust",
+    "Apple___healthy",
+    "Blueberry___healthy",
+    "Cherry_(including_sour)___Powdery_mildew",
+    "Cherry_(including_sour)___healthy",
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "Corn_(maize)___Common_rust_",
+    "Corn_(maize)___Northern_Leaf_Blight",
+    "Corn_(maize)___healthy",
+    "Grape___Black_rot",
+    "Grape___Esca_(Black_Measles)",
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "Grape___healthy",
+    "Orange___Haunglongbing_(Citrus_greening)",
+    "Peach___Bacterial_spot",
+    "Peach___healthy",
+    "Pepper,_bell___Bacterial_spot",
+    "Pepper,_bell___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Raspberry___healthy",
+    "Soybean___healthy",
+    "Squash___Powdery_mildew",
+    "Strawberry___Leaf_scorch",
+    "Strawberry___healthy",
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___Spider_mites Two-spotted_spider_mite",
+    "Tomato___Target_Spot",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato___Tomato_mosaic_virus",
+    "Tomato___healthy"
+  ],
+  "train_counts": [
+    441.0,
+    435.0,
+    192.0,
+    1147.0,
+    1050.0,
+    737.0,
+    598.0,
+    359.0,
+    834.0,
+    689.0,
+    813.0,
+    826.0,
+    967.0,
+    753.0,
+    296.0,
+    3855.0,
+    1607.0,
+    252.0,
+    698.0,
+    1034.0,
+    700.0,
+    700.0,
+    106.0,
+    259.0,
+    3563.0,
+    1285.0,
+    776.0,
+    319.0,
+    1489.0,
+    700.0,
+    1331.0,
+    666.0,
+    1240.0,
+    1174.0,
+    984.0,
+    3750.0,
+    262.0,
+    1110.0
+  ],
+  "class_weights": [
+    1.2462584907730374,
+    1.263448263059562,
+    2.8624999709943206,
+    0.4791630291463902,
+    0.5234285661246757,
+    0.7457259083187375,
+    0.9190635358376414,
+    1.5309192045429234,
+    0.6589927990778292,
+    0.7976777858213491,
+    0.6760147532975517,
+    0.665375295921198,
+    0.5683557336410646,
+    0.729880470691779,
+    1.8567567379422618,
+    0.14256809194057316,
+    0.34200373019969477,
+    2.1809523588528155,
+    0.7873925421646268,
+    0.5315280410356958,
+    0.7851428491870136,
+    0.7851428491870136,
+    5.184905607838769,
+    2.122007700505442,
+    0.15425203323909895,
+    0.4277042758217195,
+    0.7082474155037494,
+    1.7228839950812211,
+    0.3691067793357351,
+    0.7851428491870136,
+    0.4129226103913671,
+    0.8252252168632276,
+    0.44322580196041095,
+    0.4681430957673846,
+    0.5585365797062088,
+    0.14655999851490922,
+    2.0977099024080514,
+    0.49513513011793653
+  ],
+  "crops": {
+    "Apple": {
+      "classes": [
+        "Apple___Apple_scab",
+        "Apple___Black_rot",
+        "Apple___Cedar_apple_rust",
+        "Apple___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Blueberry": {
+      "classes": [
+        "Blueberry___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": false,
+      "kind": "healthy_only"
+    },
+    "Cherry (including sour)": {
+      "classes": [
+        "Cherry_(including_sour)___Powdery_mildew",
+        "Cherry_(including_sour)___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Corn (maize)": {
+      "classes": [
+        "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "Corn_(maize)___Common_rust_",
+        "Corn_(maize)___Northern_Leaf_Blight",
+        "Corn_(maize)___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Grape": {
+      "classes": [
+        "Grape___Black_rot",
+        "Grape___Esca_(Black_Measles)",
+        "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "Grape___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Orange": {
+      "classes": [
+        "Orange___Haunglongbing_(Citrus_greening)"
+      ],
+      "has_healthy": false,
+      "has_disease": true,
+      "kind": "disease_only"
+    },
+    "Peach": {
+      "classes": [
+        "Peach___Bacterial_spot",
+        "Peach___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Pepper, bell": {
+      "classes": [
+        "Pepper,_bell___Bacterial_spot",
+        "Pepper,_bell___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Potato": {
+      "classes": [
+        "Potato___Early_blight",
+        "Potato___Late_blight",
+        "Potato___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Raspberry": {
+      "classes": [
+        "Raspberry___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": false,
+      "kind": "healthy_only"
+    },
+    "Soybean": {
+      "classes": [
+        "Soybean___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": false,
+      "kind": "healthy_only"
+    },
+    "Squash": {
+      "classes": [
+        "Squash___Powdery_mildew"
+      ],
+      "has_healthy": false,
+      "has_disease": true,
+      "kind": "disease_only"
+    },
+    "Strawberry": {
+      "classes": [
+        "Strawberry___Leaf_scorch",
+        "Strawberry___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    },
+    "Tomato": {
+      "classes": [
+        "Tomato___Bacterial_spot",
+        "Tomato___Early_blight",
+        "Tomato___Late_blight",
+        "Tomato___Leaf_Mold",
+        "Tomato___Septoria_leaf_spot",
+        "Tomato___Spider_mites Two-spotted_spider_mite",
+        "Tomato___Target_Spot",
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "Tomato___Tomato_mosaic_virus",
+        "Tomato___healthy"
+      ],
+      "has_healthy": true,
+      "has_disease": true,
+      "kind": "mixed"
+    }
+  }
+}

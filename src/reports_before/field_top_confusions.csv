@@ -1,0 +1,21 @@
+true,predicted,count
+Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,100
+Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,80
+Squash___Powdery_mildew,Grape___Black_rot,63
+Potato___Late_blight,Tomato___Late_blight,42
+Peach___healthy,Strawberry___Leaf_scorch,34
+Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,32
+Raspberry___healthy,Strawberry___Leaf_scorch,27
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Septoria_leaf_spot,27
+Strawberry___healthy,Strawberry___Leaf_scorch,26
+Potato___Early_blight,Tomato___Late_blight,25
+Tomato___Leaf_Mold,Tomato___Late_blight,25
+Potato___Early_blight,Potato___Late_blight,23
+Blueberry___healthy,Strawberry___Leaf_scorch,22
+"Pepper,_bell___healthy","Pepper,_bell___Bacterial_spot",21
+Apple___Cedar_apple_rust,"Pepper,_bell___Bacterial_spot",19
+Blueberry___healthy,Grape___Black_rot,19
+Tomato___Late_blight,Tomato___Early_blight,19
+Peach___healthy,Peach___Bacterial_spot,18
+Apple___Apple_scab,Strawberry___Leaf_scorch,16
+Peach___healthy,Blueberry___healthy,16

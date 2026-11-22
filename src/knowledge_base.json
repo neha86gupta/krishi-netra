@@ -1,0 +1,881 @@
+{
+  "meta": {
+    "label": "Reference advice, not ML",
+    "status": "SEED. General advice below is standard integrated-management practice by cause group, NOT disease-specific and NOT yet checked against a named source. Add verified symptom text and source URLs per class before demo.",
+    "no_chemicals_policy": "No pesticide names or doses are given. Ask the local KVK or agriculture officer."
+  },
+  "global_resources": [
+    {
+      "name": "ICAR Krishi Vigyan Kendra portal (find your nearest KVK)",
+      "url": "https://kvk.icar.gov.in/"
+    }
+  ],
+  "cause_groups": {
+    "fungal": {
+      "advice_en": "Remove and destroy badly affected leaves. Avoid wetting leaves late in the day, keep plants spaced for airflow, clean up crop debris, rotate crops, and use certified seed or resistant varieties where available. Ask your KVK whether any treatment is recommended locally.",
+      "advice_hi": "बुरी तरह प्रभावित पत्तियों को हटाकर नष्ट करें। शाम को पत्तियों को गीला करने से बचें, पौधों के बीच हवा के लिए जगह रखें, फसल अवशेष साफ करें, फसल चक्र अपनाएं और उपलब्ध होने पर प्रमाणित बीज या प्रतिरोधी किस्में चुनें। उपचार की ज़रूरत हो तो स्थानीय KVK से पूछें।"
+    },
+    "oomycete": {
+      "advice_en": "Improve drainage and airflow, avoid overhead watering, remove infected plant parts, rotate crops. Spread can be fast in cool, wet weather, so contact your KVK early.",
+      "advice_hi": "जल निकासी और हवा का प्रवाह सुधारें, ऊपर से सिंचाई से बचें, संक्रमित हिस्से हटाएं और फसल चक्र अपनाएं। ठंडे, नम मौसम में फैलाव तेज़ हो सकता है, इसलिए जल्दी KVK से संपर्क करें।"
+    },
+    "bacterial": {
+      "advice_en": "Avoid working in the field when plants are wet, clean tools, use clean seed or seedlings, remove infected debris, rotate crops. Ask your KVK for locally recommended steps.",
+      "advice_hi": "पौधे गीले हों तो खेत में काम करने से बचें, औज़ार साफ रखें, साफ बीज या पौध लें, संक्रमित अवशेष हटाएं और फसल चक्र अपनाएं। स्थानीय सुझाव के लिए KVK से पूछें।"
+    },
+    "viral": {
+      "advice_en": "Viral diseases generally cannot be cured in the plant. Remove and destroy infected plants, keep tools clean, manage insect vectors, and use healthy planting material. Confirm the diagnosis with your KVK.",
+      "advice_hi": "पौधों में विषाणु रोग का आम तौर पर इलाज नहीं होता। संक्रमित पौधे हटाकर नष्ट करें, औज़ार साफ रखें, कीट वाहकों का नियंत्रण करें और स्वस्थ पौध सामग्री लें। निदान की पुष्टि KVK से करें।"
+    },
+    "mite": {
+      "advice_en": "Check the underside of leaves, avoid water stress, and keep field edges free of weeds. Ask your KVK about locally suitable control.",
+      "advice_hi": "पत्तियों की निचली सतह देखें, पौधों को पानी की कमी से बचाएं और खेत की मेड़ें खरपतवार-मुक्त रखें। उचित नियंत्रण के लिए KVK से पूछें।"
+    },
+    "healthy": {
+      "advice_en": "No disease was detected by the model. Keep monitoring the crop and compare with an expert if you see spots, curling or discolouration.",
+      "advice_hi": "मॉडल को कोई रोग नहीं मिला। फसल की निगरानी रखें और धब्बे, मुड़ाव या रंग बदलने पर विशेषज्ञ से जांच कराएं।"
+    },
+    "unknown": {
+      "advice_en": "No general advice is stored for this class yet. Please consult your nearest Krishi Vigyan Kendra (KVK) or agriculture officer.",
+      "advice_hi": "इस श्रेणी के लिए अभी कोई सलाह उपलब्ध नहीं है। कृपया अपने नज़दीकी कृषि विज्ञान केंद्र (KVK) या कृषि अधिकारी से संपर्क करें।"
+    }
+  },
+  "classes": {
+    "Apple___Apple_scab": {
+      "crop": "Apple",
+      "condition": "Apple scab",
+      "causal_agent": "Venturia inaequalis",
+      "cause_group": "fungal",
+      "description_en": "Apple scab is a serious fungal disease that attacks apple leaves, blossoms, and fruit, causing severe defoliation and unmarketable fruit.",
+      "description_hi": "सेब का स्कैब एक गंभीर कवक रोग है जो सेब की पत्तियों, फूलों और फलों पर हमला करता है, जिससे फल खराब हो जाते हैं।",
+      "symptoms_en": "Olive-green to dull black velvety spots on leaves, turning brown and corky. Leaves may yellow and drop prematurely. Fruit develops rough scabby lesions that crack.",
+      "symptoms_hi": "पत्तियों पर जैतून-हरे से काले मखमली धब्बे जो बाद में भूरे और पपड़ीदार हो जाते हैं। पत्तियां पीली पड़कर गिर सकती हैं। फलों पर दरारें पड़ जाती हैं।",
+      "environment_en": "Prolonged wet leaf periods (6–9 hours) at moderate temperatures (15–24°C). Overwinters in fallen orchard leaves.",
+      "environment_hi": "मध्यम तापमान (15–24°C) पर लंबे समय तक पत्ती का गीला रहना (6–9 घंटे)। गिरे हुए पत्तों में कवक सर्दियों में जीवित रहता है।",
+      "prevention_en": "Rake and destroy fallen leaves in autumn. Prune trees for open canopy and rapid drying. Plant resistant cultivars like Honeycrisp or Liberty.",
+      "prevention_hi": "शरद ऋतु में गिरे पत्तों को इकट्ठा कर नष्ट करें। धूप और हवा के लिए छंटाई करें। प्रतिरोधी किस्में लगाएं।",
+      "care_en": "Apply protective bio-fungicide or consult local KVK for recommended copper or sulfur sprays during early green-tip to petal-fall stages.",
+      "care_hi": "पत्तियों के फूटने से लेकर फूल झड़ने तक जैविक फफूंदनाशी या स्थानीय KVK द्वारा अनुशंसित तांबा/सल्फर स्प्रे का प्रयोग करें।",
+      "sources": [
+        {
+          "name": "ICAR Central Institute of Temperate Horticulture",
+          "url": "https://cith.icar.gov.in"
+        }
+      ]
+    },
+    "Apple___Black_rot": {
+      "crop": "Apple",
+      "condition": "Black rot",
+      "causal_agent": "Botryosphaeria obtusa",
+      "cause_group": "fungal",
+      "description_en": "Black rot causes leaf frog-eye spots, limb cankers, and firm rotting of fruit prior to harvest.",
+      "description_hi": "ब्लैक रॉट से पत्तियों पर फ्रॉग-आई (मेंढक की आंख जैसे) धब्बे, तने में कैंकर और फलों में सड़न होती है।",
+      "symptoms_en": "Small purple spots on leaves expanding into circular lesions with light brown centers ('frog-eye'). Fruit rots into concentric dark rings.",
+      "symptoms_hi": "पत्तियों पर छोटे बैंगनी धब्बे जो बढ़कर हल्के भूरे केंद्र वाले गोल धब्बे बन जाते हैं। फलों पर गाढ़े छल्लेदार सड़न के निशान बनते हैं।",
+      "environment_en": "Warm humid conditions (20–27°C) with rain splashing spores from infected twigs and mummified apples.",
+      "environment_hi": "गर्म और नम मौसम (20–27°C)। बारिश की बूंदों से संक्रमित टहनियों और सूखे फलों से कवक फैलता है।",
+      "prevention_en": "Prune out dead wood, fire blight strikes, and cankers. Remove all mummified fruit hanging on branches.",
+      "prevention_hi": "सूखी टहनियों और कैंकर वाले अंगों को काटकर हटा दें। पेड़ पर लटके पुराने सड़े फलों को नष्ट करें।",
+      "care_en": "Maintain regular orchard sanitation. Consult your nearest KVK for approved organic or preventive spray schedules.",
+      "care_hi": "बगीचे की स्वच्छता बनाए रखें। जैविक या निवारक स्प्रे कार्यक्रम के लिए नज़दीकी KVK से सलाह लें।",
+      "sources": [
+        {
+          "name": "ICAR-CITH Apple Disease Advisory",
+          "url": "https://cith.icar.gov.in"
+        }
+      ]
+    },
+    "Apple___Cedar_apple_rust": {
+      "crop": "Apple",
+      "condition": "Cedar apple rust",
+      "causal_agent": "Gymnosporangium juniperi-virginianae",
+      "cause_group": "fungal",
+      "description_en": "A heteroecious rust requiring both apple and juniper (cedar) trees to complete its two-year life cycle.",
+      "description_hi": "एक हेटेरोशियस रस्ट कवक जिसे अपना जीवन चक्र पूरा करने के लिए सेब और जुनिपर दोनों पेड़ों की आवश्यकता होती है।",
+      "symptoms_en": "Bright yellow-orange spots on the upper leaf surface with dark centers. Later, tubular spore-producing structures (aecia) appear beneath.",
+      "symptoms_hi": "पत्तियों की ऊपरी सतह पर चमकीले पीले-नारंगी धब्बे। बाद में निचली सतह पर नलिकाकार संरचनाएं (एसिया) दिखाई देती हैं।",
+      "environment_en": "Frequent spring rains at 10–24°C when galls on nearby cedars produce gelatinous spore horns.",
+      "environment_hi": "10–24°C तापमान और वसंत ऋतु की लगातार वर्षा के दौरान जब पास के जुनिपर के गॉल्स से बीजाणु निकलते हैं।",
+      "prevention_en": "Remove nearby eastern red cedar or juniper trees within 500m of the orchard. Grow rust-resistant apple varieties.",
+      "prevention_hi": "बगीचे के 500 मीटर के दायरे में जुनिपर पेड़ों को हटाएं। रस्ट-प्रतिरोधी सेब की किस्में लगाएं।",
+      "care_en": "Protect new foliage from pink bud through petal-fall. Seek KVK recommendations for local organic options.",
+      "care_hi": "गुलाबी कली से लेकर पंखुड़ी गिरने तक नई पत्तियों की सुरक्षा करें। जैविक विकल्पों के लिए KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR Temperate Fruit Diseases",
+          "url": "https://cith.icar.gov.in"
+        }
+      ]
+    },
+    "Apple___healthy": {
+      "crop": "Apple",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy apple foliage displaying uniform green color and vigorous physiological development.",
+      "description_hi": "स्वस्थ सेब की पत्तियां जो एकसमान हरे रंग और जोरदार शारीरिक विकास को दर्शाती हैं।",
+      "symptoms_en": "Leaves are crisp, deep green, free of spots, blemishes, discoloration, or curling.",
+      "symptoms_hi": "पत्तियां ताज़ा, गहरी हरी, किसी भी प्रकार के धब्बे, मलिनकिरण या मुड़ने से मुक्त हैं।",
+      "environment_en": "Balanced sunlight, soil moisture, and good canopy aeration.",
+      "environment_hi": "संतुलित धूप, मिट्टी की नमी और अच्छी हवादार छतरी।",
+      "prevention_en": "Maintain regular balanced fertilization (NPK + micronutrients), timely irrigation, and regular pest scouting.",
+      "prevention_hi": "नियमित संतुलित पोषण (NPK + सूक्ष्म पोषक तत्व), समय पर सिंचाई और कीट निगरानी जारी रखें।",
+      "care_en": "No disease detected. Continue standard agronomic practices and regular inspection.",
+      "care_hi": "कोई रोग नहीं मिला। मानक कृषि पद्धतियों और नियमित निरीक्षण को जारी रखें।",
+      "sources": [
+        {
+          "name": "ICAR Package of Practices - Apple",
+          "url": "https://icar.org.in"
+        }
+      ]
+    },
+    "Blueberry___healthy": {
+      "crop": "Blueberry",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy blueberry bush displaying vibrant green foliage and strong vegetative vigour.",
+      "description_hi": "स्वस्थ ब्लूबेरी की झाड़ी जो चमकदार हरी पत्तियों और मजबूत वानस्पतिक विकास को दर्शाती है।",
+      "symptoms_en": "Leaves are firm, vibrant green, without marginal scorch, spots, or chlorosis.",
+      "symptoms_hi": "पत्तियां दृढ़, चमकदार हरी हैं, जिनमें कोई झुलसा, धब्बा या पीलापन नहीं है।",
+      "environment_en": "Acidic soil (pH 4.5–5.5) with excellent drainage and organic mulching.",
+      "environment_hi": "अम्लीय मिट्टी (pH 4.5–5.5), उत्तम जल निकासी और जैविक मल्चिंग।",
+      "prevention_en": "Maintain acidic soil pH, apply pine needle or peat mulch, and avoid overhead sprinkler watering.",
+      "prevention_hi": "मिट्टी का अम्लीय pH बनाए रखें, पाइन नीडल मल्च का प्रयोग करें और ऊपर से सिंचाई से बचें।",
+      "care_en": "No disease present. Continue drip irrigation and acidic nutrient feeding.",
+      "care_hi": "कोई रोग नहीं मिला। ड्रिप सिंचाई और अम्लीय पोषण प्रबंधन जारी रखें।",
+      "sources": [
+        {
+          "name": "ICAR Berry Crop Guidelines",
+          "url": "https://icar.org.in"
+        }
+      ]
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "crop": "Cherry (including sour)",
+      "condition": "Powdery mildew",
+      "causal_agent": "Podosphaera clandestina",
+      "cause_group": "fungal",
+      "description_en": "A widespread fungal foliar disease causing white talcum-like powdery patches on leaves and terminal shoots.",
+      "description_hi": "एक व्यापक कवक रोग जो पत्तियों और नई शाखाओं पर सफेद पाउडर जैसे धब्बे बनाता है।",
+      "symptoms_en": "White powdery fungal growth on leaves. Affected young leaves curl upward, blister, and become brittle.",
+      "symptoms_hi": "पत्तियों पर सफेद चूर्ण जैसी फफूंदी। प्रभावित युवा पत्तियां ऊपर की ओर मुड़ जाती हैं और भंगुर हो जाती हैं।",
+      "environment_en": "Warm days (18–28°C) with high relative humidity and shaded canopy conditions. Does not require free water.",
+      "environment_hi": "गर्म दिन (18–28°C), उच्च आर्द्रता और छायादार छतरी। संक्रमण के लिए पानी की बूंदों की आवश्यकता नहीं होती।",
+      "prevention_en": "Prune interior branches to increase sunlight and airflow. Avoid excess nitrogen fertilization.",
+      "prevention_hi": "धूप और हवा के लिए अंदरूनी शाखाओं की छंटाई करें। अत्यधिक नाइट्रोजन उर्वरक से बचें।",
+      "care_en": "Apply sulfur-based spray or potassium bicarbonate at early onset. Consult local KVK officers.",
+      "care_hi": "शुरुआती लक्षण पर सल्फर या पोटेशियम बाइकार्बोनेट का छिड़काव करें। स्थानीय KVK से परामर्श लें।",
+      "sources": [
+        {
+          "name": "ICAR-CITH Cherry Disease Management",
+          "url": "https://cith.icar.gov.in"
+        }
+      ]
+    },
+    "Cherry_(including_sour)___healthy": {
+      "crop": "Cherry (including sour)",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy cherry foliage with smooth, glossy leaf blades and sound shoot elongation.",
+      "description_hi": "स्वस्थ चेरी की पत्तियां जो चिकनी, चमकदार और अच्छी वृद्धि वाली हैं।",
+      "symptoms_en": "Leaves are deep green, pliable, unblemished, showing active photosynthesis.",
+      "symptoms_hi": "पत्तियां गहरी हरी, लचीली और बेदाग हैं।",
+      "environment_en": "Well-drained loamy soil, full sun exposure, and good air circulation.",
+      "environment_hi": "अच्छी जल निकासी वाली दोमट मिट्टी, पूरी धूप और हवा का संचार।",
+      "prevention_en": "Prune annually during dormancy. Monitor for aphid and mite vectors.",
+      "prevention_hi": "सुप्त अवस्था में वार्षिक छंटाई करें। माहू और माइट कीटों की निगरानी करें।",
+      "care_en": "Crop is healthy. Continue balanced orchard irrigation and post-harvest sanitation.",
+      "care_hi": "फसल स्वस्थ है। संतुलित सिंचाई और स्वच्छता बनाए रखें।",
+      "sources": [
+        {
+          "name": "ICAR Temperate Horticulture",
+          "url": "https://icar.org.in"
+        }
+      ]
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "crop": "Corn (maize)",
+      "condition": "Cercospora leaf spot Gray leaf spot",
+      "causal_agent": "Cercospora zeae-maydis",
+      "cause_group": "fungal",
+      "description_en": "Gray leaf spot is one of the most destructive foliar diseases of maize worldwide, causing premature leaf death.",
+      "description_hi": "ग्रे लीफ स्पॉट मक्के की सबसे विनाशकारी पर्ण बीमारियों में से एक है, जिससे पत्तियां समय से पहले सूख जाती हैं।",
+      "symptoms_en": "Small tan lesions that expand into distinct rectangular, blocky grey-to-tan streaks bounded strictly by leaf veins.",
+      "symptoms_hi": "पत्तियों की नसों के बीच सीमित आयताकार भूरे-धूसर धब्बे जो धारियों जैसे दिखाई देते हैं।",
+      "environment_en": "Prolonged warm, humid weather (>25°C, RH >90%) with frequent dew. Overwinters in corn residue.",
+      "environment_hi": "लंबे समय तक गर्म, नम मौसम (>25°C, आर्द्रता >90%) और भारी ओस। पुराने मक्के के अवशेषों में कवक रहता है।",
+      "prevention_en": "Rotate crops with non-grasses (soybean/pulses). Till corn residue to accelerate decomposition. Plant resistant hybrid seeds.",
+      "prevention_hi": "दलहनी फसलों के साथ फसल चक्र अपनाएं। फसल अवशेषों को मिट्टी में दबाएं। प्रतिरोधी संकर बीज बोएं।",
+      "care_en": "Inspect before tasseling. Consult your district KVK for threshold-based fungicide recommendations.",
+      "care_hi": "भुट्टा निकलने से पहले निरीक्षण करें। कवकनाशी के उपयोग हेतु ज़िला KVK से मार्गदर्शन लें।",
+      "sources": [
+        {
+          "name": "ICAR Indian Institute of Maize Research",
+          "url": "https://iimr.icar.gov.in"
+        }
+      ]
+    },
+    "Corn_(maize)___Common_rust_": {
+      "crop": "Corn (maize)",
+      "condition": "Common rust",
+      "causal_agent": "Puccinia sorghi",
+      "cause_group": "fungal",
+      "description_en": "Common rust appears as prominent cinnamon-brown pustules on both upper and lower leaf surfaces.",
+      "description_hi": "कॉमन रस्ट पत्तियों की दोनों सतहों पर दालचीनी जैसे भूरे रंग के उभरे हुए फफोले के रूप में दिखता है।",
+      "symptoms_en": "Oval to elongate powdery golden-brown pustules that erupt through the leaf epidermis releasing dusty spores.",
+      "symptoms_hi": "अंडाकार सुनहरे-भूरे फफोले जो पत्ती की सतह को फाड़कर धूल जैसे बीजाणु छोड़ते हैं।",
+      "environment_en": "Cool to moderate temperatures (16–25°C) coupled with high relative humidity and heavy dew.",
+      "environment_hi": "ठंडा से मध्यम तापमान (16–25°C), उच्च आर्द्रता और अधिक ओस।",
+      "prevention_en": "Sow early in the season. Choose maize hybrids carrying the Rp resistance gene.",
+      "prevention_hi": "सीजन की शुरुआत में समय पर बुवाई करें। Rp प्रतिरोधक जीन वाले संकर बीज चुनें।",
+      "care_en": "Usually self-limiting as temperatures rise. Consult local KVK if rust covers >10% of ear leaf area before silking.",
+      "care_hi": "तापमान बढ़ने पर रोग अक्सर रुक जाता है। यदि भुट्टे की पत्ती पर 10% से अधिक संक्रमण हो तो KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR-IIMR Maize Pathology Division",
+          "url": "https://iimr.icar.gov.in"
+        }
+      ]
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "crop": "Corn (maize)",
+      "condition": "Northern Leaf Blight",
+      "causal_agent": "Exserohilum turcicum",
+      "cause_group": "fungal",
+      "description_en": "Northern corn leaf blight causes large cigar-shaped necrotic lesions, resulting in dramatic photosynthetic loss.",
+      "description_hi": "उत्तरी मक्का पत्ती झुलसा बड़े सिगार के आकार के सूखे धब्बे बनाता है, जिससे पैदावार में भारी कमी आती है।",
+      "symptoms_en": "Long, elliptical, cigar-shaped greyish-green to tan lesions (3–15 cm long) beginning on lower leaves and moving up.",
+      "symptoms_hi": "लंबे, सिगार के आकार के धूसर-हरे से भूरे धब्बे (3–15 सेमी) जो निचली पत्तियों से शुरू होकर ऊपर बढ़ते हैं।",
+      "environment_en": "Moderate temperatures (18–27°C) accompanied by extended dews or frequent rainfall.",
+      "environment_hi": "मध्यम तापमान (18–27°C) के साथ लंबी ओस या लगातार बारिश।",
+      "prevention_en": "Use certified Ht-gene resistant hybrids. Practice 2-year crop rotation and deep residue ploughing.",
+      "prevention_hi": "Ht-जीन प्रतिरोधी संकर बीजों का उपयोग करें। 2 साल का फसल चक्र अपनाएं और गहरी जुताई करें।",
+      "care_en": "Scout fields prior to silking. Contact your local KVK for approved protective measures.",
+      "care_hi": "सिल्किंग से पहले खेत का मुआयना करें। अनुमोदित सुरक्षा उपायों के लिए KVK से सलाह लें।",
+      "sources": [
+        {
+          "name": "ICAR-IIMR Maize Advisory",
+          "url": "https://iimr.icar.gov.in"
+        }
+      ]
+    },
+    "Corn_(maize)___healthy": {
+      "crop": "Corn (maize)",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Vigorous maize plant displaying lush dark green leaves, sound stalk strength, and uniform canopy closure.",
+      "description_hi": "मजबूत मक्के का पौधा जिसमें गहरे हरे रंग की स्वस्थ पत्तियां और मजबूत तना है।",
+      "symptoms_en": "Long lanceolate leaves are clean, uniformly green with prominent midrib and no fungal lesions.",
+      "symptoms_hi": "लंबी पत्तियां साफ, एकसमान हरी हैं, जिनमें कोई फंगल धब्बा या कीट क्षति नहीं है।",
+      "environment_en": "Adequate solar radiation, warm soil temperatures, and consistent moisture through vegetative development.",
+      "environment_hi": "पर्याप्त धूप, गर्म मिट्टी और वानस्पतिक विकास के दौरान निरंतर नमी।",
+      "prevention_en": "Side-dress nitrogen at knee-high stage; maintain weed-free rows and scout weekly.",
+      "prevention_hi": "घुटने तक ऊंचाई पर नाइट्रोजन की टॉप-ड्रेसिंग करें; खरपतवार नियंत्रण रखें और साप्ताहिक जांच करें।",
+      "care_en": "Crop is healthy. Maintain planned irrigation and fertilizer schedule.",
+      "care_hi": "फसल बिल्कुल स्वस्थ है। निर्धारित सिंचाई और उर्वरक कार्यक्रम जारी रखें।",
+      "sources": [
+        {
+          "name": "ICAR Maize Production Technology",
+          "url": "https://iimr.icar.gov.in"
+        }
+      ]
+    },
+    "Grape___Black_rot": {
+      "crop": "Grape",
+      "condition": "Black rot",
+      "causal_agent": "Guignardia bidwellii",
+      "cause_group": "fungal",
+      "description_en": "A highly destructive fungal disease in warm, humid grape regions that can shrivel and destroy complete berry clusters.",
+      "description_hi": "अंगूर का एक अत्यधिक विनाशकारी कवक रोग जो पूरे अंगूर के गुच्छों को सुखाकर काला कर देता है।",
+      "symptoms_en": "Small circular reddish-brown leaf spots with dark margins and tiny black pycnidia dots inside. Berries shrivel into hard black mummies.",
+      "symptoms_hi": "पत्तियों पर लाल-भूरे गोल धब्बे जिनके अंदर काले बिंदु दिखते हैं। अंगूर सिकुड़कर काले और कठोर हो जाते हैं।",
+      "environment_en": "Warm temperatures (21–27°C) with continuous leaf wetness from rain or heavy morning fog.",
+      "environment_hi": "गर्म तापमान (21–27°C) और बारिश या भारी कोहरे से पत्तियों का लगातार गीला रहना।",
+      "prevention_en": "Prune out mummified berries and infected canes during dormancy. Orient trellises for maximum wind circulation.",
+      "prevention_hi": "सुप्त अवस्था में पुराने सूखे अंगूर और संक्रमित टहनियों को छांटें। हवा के संचार के लिए ट्रेलिस सही रखें।",
+      "care_en": "Apply early protective sprays from bud break through 4 weeks post-bloom. Consult ICAR-NRCG guidelines.",
+      "care_hi": "कलियों के फूटने से लेकर फूल आने के 4 सप्ताह बाद तक सुरक्षात्मक स्प्रे करें। ICAR-NRCG से सलाह लें।",
+      "sources": [
+        {
+          "name": "ICAR National Research Centre for Grapes",
+          "url": "https://nrcgrapes.icar.gov.in"
+        }
+      ]
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "crop": "Grape",
+      "condition": "Esca (Black Measles)",
+      "causal_agent": "Phaeomoniella chlamydospora, Phaeoacremonium aleophilum",
+      "cause_group": "fungal",
+      "description_en": "A complex fungal trunk disease causing chronic grapevine decline, distinctive leaf 'tiger stripes', and spotted fruit.",
+      "description_hi": "अंगूर के तने का एक जटिल कवक रोग जिससे बेल कमजोर होती है और पत्तियों पर बाघ जैसी धारियां ('टाइगर स्ट्राइप्स') बनती हैं।",
+      "symptoms_en": "Interveinal yellowing and browning creating a striking 'tiger-stripe' pattern on leaves. Berries exhibit dark speckles ('black measles').",
+      "symptoms_hi": "पत्तियों की नसों के बीच पीलापन और भूरापन जिससे 'टाइगर-स्ट्राइप' पैटर्न बनता है। फलों पर काले चकत्ते पड़ते हैं।",
+      "environment_en": "Infection enters through large pruning wounds during wet dormant periods; foliar symptoms spike during midsummer heat.",
+      "environment_hi": "सर्दियों में छंटाई के घावों से कवक प्रवेश करता है; गर्मियों में पत्तियों पर लक्षण तेजी से उभरते हैं।",
+      "prevention_en": "Avoid pruning in wet weather. Seal all pruning wounds with wound paste or protective paste. Remove severely declining vines.",
+      "prevention_hi": "गीले मौसम में छंटाई न करें। छंटाई के घावों पर सुरक्षात्मक पेस्ट लगाएं। अत्यधिक रोगग्रस्त बेलों को हटाएं।",
+      "care_en": "No single curative chemical exists. Maintain vine vigor and consult ICAR-NRCG for trunk surgery protocols.",
+      "care_hi": "कोई एक अचूक रासायनिक इलाज नहीं है। बेल की ताकत बनाए रखें और ICAR-NRCG से मार्गदर्शन लें।",
+      "sources": [
+        {
+          "name": "ICAR-NRCG Grape Trunk Disease Advisory",
+          "url": "https://nrcgrapes.icar.gov.in"
+        }
+      ]
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "crop": "Grape",
+      "condition": "Leaf blight (Isariopsis Leaf Spot)",
+      "causal_agent": "Pseudocercospora vitis (syn. Isariopsis clavispora)",
+      "cause_group": "fungal",
+      "description_en": "Common foliar blight causing irregular angular leaf spotting and premature defoliation in late-season grape canopies.",
+      "description_hi": "पत्तियों का सामान्य झुलसा रोग जो देर के मौसम में पत्तियों पर कोणीय धब्बे बनाता है और पत्तियां समय से पहले गिर जाती हैं।",
+      "symptoms_en": "Dark brown, angular to irregular necrotic spots on leaves with distinct yellowish halos. Dark velvety fungal growth under leaf.",
+      "symptoms_hi": "पत्तियों पर गहरे भूरे, कोणीय धब्बे जिनके चारों ओर पीला घेरा होता है। निचली सतह पर काली मखमली फफूंदी।",
+      "environment_en": "Humid monsoon weather, warm temperatures (24–30°C), and dense unpruned vine canopies.",
+      "environment_hi": "मानसून की नमी, गर्म तापमान (24–30°C) और घनी अव्यवस्थित बेलें।",
+      "prevention_en": "Improve canopy aeration by canopy thinning and leaf plucking around grape bunches.",
+      "prevention_hi": "गुच्छों के आसपास की पत्तियां हटाकर और छंटाई करके हवा का आवागमन सुधारें।",
+      "care_en": "Post-harvest sprays help reduce overwintering inocula. Contact nearest KVK for approved spray schedule.",
+      "care_hi": "फसल कटाई के बाद स्प्रे से अगले सीजन के लिए कवक घटता है। अनुशंसित स्प्रे के लिए KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR-NRCG Disease Protocols",
+          "url": "https://nrcgrapes.icar.gov.in"
+        }
+      ]
+    },
+    "Grape___healthy": {
+      "crop": "Grape",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Vigorous grapevine canopy with healthy lobed leaves and active shoot growth.",
+      "description_hi": "स्वस्थ अंगूर की बेल जिसमें हरी, चमकदार पत्तियां और मजबूत शाखाएं हैं।",
+      "symptoms_en": "Lush green leaves free of interveinal chlorosis, marginal burns, or fungal spots.",
+      "symptoms_hi": "हरी-भरी पत्तियां जो नसों के बीच पीलेपन, किनारे जलने या फंगल धब्बों से मुक्त हैं।",
+      "environment_en": "Sunny micro-climate with well-drained gravelly or sandy-loam soils.",
+      "environment_hi": "धूप वाला वातावरण और अच्छी जल निकासी वाली रेतीली-दोमट मिट्टी।",
+      "prevention_en": "Maintain shoot positioning, balanced drip nutrition, and proactive disease monitoring.",
+      "prevention_hi": "टहनियों को व्यवस्थित रखें, संतुलित ड्रिप पोषण दें और नियमित रूप से जांच करें।",
+      "care_en": "No disease present. Continue regular vineyard maintenance and shoot management.",
+      "care_hi": "कोई रोग नहीं मिला। नियमित बेल प्रबंधन और सिंचाई जारी रखें।",
+      "sources": [
+        {
+          "name": "ICAR National Research Centre for Grapes",
+          "url": "https://nrcgrapes.icar.gov.in"
+        }
+      ]
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "crop": "Orange",
+      "condition": "Haunglongbing (Citrus greening)",
+      "causal_agent": "Candidatus Liberibacter asiaticus",
+      "cause_group": "bacterial",
+      "description_en": "Citrus greening (Huanglongbing) is the world's most devastating bacterial citrus disease, transmitted by the Asian citrus psyllid.",
+      "description_hi": "सिट्रस ग्रीनिंग (HLB) नींबू वर्गीय फलों का सबसे विनाशकारी जीवाणु रोग है, जो एशियाई सिट्रस सिलीड कीट द्वारा फैलता है।",
+      "symptoms_en": "Asymmetric 'blotchy mottle' yellowing across leaf veins. Fruit stays small, lopsided, remains green at stylar end, and tastes bitter.",
+      "symptoms_hi": "पत्ती की नसों के आर-पार असमान पीलापन ('ब्लॉची मोटल')। फल छोटे, टेढ़े-मेढ़े, निचले हिस्से में हरे और स्वाद में कड़वे रहते हैं।",
+      "environment_en": "Vectored by Diaphorina citri (citrus psyllid); spreads rapidly in warm subtropical and tropical growing zones.",
+      "environment_hi": "डायफोरिना सिट्री (सिट्रस सिलीड कीट) द्वारा फैलता है; गर्म उपोष्णकटिबंधीय क्षेत्रों में तेजी से फैलता है।",
+      "prevention_en": "Plant only certified disease-free nursery saplings. Strictly control psyllid vectors with yellow sticky traps and bio-agents.",
+      "prevention_hi": "केवल प्रमाणित रोग-मुक्त पौधों की रोपाई करें। पीले चिपचिपे ट्रैप और जैविक नियंत्रण से सिलीड कीट को रोकें।",
+      "care_en": "Incurable once systemically established. Remove and burn severely affected trees to safeguard surrounding orchards.",
+      "care_hi": "एक बार फैलने के बाद इसका कोई इलाज नहीं है। अन्य पेड़ों को बचाने के लिए अत्यधिक प्रभावित पेड़ों को उखाड़कर नष्ट करें।",
+      "sources": [
+        {
+          "name": "ICAR Central Citrus Research Institute",
+          "url": "https://ccri.icar.gov.in"
+        }
+      ]
+    },
+    "Peach___Bacterial_spot": {
+      "crop": "Peach",
+      "condition": "Bacterial spot",
+      "causal_agent": "Xanthomonas arboricola pv. pruni",
+      "cause_group": "bacterial",
+      "description_en": "Bacterial spot causes distinct angular shot-holes on peach leaves and deep pitting lesions on developing fruit.",
+      "description_hi": "बैक्टीरियल स्पॉट से आड़ू की पत्तियों पर कोणीय छेद ('शॉट-होल') और फलों पर गहरे गड्ढे वाले घाव बनते हैं।",
+      "symptoms_en": "Small, angular water-soaked leaf spots that turn purplish-black and drop out, creating a 'shot-hole' effect. Gumming fruit cracks.",
+      "symptoms_hi": "छोटे कोणीय पानीदार धब्बे जो काले होकर गिर जाते हैं, जिससे पत्तियों में छेद बन जाते हैं। फलों पर दरारें और गोंद निकलता है।",
+      "environment_en": "Warm, windy, wet spring weather (20–30°C) with blowing rain and sandy abrasive soil.",
+      "environment_hi": "गर्म, हवादार और नम मौसम (20–30°C) जिसमें तेज बारिश से जीवाणु फैलता है।",
+      "prevention_en": "Plant resistant peach cultivars. Plant windbreaks to minimize wind-driven sand abrasion on leaves.",
+      "prevention_hi": "प्रतिरोधी किस्में लगाएं। पत्तियों पर खरोंच से बचने के लिए हवा-रोधी बाड़ लगाएं।",
+      "care_en": "Apply dormant copper sprays before bud-swell. Consult your local KVK for bloom spray guidelines.",
+      "care_hi": "कलियां फूटने से पहले सुप्त अवस्था में तांबे का छिड़काव करें। KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR-CITH Stone Fruit Advisory",
+          "url": "https://cith.icar.gov.in"
+        }
+      ]
+    },
+    "Peach___healthy": {
+      "crop": "Peach",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy peach foliage showing characteristic lanceolate leaves and robust canopy architecture.",
+      "description_hi": "स्वस्थ आड़ू की पत्तियां जो चमकदार और अच्छी छतरी विकास को दर्शाती हैं।",
+      "symptoms_en": "Leaves are bright green, spear-shaped, without marginal yellowing, spots, or perforation.",
+      "symptoms_hi": "पत्तियां चमकदार हरी, भाले के आकार की, किनारों पर बिना किसी पीलेपन या छेद के हैं।",
+      "environment_en": "Full sunlight and well-aerated sandy loam soil with good drainage.",
+      "environment_hi": "पूरी धूप और अच्छी जल निकासी वाली रेतीली दोमट मिट्टी।",
+      "prevention_en": "Perform annual open-center pruning; inspect for peach leaf curl and borer damage regularly.",
+      "prevention_hi": "सालाना ओपन-सेंटर छंटाई करें; लीफ कर्ल और तना छेदक कीट की नियमित जांच करें।",
+      "care_en": "Tree is healthy. Continue planned irrigation and post-harvest orchard hygiene.",
+      "care_hi": "पेड़ स्वस्थ है। नियमित सिंचाई और बाग की स्वच्छता बनाए रखें।",
+      "sources": [
+        {
+          "name": "ICAR Stone Fruit Production Guidelines",
+          "url": "https://icar.org.in"
+        }
+      ]
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "crop": "Pepper, bell",
+      "condition": "Bacterial spot",
+      "causal_agent": "Xanthomonas campestris pv. vesicatoria",
+      "cause_group": "bacterial",
+      "description_en": "A devastating disease of bell pepper and chili that causes extensive leaf drop, sunscald on fruit, and severe yield reduction.",
+      "description_hi": "शिमला मिर्च और मिर्च का एक विनाशकारी रोग जिससे पत्तियां झड़ जाती हैं और फलों पर धब्बे पड़ जाते हैं।",
+      "symptoms_en": "Small, yellowish-green blister-like spots on leaves that turn brown with water-soaked margins. Rapid lower leaf drop.",
+      "symptoms_hi": "पत्तियों पर छोटे, पीले-हरे छाले जैसे धब्बे जो भूरे हो जाते हैं। निचली पत्तियां तेजी से पीली होकर झड़ती हैं।",
+      "environment_en": "High humidity with warm temperatures (24–30°C) and rain splashing or overhead sprinkler irrigation.",
+      "environment_hi": "उच्च आर्द्रता और गर्म तापमान (24–30°C) के साथ बारिश की फुहारें या फव्वारा सिंचाई।",
+      "prevention_en": "Use certified hot-water-treated seed. Never use overhead sprinkler irrigation; practice 2–3 year crop rotation.",
+      "prevention_hi": "प्रमाणित गर्म पानी से उपचारित बीज का प्रयोग करें। ड्रिप सिंचाई अपनाएं और 2-3 साल का फसल चक्र रखें।",
+      "care_en": "Apply copper hydroxide + mancozeb preventive sprays at transplanting. Seek KVK recommendations.",
+      "care_hi": "रोपाई के समय तांबा आधारित सुरक्षात्मक स्प्रे करें। विस्तृत सलाह के लिए KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR Indian Institute of Vegetable Research",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Pepper,_bell___healthy": {
+      "crop": "Pepper, bell",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Thriving bell pepper plant with smooth, dark green leaves and sturdy erect stems.",
+      "description_hi": "स्वस्थ शिमला मिर्च का पौधा जिसकी पत्तियां चिकनी, गहरी हरी और तने मजबूत हैं।",
+      "symptoms_en": "Leaves are broad, shiny, uniform dark green, free of water-soaked spots, wilting, or distortion.",
+      "symptoms_hi": "पत्तियां चौड़ी, चमकदार, एकसमान गहरी हरी हैं, जिनमें कोई धब्बा या मुरझाव नहीं है।",
+      "environment_en": "Warm growing season (21–29°C), rich organic soil, and steady drip moisture.",
+      "environment_hi": "गर्म मौसम (21–29°C), जैविक खाद युक्त मिट्टी और ड्रिप द्वारा नियमित नमी।",
+      "prevention_en": "Stake plants to keep fruit off the soil; apply organic mulch to maintain root zone temperature.",
+      "prevention_hi": "पौधों को सहारा दें ताकि फल मिट्टी से न छुएं; नमी बनाए रखने के लिए जैविक मल्च का प्रयोग करें।",
+      "care_en": "Plant is healthy. Maintain drip fertigation schedule and scout for thrips/aphids.",
+      "care_hi": "पौधा पूरी तरह स्वस्थ है। ड्रिप पोषण जारी रखें और थ्रिप्स/माहू कीट की निगरानी करें।",
+      "sources": [
+        {
+          "name": "ICAR-IIVR Protected Cultivation of Capsicum",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Potato___Early_blight": {
+      "crop": "Potato",
+      "condition": "Early blight",
+      "causal_agent": "Alternaria solani",
+      "cause_group": "fungal",
+      "description_en": "Early blight is a common foliar disease targeting older potato foliage, reducing photosynthetic area and tuber yield.",
+      "description_hi": "अगेती झुलसा आलू का एक आम रोग है जो पुरानी पत्तियों को प्रभावित करता है, जिससे आलू की उपज घट जाती है।",
+      "symptoms_en": "Dark brown circular-to-angular spots showing characteristic concentric rings ('target-board' pattern) surrounded by chlorotic yellow halos.",
+      "symptoms_hi": "पत्तियों पर गहरे भूरे रंग के छल्लेदार धब्बे (टार्गेट बोर्ड जैसे) जिनके चारों तरफ पीला घेरा होता है।",
+      "environment_en": "Warm, sunny days alternating with humid dewy nights or intermittent rainfall (24–29°C).",
+      "environment_hi": "गर्म, धूप वाले दिन और नम, ओस वाली रातें (24–29°C) या रुक-रुक कर बारिश।",
+      "prevention_en": "Rotate crops with non-solanaceous crops for 3 years. Ensure optimal nitrogen nutrition; stressed plants succumb faster.",
+      "prevention_hi": "आलू-टमाटर कुल से अलग फसलों के साथ 3 साल का फसल चक्र अपनाएं। संतुलित नाइट्रोजन पोषण दें।",
+      "care_en": "Remove infected lower leaves. Spray Mancozeb 75% WP or neem-based bio-formulations as advised by local KVK.",
+      "care_hi": "निचली बीमार पत्तियों को हटाएं। स्थानीय KVK की सलाह पर मैनकोज़ेब या नीम आधारित फॉर्मूलेशन का छिड़काव करें।",
+      "sources": [
+        {
+          "name": "ICAR Central Potato Research Institute",
+          "url": "https://cpri.icar.gov.in"
+        }
+      ]
+    },
+    "Potato___Late_blight": {
+      "crop": "Potato",
+      "condition": "Late blight",
+      "causal_agent": "Phytophthora infestans",
+      "cause_group": "oomycete",
+      "description_en": "The most catastrophic potato disease in history, capable of destroying entire fields within a few days under favourable conditions.",
+      "description_hi": "इतिहास का सबसे विनाशकारी आलू रोग (पछेती झुलसा), जो अनुकूल मौसम में कुछ ही दिनों में पूरे खेत को नष्ट कर सकता है।",
+      "symptoms_en": "Large, irregular water-soaked pale-to-dark lesions rapidly turning black. Fine white cottony mildew under lesions in morning dew.",
+      "symptoms_hi": "पत्तियों पर बड़े, पानीदार गहरे धब्बे जो तेजी से काले पड़ते हैं। सुबह की ओस में धब्बों के नीचे सफेद रूई जैसी फफूंदी दिखती है।",
+      "environment_en": "Cool, damp, fog-laden weather (12–22°C) with relative humidity exceeding 90% for consecutive days.",
+      "environment_hi": "ठंडा, नम और कोहरे वाला मौसम (12–22°C) जिसमें लगातार कई दिनों तक आर्द्रता 90% से अधिक रहे।",
+      "prevention_en": "Plant only certified disease-free seed tubers. Hill soil high to shield tubers from spore wash-down. Use resistant cultivars (e.g., Kufri Girdhari).",
+      "prevention_hi": "प्रमाणित रोग-मुक्त बीज आलू ही बोएं। मिट्टी चढ़ाएं ताकि कवक कंद तक न पहुंचे। कुफरी गिरधारी जैसी प्रतिरोधी किस्में लगाएं।",
+      "care_en": "Immediate action required. Contact KVK immediately for preventive systemic fungicide applications (e.g. Cymoxanil or Metalaxyl).",
+      "care_hi": "तुरंत कार्रवाई आवश्यक है। प्रणालीगत फफूंदनाशी (जैसे सिमोक्सानिल या मेटालैक्सिल) के लिए तुरंत KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR-CPRI Late Blight Forecasting & Advisory",
+          "url": "https://cpri.icar.gov.in"
+        }
+      ]
+    },
+    "Potato___healthy": {
+      "crop": "Potato",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Robust potato crop displaying rich green leaf canopy, sturdy haulms, and vigorous tuber bulking.",
+      "description_hi": "स्वस्थ आलू की फसल जिसमें घनी हरी पत्तियां, मजबूत तना और अच्छी कंद वृद्धि है।",
+      "symptoms_en": "Compound foliage is vibrant green, firm, unspotted, showing strong erect vegetative development.",
+      "symptoms_hi": "पत्तियां चमकदार हरी, मजबूत, बेदाग हैं और सीधी खड़ी वृद्धि दर्शाती हैं।",
+      "environment_en": "Cool night temperatures (15–18°C), loose friable soil, and balanced moisture.",
+      "environment_hi": "ठंडी रातें (15–18°C), भुरभुरी बलुई दोमट मिट्टी और संतुलित नमी।",
+      "prevention_en": "Hill up soil twice during season; monitor field micro-climate with local agro-meteorology advisories.",
+      "prevention_hi": "सीजन में दो बार मिट्टी चढ़ाएं; स्थानीय कृषि-मौसम सलाह से मौसम की निगरानी करें।",
+      "care_en": "Crop is healthy. Continue balanced irrigation up to 10 days before dehaulming.",
+      "care_hi": "फसल पूरी तरह स्वस्थ है। कटाई से 10 दिन पहले तक संतुलित सिंचाई जारी रखें।",
+      "sources": [
+        {
+          "name": "ICAR Central Potato Research Institute",
+          "url": "https://cpri.icar.gov.in"
+        }
+      ]
+    },
+    "Raspberry___healthy": {
+      "crop": "Raspberry",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy raspberry cane with vigorous trifoliate leaves and active cane renewal.",
+      "description_hi": "स्वस्थ रसभरी की बेल जिसमें हरी पत्तियां और मजबूत नई शाखाएं हैं।",
+      "symptoms_en": "Leaves are serrated, deep green, without cane blight lesions, powdery patches, or rust.",
+      "symptoms_hi": "पत्तियां दांतेदार, गहरी हरी हैं, जिनमें कोई धब्बा, फफूंदी या रस्ट नहीं है।",
+      "environment_en": "Cool temperate climates with fertile, well-drained organic loam.",
+      "environment_hi": "ठंडी समशीतोष्ण जलवायु और उपजाऊ, अच्छी जल निकासी वाली दोमट मिट्टी।",
+      "prevention_en": "Prune out old fruited floricanes annually; maintain trellising for ventilation.",
+      "prevention_hi": "फल देने वाली पुरानी शाखाओं को सालाना काटें; हवा के लिए ट्रेलिसिंग बनाए रखें।",
+      "care_en": "Plant is healthy. Keep soil mulched and maintain trickle irrigation.",
+      "care_hi": "पौधा स्वस्थ है। मिट्टी पर मल्चिंग रखें और ड्रिप सिंचाई जारी रखें।",
+      "sources": [
+        {
+          "name": "ICAR Temperate Small Fruit Advisory",
+          "url": "https://icar.org.in"
+        }
+      ]
+    },
+    "Soybean___healthy": {
+      "crop": "Soybean",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy soybean crop with vibrant trifoliate foliage, strong nodulation, and good pod development.",
+      "description_hi": "स्वस्थ सोयाबीन की फसल जिसमें हरी-भरी तिपत्तियां, जड़ों में मजबूत गांठें और अच्छी फलियां हैं।",
+      "symptoms_en": "Leaves are uniformly green, smooth, devoid of rust pustules, frogeye spots, or mosaic mottling.",
+      "symptoms_hi": "पत्तियां एकसमान हरी, चिकनी हैं, जिनमें रस्ट, फ्रॉग-आई धब्बे या मोज़ेक का कोई निशान नहीं है।",
+      "environment_en": "Warm monsoon season (22–32°C) with well-drained black or alluvial soils.",
+      "environment_hi": "गर्म मानसूनी मौसम (22–32°C) और अच्छी जल निकासी वाली काली या जलोढ़ मिट्टी।",
+      "prevention_en": "Seed inoculation with Bradyrhizobium japonicum; maintain weed-free condition for first 45 days.",
+      "prevention_hi": "राइजोबियम कल्चर से बीजोपचार करें; पहले 45 दिनों तक खरपतवार नियंत्रण रखें।",
+      "care_en": "Crop is healthy. Ensure adequate drainage during heavy rainfall spells.",
+      "care_hi": "फसल स्वस्थ है। भारी बारिश के दौरान खेत से जल निकासी सुनिश्चित करें।",
+      "sources": [
+        {
+          "name": "ICAR Indian Institute of Soybean Research",
+          "url": "https://iisrindore.icar.gov.in"
+        }
+      ]
+    },
+    "Squash___Powdery_mildew": {
+      "crop": "Squash",
+      "condition": "Powdery mildew",
+      "causal_agent": "Podosphaera xanthii, Erysiphe cichoracearum",
+      "cause_group": "fungal",
+      "description_en": "A ubiquitous fungal problem in cucurbits causing white talc-like powder coating on leaf surfaces, reducing photosynthesis.",
+      "description_hi": "कद्दू वर्गीय फसलों का एक आम कवक रोग जो पत्तियों पर सफेद पाउडर जैसी परत बनाता है।",
+      "symptoms_en": "White powdery circular talcum-like spots expanding across both leaf surfaces and stems. Heavily infected leaves brown and wither.",
+      "symptoms_hi": "पत्तियों और तनों पर सफेद पाउडर जैसे गोल धब्बे जो फैलते हैं। गंभीर रूप से प्रभावित पत्तियां सूख जाती हैं।",
+      "environment_en": "Warm, dry climates (20–30°C) with dense shaded plant canopies and high relative humidity at night.",
+      "environment_hi": "गर्म मौसम (20–30°C), घनी छायादार बेलें और रात में उच्च आर्द्रता।",
+      "prevention_en": "Plant powdery-mildew-tolerant squash varieties. Ensure wide row spacing for maximum sunlight penetration.",
+      "prevention_hi": "रोग प्रतिरोधी किस्में लगाएं। धूप के लिए पौधों के बीच पर्याप्त दूरी रखें।",
+      "care_en": "Apply wettable sulfur (2 g/L) or neem oil spray at first white speck. Consult local KVK.",
+      "care_hi": "पहला सफेद धब्बा दिखते ही घुलनशील गंधक (2 ग्राम/लीटर) या नीम तेल का छिड़काव करें। KVK से सलाह लें।",
+      "sources": [
+        {
+          "name": "ICAR-IIVR Cucurbit Management Guide",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Strawberry___Leaf_scorch": {
+      "crop": "Strawberry",
+      "condition": "Leaf scorch",
+      "causal_agent": "Diplocarpon earlianum",
+      "cause_group": "fungal",
+      "description_en": "Leaf scorch is an economically damaging strawberry disease causing purple blotches that coalesce into scorched, dried foliage.",
+      "description_hi": "स्ट्रॉबेरी का एक नुकसानदेह रोग जिससे पत्तियों पर बैंगनी चकत्ते बनते हैं और पत्तियां झुलसी हुई दिखती हैं।",
+      "symptoms_en": "Numerous irregular purple-to-brown blotches (1–5 mm) with no light center. Leaves dry up, curl upward, and look burnt or scorched.",
+      "symptoms_hi": "पत्तियों पर अनेक अनियमित बैंगनी-भूरे चकत्ते। पत्तियां ऊपर की ओर मुड़कर सूख जाती हैं और जली हुई दिखती हैं।",
+      "environment_en": "Warm, wet weather (20–26°C) with prolonged moisture on strawberry beds.",
+      "environment_hi": "गर्म और गीला मौसम (20–26°C) जिसमें क्यारियों पर देर तक नमी बनी रहे।",
+      "prevention_en": "Plant on raised plastic mulch beds with drip irrigation. Rake and compost old infected leaves after harvest renovation.",
+      "prevention_hi": "उठी हुई क्यारियों पर ड्रिप सिंचाई के साथ प्लास्टिक मल्च लगाएं। फसल कटाई के बाद पुरानी पत्तियां हटाएं।",
+      "care_en": "Apply protective bio-fungicide or consult local KVK for approved strawberry fungicide schedules.",
+      "care_hi": "जैविक फफूंदनाशी का छिड़काव करें या KVK से अनुमोदित कवकनाशी के बारे में जानकारी लें।",
+      "sources": [
+        {
+          "name": "ICAR Strawberry Advisory",
+          "url": "https://icar.org.in"
+        }
+      ]
+    },
+    "Strawberry___healthy": {
+      "crop": "Strawberry",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Healthy strawberry plant displaying vibrant dark green trifoliate leaves and active runner development.",
+      "description_hi": "स्वस्थ स्ट्रॉबेरी का पौधा जिसमें गहरे हरे रंग की तिपत्तियां और मजबूत तने हैं।",
+      "symptoms_en": "Leaves are serrated, deep emerald green, firm, completely free of purple spots, scorch, or chlorosis.",
+      "symptoms_hi": "पत्तियां दांतेदार, गहरे हरे रंग की, मजबूत हैं, जिनमें कोई बैंगनी धब्बा या झुलसा नहीं है।",
+      "environment_en": "Mild daytime temperatures (18–24°C), sandy loam rich in organic compost, and drip irrigation.",
+      "environment_hi": "हल्का तापमान (18–24°C), जैविक खाद वाली बलुई दोमट मिट्टी और ड्रिप सिंचाई।",
+      "prevention_en": "Mulch beds cleanly with clean straw or silver-black plastic to keep fruit off wet soil.",
+      "prevention_hi": "फलों को मिट्टी से बचाने के लिए पुआल या प्लास्टिक मल्च का उपयोग करें।",
+      "care_en": "Crop is healthy. Continue fertigation and inspect crowns weekly for mites.",
+      "care_hi": "फसल पूरी तरह स्वस्थ है। ड्रिप पोषण जारी रखें और माइट कीट की साप्ताहिक जांच करें।",
+      "sources": [
+        {
+          "name": "ICAR-CITH Berry Cultivation",
+          "url": "https://cith.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Bacterial_spot": {
+      "crop": "Tomato",
+      "condition": "Bacterial spot",
+      "causal_agent": "Xanthomonas vesicatoria",
+      "cause_group": "bacterial",
+      "description_en": "A severe bacterial disease of tomato that blights leaves and creates scabby blemishes on fruit, slashing market value.",
+      "description_hi": "टमाटर का एक गंभीर जीवाणु रोग जो पत्तियों को झुलसाता है और फलों पर खुरदुरे दाग बनाता है।",
+      "symptoms_en": "Small (2–3 mm) water-soaked dark brown circular spots with yellow halos. Spots rarely exceed 3mm. Severe defoliation occurs.",
+      "symptoms_hi": "छोटे (2–3 मिमी) पानीदार गहरे भूरे गोल धब्बे जिनके चारों ओर पीला घेरा होता है। पत्तियां तेजी से झड़ती हैं।",
+      "environment_en": "High temperatures (24–30°C) with persistent rains, morning dew, or overhead sprinklers.",
+      "environment_hi": "उच्च तापमान (24–30°C), लगातार बारिश, सुबह की ओस या फव्वारा सिंचाई।",
+      "prevention_en": "Use certified hot-water-treated seed. Avoid working in fields when plants are wet. Rotate with non-solanaceous crops.",
+      "prevention_hi": "गर्म पानी से उपचारित बीज का प्रयोग करें। गीले पौधों पर काम न करें। फसल चक्र अपनाएं।",
+      "care_en": "Apply copper hydroxide + streptocycline sprays as advised by local KVK. Avoid overhead watering.",
+      "care_hi": "स्थानीय KVK की सलाह पर कॉपर हाइड्रॉक्साइड + स्ट्रेप्टोसाइक्लिन का छिड़काव करें। ऊपर से पानी देने से बचें।",
+      "sources": [
+        {
+          "name": "ICAR-IIVR Tomato Pathology Bulletin",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Early_blight": {
+      "crop": "Tomato",
+      "condition": "Early blight",
+      "causal_agent": "Alternaria solani",
+      "cause_group": "fungal",
+      "description_en": "Early blight is one of the most common fungal diseases affecting tomato plants, attacking foliage, stems, and fruit.",
+      "description_hi": "अगेती झुलसा टमाटर का सबसे आम कवक रोग है जो पत्तियों, तनों और फलों को प्रभावित करता है।",
+      "symptoms_en": "Concentric ring 'target board' dark brown lesions developing first on older leaves, progressing upward. Yellowing around lesions.",
+      "symptoms_hi": "पुरानी पत्तियों पर गोल गाढ़े भूरे रंग के छल्लेदार धब्बे (टार्गेट बोर्ड जैसे) जो ऊपर की ओर बढ़ते हैं।",
+      "environment_en": "Warm, humid conditions (24–29°C) with alternating wet and dry periods. Overwinters on diseased solanaceous debris.",
+      "environment_hi": "गर्म और नम मौसम (24–29°C) जिसमें गीले और सूखे दौर बदलते रहें। फसल अवशेषों में कवक जीवित रहता है।",
+      "prevention_en": "Prune lower 30cm of leaves to prevent soil splash. Mulch under plants and use drip irrigation.",
+      "prevention_hi": "मिट्टी के छींटों से बचने के लिए निचली 30 सेमी पत्तियां छांटें। मल्चिंग करें और ड्रिप से पानी दें।",
+      "care_en": "Apply Mancozeb 75% WP (2.5 g/L) or neem oil (5 ml/L). Consult your district KVK for spray intervals.",
+      "care_hi": "मैनकोज़ेब (2.5 ग्राम/लीटर) या नीम तेल (5 मिली/लीटर) का छिड़काव करें। KVK से परामर्श लें।",
+      "sources": [
+        {
+          "name": "ICAR Indian Institute of Horticultural Research",
+          "url": "https://iihr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Late_blight": {
+      "crop": "Tomato",
+      "condition": "Late blight",
+      "causal_agent": "Phytophthora infestans",
+      "cause_group": "oomycete",
+      "description_en": "A lethal water-mold pathogen capable of turning entire tomato fields into a blackened, rotting mass within days.",
+      "description_hi": "पछेती झुलसा एक घातक रोग है जो कुछ ही दिनों में पूरे टमाटर के खेत को सड़ाकर काला कर सकता है।",
+      "symptoms_en": "Large, irregular greasy water-soaked grey-green spots expanding rapidly into brown-black blotches. White fungal fuzz under leaf in high humidity.",
+      "symptoms_hi": "बड़े, अनियमित पानीदार धूसर-हरे धब्बे जो तेजी से काले पड़ते हैं। पत्तियों के नीचे सफेद रूई जैसी फफूंदी।",
+      "environment_en": "Cool, damp weather with temperatures between 15–22°C and relative humidity over 90%.",
+      "environment_hi": "ठंडा और अत्यधिक नम मौसम (15–22°C) जिसमें आर्द्रता 90% से अधिक हो।",
+      "prevention_en": "Ensure wide plant spacing for rapid canopy drying. Avoid overhead watering. Remove volunteer tomatoes and potato cull piles.",
+      "prevention_hi": "हवा के लिए पौधों में दूरी रखें। ऊपर से सिंचाई न करें। पास के बेकार आलू-टमाटर अवशेष नष्ट करें।",
+      "care_en": "Emergency action needed. Contact local KVK immediately for preventive systemic fungicide applications.",
+      "care_hi": "आपातकालीन स्थिति! निवारक प्रणालीगत फफूंदनाशी के लिए तुरंत अपने नज़दीकी KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR-CPRI Late Blight Advisory",
+          "url": "https://cpri.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Leaf_Mold": {
+      "crop": "Tomato",
+      "condition": "Leaf Mold",
+      "causal_agent": "Passalora fulva (syn. Fulvia fulva)",
+      "cause_group": "fungal",
+      "description_en": "Leaf mold predominantly strikes greenhouse and polyhouse tomatoes under elevated humidity and inadequate ventilation.",
+      "description_hi": "लीफ मोल्ड मुख्य रूप से पॉलीहाउस और ग्रीनहाउस टमाटरों में उच्च आर्द्रता और कम हवा के कारण होता है।",
+      "symptoms_en": "Pale green or yellow spots on the upper leaf surface matched by olive-green to brown velvety mold on the underside.",
+      "symptoms_hi": "पत्तियों की ऊपरी सतह पर हल्के पीले धब्बे और निचली सतह पर जैतून-हरे से भूरे रंग की मखमली फफूंद।",
+      "environment_en": "High relative humidity (>85%) and moderate temperatures (21–24°C); common in protected polyhouses.",
+      "environment_hi": "उच्च आर्द्रता (>85%) और मध्यम तापमान (21–24°C); संरक्षित पॉलीहाउस में बहुत आम।",
+      "prevention_en": "Increase polyhouse ventilation and air movement with circulating fans. Maintain temperatures above dew point.",
+      "prevention_hi": "पॉलीहाउस में वेंटिलेशन और पंखों से हवा का संचार बढ़ाएं। पत्तियों को सूखा रखें।",
+      "care_en": "Spray Chlorothalonil or copper oxychloride as per KVK guidance. Remove lower infected leaves.",
+      "care_hi": "KVK की सलाह के अनुसार कॉपर ऑक्सीक्लोराइड का छिड़काव करें। निचली संक्रमित पत्तियां हटाएं।",
+      "sources": [
+        {
+          "name": "ICAR-IIVR Protected Tomato Production",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "crop": "Tomato",
+      "condition": "Septoria leaf spot",
+      "causal_agent": "Septoria lycopersici",
+      "cause_group": "fungal",
+      "description_en": "Septoria leaf spot causes profuse small circular spots on lower foliage, progressing rapidly upward to defoliate plants.",
+      "description_hi": "सेप्टोरिया लीफ स्पॉट निचली पत्तियों पर अनगिनत छोटे गोल धब्बे बनाता है, जिससे पत्तियां तेजी से झड़ जाती हैं।",
+      "symptoms_en": "Numerous small (1.5–3 mm) circular spots with dark brown margins and sunken grey-to-white centers containing tiny black specks (pycnidia).",
+      "symptoms_hi": "छोटे (1.5–3 मिमी) गोल धब्बे जिनके किनारे गहरे भूरे और केंद्र हल्के धूसर होते हैं जिनमें काले बिंदु दिखते हैं।",
+      "environment_en": "Warm temperatures (20–26°C) combined with frequent rain or heavy overhead irrigation.",
+      "environment_hi": "गर्म तापमान (20–26°C) और लगातार बारिश या ऊपर से पानी का छिड़काव।",
+      "prevention_en": "Stake tomato plants and apply organic mulch. Destroy all crop residue after final harvest.",
+      "prevention_hi": "टमाटर के पौधों को सहारा दें और मल्चिंग करें। फसल के बाद अवशेषों को नष्ट करें।",
+      "care_en": "Strip lower affected leaves. Apply protective bio-fungicide or consult local KVK for spray schedules.",
+      "care_hi": "निचली बीमार पत्तियों को तोड़कर नष्ट करें। जैविक फफूंदनाशी के लिए KVK से संपर्क करें।",
+      "sources": [
+        {
+          "name": "ICAR-IIHR Foliar Tomato Diseases",
+          "url": "https://iihr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "crop": "Tomato",
+      "condition": "Spider mites Two-spotted spider mite",
+      "causal_agent": "Tetranychus urticae",
+      "cause_group": "mite",
+      "description_en": "Microscopic arachnid pests that pierce plant cells on leaf undersides, sucking sap and causing bronzing and fine webbing.",
+      "description_hi": "सूक्ष्म मकड़ी कीट जो पत्तियों की निचली सतह से रस चूसते हैं, जिससे पत्तियां पीली पड़कर सूख जाती हैं और जाला बन जाता है।",
+      "symptoms_en": "Fine yellow stippling or flecking on upper leaf surface. Undersides show fine silken webbing and tiny moving yellowish-red dots.",
+      "symptoms_hi": "पत्तियों की ऊपरी सतह पर महीन पीले बिंदु। निचली सतह पर बारीक जाला और चलते हुए छोटे कीट दिखाई देते हैं।",
+      "environment_en": "Hot, dry, dusty weather (>28°C, low humidity). Drought stress dramatically speeds mite reproduction.",
+      "environment_hi": "गर्म, सूखा और धूल भरा मौसम (>28°C, कम आर्द्रता)। सूखे की स्थिति में कीट तेजी से बढ़ते हैं।",
+      "prevention_en": "Avoid water stress; keep field borders free of broadleaf weeds. Conserve predatory mites.",
+      "prevention_hi": "फसल को पानी की कमी न होने दें; मेड़ों को खरपतवार-मुक्त रखें। मित्र कीटों का संरक्षण करें।",
+      "care_en": "Spray strong water jet on leaf undersides. Apply neem oil (5 ml/L) or wettable sulfur (2 g/L). Consult KVK.",
+      "care_hi": "पत्तियों की निचली सतह पर पानी की तेज धार मारें। नीम तेल (5 मिली/लीटर) या गंधक का छिड़काव करें। KVK से सलाह लें।",
+      "sources": [
+        {
+          "name": "ICAR National Bureau of Agricultural Insect Resources",
+          "url": "https://nbair.res.in"
+        }
+      ]
+    },
+    "Tomato___Target_Spot": {
+      "crop": "Tomato",
+      "condition": "Target Spot",
+      "causal_agent": "Corynespora cassiicola",
+      "cause_group": "fungal",
+      "description_en": "Target spot produces circular lesions with pronounced concentric zonations on tomato leaves, stems, and ripening fruit.",
+      "description_hi": "टार्गेट स्पॉट टमाटर की पत्तियों, तनों और फलों पर गोल छल्लेदार धब्बे बनाता है।",
+      "symptoms_en": "Brown circular lesions with concentric light and dark brown rings. Lesions expand up to 10mm and coalesce, killing the leaf.",
+      "symptoms_hi": "भूरे रंग के गोल धब्बे जिनमें हल्के और गहरे रंग के छल्ले होते हैं। धब्बे बढ़कर 10 मिमी तक हो जाते हैं।",
+      "environment_en": "Warm, highly humid tropical and subtropical climates (20–28°C).",
+      "environment_hi": "गर्म और अत्यधिक नम जलवायु (20–28°C)।",
+      "prevention_en": "Stake plants for upright growth; avoid excess vegetative density to keep humidity down.",
+      "prevention_hi": "पौधों को सहारा देकर सीधा रखें; ज्यादा घने पौधों की छंटाई करें ताकि नमी कम रहे।",
+      "care_en": "Prune lower infected canopy. Consult nearest KVK for approved fungicide options.",
+      "care_hi": "निचली बीमार पत्तियों को हटाएं। अनुमोदित कवकनाशी के लिए नज़दीकी KVK से सलाह लें।",
+      "sources": [
+        {
+          "name": "ICAR-IIVR Tomato Pathology",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "crop": "Tomato",
+      "condition": "Tomato Yellow Leaf Curl Virus",
+      "causal_agent": "Tomato yellow leaf curl virus (TYLCV)",
+      "cause_group": "viral",
+      "description_en": "A catastrophic begomovirus transmitted by whiteflies that stunts tomato plants and halts fruit setting completely.",
+      "description_hi": "सफेद मक्खी द्वारा फैलने वाला एक अत्यंत विनाशकारी विषाणु रोग जो टमाटर के पौधों का विकास रोक देता है और फल नहीं लगते।",
+      "symptoms_en": "Severe upward leaf cupping, curling, and marginal chlorosis (yellowing). Plants become stunted, bushy, and fail to set fruit.",
+      "symptoms_hi": "पत्तियां ऊपर की ओर कप जैसी मुड़ जाती हैं और पीली पड़ जाती हैं। पौधे बौने, झाड़ीदार हो जाते हैं और फल नहीं बनते।",
+      "environment_en": "Vectored exclusively by the sweetpotato whitefly (Bemisia tabaci); worst in hot dry seasons when whitefly numbers surge.",
+      "environment_hi": "सफेद मक्खी (बेमिसिया तबासी) द्वारा फैलता है; गर्म और सूखे मौसम में सफेद मक्खी बढ़ने पर प्रकोप अधिक होता है।",
+      "prevention_en": "Grow TYLCV-resistant hybrid varieties. Install 40-mesh insect netting in nurseries. Erect yellow sticky traps (15–20/acre).",
+      "prevention_hi": "प्रतिरोधी संकर किस्में लगाएं। नर्सरी में 40-मेश कीट जाली लगाएं। पीले चिपचिपे ट्रैप (15–20 प्रति एकड़) लगाएं।",
+      "care_en": "No viral cure. Rogue out and destroy early infected plants immediately to prevent whiteflies spreading virus across the field.",
+      "care_hi": "विषाणु का कोई इलाज नहीं है। शुरुआती संक्रमित पौधों को तुरंत उखाड़कर नष्ट करें ताकि सफेद मक्खी अन्य पौधों में न फैलाए।",
+      "sources": [
+        {
+          "name": "ICAR-IIHR Vector-Borne Tomato Viruses",
+          "url": "https://iihr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "crop": "Tomato",
+      "condition": "Tomato mosaic virus",
+      "causal_agent": "Tomato mosaic virus (ToMV)",
+      "cause_group": "viral",
+      "description_en": "A highly stable mechanically-transmitted tobamovirus causing mottled leaf chlorosis, blistering, and severe plant distortion.",
+      "description_hi": "हाथों और औज़ारों से फैलने वाला एक बहुत स्थिर विषाणु रोग जो पत्तियों पर हल्के और गहरे हरे रंग के धब्बे बनाता है।",
+      "symptoms_en": "Mottled alternating light- and dark-green mosaic patterns on foliage. Leaves may show 'shoestring' narrowing, blistering, and distortion.",
+      "symptoms_hi": "पत्तियों पर हल्के और गहरे हरे रंग का मोज़ेक पैटर्न। पत्तियां संकरी (फीते जैसी), उभरी हुई और विकृत हो जाती हैं।",
+      "environment_en": "Transmitted mechanically by hands, tools, stakes, and through seed coats. Extremely stable virus persisting for years in dry tissue.",
+      "environment_hi": "हाथों, औज़ारों, खूंटियों और बीजों से फैलता है। यह विषाणु सूखे पौधों के अवशेषों में कई वर्षों तक जीवित रहता है।",
+      "prevention_en": "Disinfect hands and tools with 10% trisodium phosphate or non-fat milk solution. Plant certified ToMV-resistant cultivars.",
+      "prevention_hi": "हाथों और औज़ारों को साबुन या दूध के घोल से धोएं। केवल ToMV-प्रतिरोधी प्रमाणित किस्में लगाएं।",
+      "care_en": "Cannot be cured chemically. Immediately remove and bury infected plants; do not compost them.",
+      "care_hi": "कोई रासायनिक इलाज संभव नहीं है। संक्रमित पौधों को तुरंत उखाड़कर जमीन में दबा दें; कंपोस्ट में न डालें।",
+      "sources": [
+        {
+          "name": "ICAR-IIVR Tobamovirus Advisory",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    },
+    "Tomato___healthy": {
+      "crop": "Tomato",
+      "condition": "healthy",
+      "causal_agent": "",
+      "cause_group": "healthy",
+      "description_en": "Vigorous tomato plant exhibiting dark green foliage, thick sturdy stems, and prolific floral cluster development.",
+      "description_hi": "स्वस्थ टमाटर का पौधा जिसमें गहरी हरी पत्तियां, मजबूत तना और अच्छे फूल-फल आ रहे हैं।",
+      "symptoms_en": "Leaves are crisp, broad, uniformly green, free of lesions, curling, stippling, or chlorosis.",
+      "symptoms_hi": "पत्तियां ताज़ा, चौड़ी, एकसमान हरी हैं, जिनमें कोई दाग, मुड़ाव, धब्बा या पीलापन नहीं है।",
+      "environment_en": "Warm sunny days (21–29°C), consistent soil moisture, and rich balanced fertile soil.",
+      "environment_hi": "गर्म धूप वाले दिन (21–29°C), नियमित नमी और जैविक खाद से भरपूर उपजाऊ मिट्टी।",
+      "prevention_en": "Mulch beds cleanly; prune suckers below first fruit cluster to promote airflow and fruit size.",
+      "prevention_hi": "क्यारियों में मल्चिंग करें; हवा के आवागमन के लिए पहली फल गुच्छी के नीचे के सकर हटाएं।",
+      "care_en": "Crop is healthy. Continue balanced fertigation and regular pest scouting.",
+      "care_hi": "फसल पूरी तरह स्वस्थ है। संतुलित पोषण जारी रखें और नियमित कीट निगरानी करें।",
+      "sources": [
+        {
+          "name": "ICAR Package of Practices - Tomato",
+          "url": "https://iivr.icar.gov.in"
+        }
+      ]
+    }
+  }
+}

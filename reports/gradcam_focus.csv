@@ -1,0 +1,113 @@
+crop,true,pred,correct,cam_inside_mask,mask_fraction,enrichment
+Apple,Apple___Black_rot,Apple___Black_rot,True,0.38867881894111633,0.41537786989795916,0.9357234631604191
+Apple,Apple___healthy,Apple___healthy,True,0.3078078031539917,0.34396922831632654,0.894870173883463
+Apple,Apple___healthy,Apple___healthy,True,0.2575782835483551,0.2842394770408163,0.9062016516142383
+Apple,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,True,0.2982484996318817,0.3068997130102041,0.9718109434073184
+Apple,Apple___healthy,Apple___healthy,True,0.33716917037963867,0.42637914540816324,0.7907731276511523
+Apple,Apple___Apple_scab,Apple___Apple_scab,True,0.6581574082374573,0.5079918686224489,1.295606187599461
+Apple,Apple___healthy,Apple___healthy,True,0.2963048219680786,0.22399154974489796,1.3228392870424692
+Apple,Apple___healthy,Apple___healthy,True,0.5798730254173279,0.43632413903061223,1.3289959769487893
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.42834553122520447,0.19788345025510204,2.164635449164655
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.1839831918478012,0.18991151147959184,0.9687837794265163
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.30916526913642883,0.2991470025510204,1.0334894433170856
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.1897476613521576,0.18010602678571427,1.0535331034641873
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.2854063808917999,0.1997967155612245,1.4284838471448331
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.4189578890800476,0.33412388392857145,1.2538998534136874
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.484354704618454,0.375,1.2916125456492107
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,0.350617915391922,0.35951450892857145,0.9752538678809843
+Cherry (including sour),Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,True,0.4517485797405243,0.3596739477040816,1.2559947213974925
+Cherry (including sour),Cherry_(including_sour)___Powdery_mildew,Cherry_(including_sour)___Powdery_mildew,True,0.1663130819797516,0.14112324617346939,1.1784952974743703
+Cherry (including sour),Cherry_(including_sour)___Powdery_mildew,Cherry_(including_sour)___Powdery_mildew,True,0.3804992139339447,0.40563217474489793,0.9380400215373463
+Cherry (including sour),Cherry_(including_sour)___Powdery_mildew,Cherry_(including_sour)___Powdery_mildew,True,0.4820241630077362,0.4672154017857143,1.0316957899192156
+Cherry (including sour),Cherry_(including_sour)___Powdery_mildew,Cherry_(including_sour)___Powdery_mildew,True,0.14064379036426544,0.10465162627551021,1.3439236003270583
+Cherry (including sour),Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,True,0.6917887926101685,0.4606784119897959,1.5016739977507165
+Cherry (including sour),Cherry_(including_sour)___Powdery_mildew,Cherry_(including_sour)___Powdery_mildew,True,0.17579133808612823,0.1971061862244898,0.891861089970634
+Cherry (including sour),Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,True,0.5684888362884521,0.39504942602040816,1.4390321788724334
+Corn (maize),Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,True,0.36313313245773315,0.38576211734693877,0.9413395357614807
+Corn (maize),Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,True,0.46497708559036255,0.36569276147959184,1.271496552759389
+Corn (maize),Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,True,0.7059082388877869,0.5305125956632653,1.3306154173497726
+Corn (maize),Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,True,0.09909459948539734,0.17079878826530612,0.5801832699859156
+Corn (maize),Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,True,0.35005277395248413,0.32399952168367346,1.080411391144728
+Corn (maize),Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,True,0.4965052902698517,0.6962292729591837,0.7131347525213282
+Corn (maize),Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,True,0.4702928066253662,0.6546755420918368,0.7183601286259665
+Corn (maize),Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,False,0.23540064692497253,0.3119618941326531,0.7545814131545021
+Grape,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),Grape___Leaf_blight_(Isariopsis_Leaf_Spot),True,0.5065649747848511,0.3895687181122449,1.3003225136749725
+Grape,Grape___Black_rot,Grape___Black_rot,True,0.7051365375518799,0.4110530931122449,1.715439074337121
+Grape,Grape___Black_rot,Grape___Black_rot,True,0.6513362526893616,0.4100765306122449,1.5883285291087386
+Grape,Grape___Esca_(Black_Measles),Grape___Black_rot,False,0.6960371136665344,0.46968670280612246,1.4819178603696708
+Grape,Grape___Black_rot,Grape___Black_rot,True,0.556369960308075,0.35289779974489793,1.5765753164521359
+Grape,Grape___Black_rot,Grape___Black_rot,True,0.4705781936645508,0.3921595982142857,1.199966023545891
+Grape,Grape___Esca_(Black_Measles),Grape___Esca_(Black_Measles),True,0.6633845567703247,0.4789341517857143,1.3851268578297953
+Grape,Grape___Esca_(Black_Measles),Grape___Esca_(Black_Measles),True,0.7259743213653564,0.43112244897959184,1.6839167690841403
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.5692596435546875,0.3530173788265306,1.6125541621972563
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.7434765100479126,0.5943080357142857,1.2509952169069103
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.7176883220672607,0.5209661989795918,1.3776101472091382
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.7498957514762878,0.6084382971938775,1.2324926864972394
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.7307394742965698,0.6541772959183674,1.1170358232483757
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.7456775903701782,0.5357342155612245,1.3918797207847202
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.7452538013458252,0.420101243622449,1.7739861822822773
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,0.6715222597122192,0.4362045599489796,1.5394663911600635
+Peach,Peach___Bacterial_spot,Peach___Bacterial_spot,True,0.5468652844429016,0.4208984375,1.2992808614142257
+Peach,Peach___Bacterial_spot,Peach___Bacterial_spot,True,0.21854832768440247,0.27333785076530615,0.799553838125598
+Peach,Peach___Bacterial_spot,Peach___Bacterial_spot,True,0.37252411246299744,0.3532565369897959,1.0545427287415152
+Peach,Peach___healthy,Peach___healthy,True,0.13926206529140472,0.13592155612244897,1.0245767431175254
+Peach,Peach___Bacterial_spot,Peach___healthy,False,0.2140486240386963,0.16980229591836735,1.2605755586579372
+Peach,Peach___Bacterial_spot,Peach___Bacterial_spot,True,0.323279470205307,0.2616390306122449,1.2355934412722032
+Peach,Peach___Bacterial_spot,Peach___Bacterial_spot,True,0.3514847457408905,0.3241589604591837,1.0842974855391898
+Peach,Peach___Bacterial_spot,Peach___Bacterial_spot,True,0.6304686665534973,0.37380420918367346,1.6866280557148796
+"Pepper, bell","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",True,0.5009816884994507,0.4014469068877551,1.2479400884748268
+"Pepper, bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,0.49382638931274414,0.3956273915816326,1.2482108160876657
+"Pepper, bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,0.6956977248191833,0.5196707589285714,1.3387278634909816
+"Pepper, bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,0.6226744651794434,0.48134566326530615,1.293611873337353
+"Pepper, bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,0.7338131666183472,0.45810746173469385,1.6018363111564513
+"Pepper, bell","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",True,0.2957707345485687,0.37886639030612246,0.7806729288116246
+"Pepper, bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,0.6155058145523071,0.5576570471938775,1.1037353829733234
+"Pepper, bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,0.6399086117744446,0.4849131058673469,1.3196356296245337
+Potato,Potato___Early_blight,Potato___Early_blight,True,0.12724152207374573,0.11348054846938775,1.1212628401075282
+Potato,Potato___Late_blight,Potato___Late_blight,True,0.26845329999923706,0.24533641581632654,1.0942252462032265
+Potato,Potato___Early_blight,Potato___Early_blight,True,0.3681110441684723,0.27634725765306123,1.332059696538098
+Potato,Potato___Early_blight,Potato___Early_blight,True,0.3327556550502777,0.2613998724489796,1.2729755830895648
+Potato,Potato___Early_blight,Potato___Early_blight,True,0.1419704705476761,0.13984773596938777,1.0151788984181551
+Potato,Potato___Early_blight,Potato___Early_blight,True,0.23051467537879944,0.23782286352040816,0.9692704560300546
+Potato,Potato___Late_blight,Potato___Late_blight,True,0.3823239207267761,0.29139429209183676,1.3120501365424195
+Potato,Potato___Early_blight,Potato___Early_blight,True,0.22605575621128082,0.21896922831632654,1.032363122204171
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.6446130871772766,0.5266262755102041,1.224042774076863
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.6795677542686462,0.5102040816326531,1.3319527983665467
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.46978071331977844,0.43056441326530615,1.0910811456921496
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.6537483930587769,0.48879942602040816,1.3374573664730158
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.6362112164497375,0.43361367984693877,1.467230500371468
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.7235223054885864,0.4955357142857143,1.460081048913904
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.5602476596832275,0.41476004464285715,1.3507753866832743
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,0.48386678099632263,0.4735730229591837,1.0217363691301862
+Soybean,Soybean___healthy,Soybean___healthy,True,0.7485166788101196,0.4315210459183674,1.7346006316264806
+Soybean,Soybean___healthy,Soybean___healthy,True,0.6407144665718079,0.5749960140306123,1.1142937532392994
+Soybean,Soybean___healthy,Soybean___healthy,True,0.5126547813415527,0.4793726084183674,1.0694286080153723
+Soybean,Soybean___healthy,Soybean___healthy,True,0.6896083950996399,0.5495655293367347,1.2548246902092304
+Soybean,Soybean___healthy,Soybean___healthy,True,0.41627687215805054,0.34468670280612246,1.207696347927282
+Soybean,Soybean___healthy,Soybean___healthy,True,0.6921373009681702,0.5336814413265306,1.2969109423175333
+Soybean,Soybean___healthy,Soybean___healthy,True,0.5779193043708801,0.4899154974489796,1.1796305840091645
+Soybean,Soybean___healthy,Soybean___healthy,True,0.5880757570266724,0.44784359056122447,1.3131275503791693
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.23451761901378632,0.22385204081632654,1.0476456598678545
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.2595563530921936,0.2657445790816326,0.9767136322749294
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.3679119050502777,0.27138472576530615,1.3556839059853663
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.28410735726356506,0.25558035714285715,1.1116165594242546
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.2981279492378235,0.29366629464285715,1.0151929406825266
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.25086528062820435,0.23682637117346939,1.0592793335690298
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.26011568307876587,0.2802734375,0.9280782560022866
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,0.21252833306789398,0.24001514668367346,0.8854788375001784
+Strawberry,Strawberry___healthy,Strawberry___healthy,True,0.5902735590934753,0.39634486607142855,1.4892928094269735
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.3452686369419098,0.38034119897959184,0.9077865818066058
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.4231082499027252,0.37105389030612246,1.1402878691115663
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.5189214944839478,0.4664779974489796,1.1124243744008613
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.41958871483802795,0.41464046556122447,1.0119338310844936
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.544870913028717,0.4213767538265306,1.2930730233235068
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.5741052031517029,0.46958705357142855,1.222574597798992
+Strawberry,Strawberry___Leaf_scorch,Strawberry___Leaf_scorch,True,0.4192492663860321,0.3164859693877551,1.3247009565608028
+Tomato,Tomato___Bacterial_spot,Tomato___Bacterial_spot,True,0.6073558926582336,0.36997767857142855,1.6416014474261762
+Tomato,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,True,0.5945127010345459,0.5432278380102041,1.0944076489382313
+Tomato,Tomato___Late_blight,Tomato___Late_blight,True,0.34699830412864685,0.32334183673469385,1.0731624080349473
+Tomato,Tomato___Target_Spot,Tomato___Target_Spot,True,0.2921616733074188,0.2118343431122449,1.3791988070254066
+Tomato,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,True,0.6588010787963867,0.47708067602040816,1.3809007824249102
+Tomato,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,True,0.6710711717605591,0.2829440369897959,2.371745235913067
+Tomato,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,True,0.5806430578231812,0.3254942602040816,1.783881096579472
+Tomato,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,True,0.632831871509552,0.3431919642857143,1.8439588841384018

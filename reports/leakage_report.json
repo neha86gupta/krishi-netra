@@ -1,0 +1,17 @@
+{
+  "group_overlap": {
+    "train-val": 0,
+    "train-test": 0,
+    "val-test": 0
+  },
+  "md5_overlap": {
+    "train-val": 0,
+    "train-test": 0,
+    "val-test": 0
+  },
+  "near_duplicate_cross_split_pairs": {
+    "val": 20,
+    "test": 49
+  },
+  "dropped_from_val_test": 69
+}

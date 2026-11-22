@@ -1,0 +1,855 @@
+path,plantdoc_label,true,pred,pred_restricted,confidence,not_sure,correct
+data/field_test/plantdoc/Apple Scab Leaf/test_194b3c116f44.jpg,Apple Scab Leaf,Apple___Apple_scab,Strawberry___Leaf_scorch,Apple___Apple_scab,0.5261557,True,False
+data/field_test/plantdoc/Apple Scab Leaf/test_300ef69210e7.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.9346623,False,True
+data/field_test/plantdoc/Apple Scab Leaf/test_0f92be7c130b.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.46827307,True,True
+data/field_test/plantdoc/Apple Scab Leaf/test_067dec417ea3.jpg,Apple Scab Leaf,Apple___Apple_scab,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.2571983,True,False
+data/field_test/plantdoc/Apple Scab Leaf/test_196a1e5def08.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___healthy,Apple___healthy,0.3018465,True,False
+data/field_test/plantdoc/Apple leaf/test_ec74ca46ff70.jpg,Apple leaf,Apple___healthy,Peach___healthy,Peach___healthy,0.24664539,True,False
+data/field_test/plantdoc/Apple leaf/test_c826aa5df82a.jpg,Apple leaf,Apple___healthy,Peach___healthy,Peach___healthy,0.46216285,True,False
+data/field_test/plantdoc/Apple leaf/test_6a22bf00f36d.jpg,Apple leaf,Apple___healthy,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.32649055,True,False
+data/field_test/plantdoc/Apple leaf/test_91fef4ab7c57.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.601513,False,True
+data/field_test/plantdoc/Apple leaf/test_9365079e0ba8.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.99713194,False,True
+data/field_test/plantdoc/Apple rust leaf/test_7467ecdfdb53.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.47987974,True,True
+data/field_test/plantdoc/Apple rust leaf/test_6c93c6d46edd.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.42978975,True,True
+data/field_test/plantdoc/Apple rust leaf/test_6d29768f4b5f.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.57451814,True,True
+data/field_test/plantdoc/Apple rust leaf/test_0e995ddd1222.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.66507316,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/test_6bd8407bf6d5.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.48140466,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/test_512bb14b4e76.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.38594148,True,True
+data/field_test/plantdoc/Bell_pepper leaf spot/test_4c40035d1acd.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.6220044,False,False
+data/field_test/plantdoc/Bell_pepper leaf spot/test_4a7ff8de5776.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.9723337,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/test_293ed8806bc4.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.9622881,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/test_56e1e22b9a5c.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.38991308,True,False
+data/field_test/plantdoc/Bell_pepper leaf/test_e4a7a85578c3.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.48711723,True,True
+data/field_test/plantdoc/Bell_pepper leaf/test_ad80c13b0548.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.9716177,False,True
+data/field_test/plantdoc/Bell_pepper leaf/test_4a8f2f78daa7.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.99247617,True,True
+data/field_test/plantdoc/Bell_pepper leaf/test_22cb1dca1e47.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.8977655,False,True
+data/field_test/plantdoc/Blueberry leaf/test_24c112300a92.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.5040336,False,True
+data/field_test/plantdoc/Blueberry leaf/test_210b8b7ade88.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.3316135,True,True
+data/field_test/plantdoc/Blueberry leaf/test_11c7677405c3.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.3394934,True,True
+data/field_test/plantdoc/Blueberry leaf/test_6c912c8c0606.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.85873175,False,True
+data/field_test/plantdoc/Cherry leaf/test_4580a3c4dda4.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.84248114,False,True
+data/field_test/plantdoc/Cherry leaf/test_3018f8edac28.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.9583198,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/test_40ee74370061.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9416633,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/test_da017abcd70f.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.59058,False,True
+data/field_test/plantdoc/Corn leaf blight/test_b1e09902b759.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.83300334,False,False
+data/field_test/plantdoc/Corn leaf blight/test_06365dc99372.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.7670349,False,True
+data/field_test/plantdoc/Corn leaf blight/test_9ffe09345cbd.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9993973,False,True
+data/field_test/plantdoc/Corn leaf blight/test_9cc594cbb6bc.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9713876,False,True
+data/field_test/plantdoc/Corn rust leaf/test_8e6975429404.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.51190144,False,False
+data/field_test/plantdoc/Corn rust leaf/test_97a20e2abb54.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.8751997,False,False
+data/field_test/plantdoc/Corn rust leaf/test_df2fdaa4d958.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.92270285,False,True
+data/field_test/plantdoc/Corn rust leaf/test_4f81647d80bd.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.9978029,False,True
+data/field_test/plantdoc/Peach leaf/test_dbab2494627b.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9949616,False,True
+data/field_test/plantdoc/Peach leaf/test_08d735b69ef5.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.99431396,False,True
+data/field_test/plantdoc/Potato leaf early blight/test_5e4a15ca2b1c.jpg,Potato leaf early blight,Potato___Early_blight,Potato___healthy,Soybean___healthy,0.46741286,True,False
+data/field_test/plantdoc/Potato leaf early blight/test_f29ebbcadcdc.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.9655387,False,True
+data/field_test/plantdoc/Potato leaf early blight/test_0562f7b28e43.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.52318394,False,True
+data/field_test/plantdoc/Potato leaf late blight/test_c471d5835df3.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.84744954,False,False
+data/field_test/plantdoc/Potato leaf late blight/test_4deebc0ba2e2.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.7351075,False,False
+data/field_test/plantdoc/Raspberry leaf/test_745ae86f4c19.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9815933,False,True
+data/field_test/plantdoc/Raspberry leaf/test_6e7083c23e82.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9778219,False,True
+data/field_test/plantdoc/Raspberry leaf/test_42d7cd1a38b7.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.7746164,False,True
+data/field_test/plantdoc/Raspberry leaf/test_b06b14dd0a73.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.96464837,False,True
+data/field_test/plantdoc/Soyabean leaf/test_ce6f92d84635.jpg,Soyabean leaf,Soybean___healthy,Potato___Early_blight,Potato___Early_blight,0.64427954,False,False
+data/field_test/plantdoc/Soyabean leaf/test_5b20b5d035bb.jpg,Soyabean leaf,Soybean___healthy,Blueberry___healthy,Blueberry___healthy,0.741012,False,False
+data/field_test/plantdoc/Soyabean leaf/test_10e867715722.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.97893083,False,True
+data/field_test/plantdoc/Soyabean leaf/test_6dea449baad2.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.75093234,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/test_70a2c9eb7dc7.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.8868234,False,True
+data/field_test/plantdoc/Strawberry leaf/test_c5ec31a6164a.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.7835537,False,True
+data/field_test/plantdoc/Strawberry leaf/test_7ce78e2d057c.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.99846005,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/test_721ee819c107.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.829931,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/test_af7bbef4f6b2.jpg,Tomato Early blight leaf,Tomato___Early_blight,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.4296505,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/test_14cbb77cf85d.jpg,Tomato Early blight leaf,Tomato___Early_blight,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.57134676,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/test_6555899576b2.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.55708355,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/test_ef8f109fdf5b.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.9371401,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/test_798a74a7a605.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.6875222,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/test_c50a71ce641d.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.957677,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/test_ab1fadd69f3f.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.6572423,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/test_ad5b8a1984e6.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Early_blight,Tomato___Early_blight,0.6020475,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/test_fc655da0f93f.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.9929206,False,False
+data/field_test/plantdoc/Tomato leaf late blight/test_a26d9e277e3e.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9293653,False,True
+data/field_test/plantdoc/Tomato leaf late blight/test_0b61120b8357.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.7402468,False,True
+data/field_test/plantdoc/Tomato leaf late blight/test_df6077fa2d42.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.3313963,True,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/test_183ded5524db.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.940118,False,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/test_5b9b88e02b3b.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Late_blight,Tomato___Late_blight,0.65688604,False,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/test_302724e06fa0.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.37107027,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/test_f67403c14093.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.9727744,True,True
+data/field_test/plantdoc/Tomato leaf yellow virus/test_f71670437ce4.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.6088386,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/test_6f070538be84.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.7425566,False,True
+data/field_test/plantdoc/Tomato leaf yellow virus/test_cc42c4a02139.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.8087074,True,True
+data/field_test/plantdoc/Tomato leaf yellow virus/test_32d340c66b20.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.22144021,True,True
+data/field_test/plantdoc/Tomato leaf/test_9907a1739c26.jpg,Tomato leaf,Tomato___healthy,Tomato___Late_blight,Tomato___Late_blight,0.3175475,True,False
+data/field_test/plantdoc/Tomato mold leaf/test_f521f8ce6361.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Late_blight,Tomato___Late_blight,0.32199326,True,False
+data/field_test/plantdoc/Tomato mold leaf/test_86f33a97ab23.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Late_blight,Tomato___Late_blight,0.51976484,False,False
+data/field_test/plantdoc/grape leaf black rot/test_21255b273199.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.4794883,True,True
+data/field_test/plantdoc/grape leaf black rot/test_59614fbd203b.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.62761414,False,True
+data/field_test/plantdoc/grape leaf/test_70d89f961050.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.9975713,False,True
+data/field_test/plantdoc/grape leaf/test_063fd827c6fb.jpg,grape leaf,Grape___healthy,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.42880198,True,False
+data/field_test/plantdoc/grape leaf/test_f224e93d7c26.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.96443385,False,True
+data/field_test/plantdoc/grape leaf/test_9c4976c184f8.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.9551314,False,True
+data/field_test/plantdoc/grape leaf/test_10e5515c2cb1.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.63866425,False,True
+data/field_test/plantdoc/grape leaf/test_e2e59b2a43b1.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.98171324,False,True
+data/field_test/plantdoc/grape leaf/test_945ff1f78f2d.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.95821697,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_1a021c3fbc2e.jpg,Apple Scab Leaf,Apple___Apple_scab,Potato___Early_blight,Potato___Early_blight,0.27543125,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_5562f57cd41e.jpg,Apple Scab Leaf,Apple___Apple_scab,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.29236507,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_fca3deda78d2.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.63583827,True,True
+data/field_test/plantdoc/Apple Scab Leaf/train_0d371ac83875.jpg,Apple Scab Leaf,Apple___Apple_scab,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.26998162,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_8d25a954f395.jpg,Apple Scab Leaf,Apple___Apple_scab,Potato___Early_blight,Potato___Early_blight,0.51660264,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_4c775502dd13.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.9981256,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_c4eea34c6de1.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.88911736,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_a2500e0c7c63.jpg,Apple Scab Leaf,Apple___Apple_scab,Grape___Black_rot,Grape___Black_rot,0.4154931,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_03255d3d5305.jpg,Apple Scab Leaf,Apple___Apple_scab,Blueberry___healthy,Blueberry___healthy,0.29404646,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_db82e1ab66ad.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.63931054,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_cadbb65ccb0d.jpg,Apple Scab Leaf,Apple___Apple_scab,Tomato___Early_blight,Tomato___Early_blight,0.48247924,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_f59cf1dde82b.jpg,Apple Scab Leaf,Apple___Apple_scab,Potato___Early_blight,Potato___Early_blight,0.87208897,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_e441b6b4e0d4.jpg,Apple Scab Leaf,Apple___Apple_scab,Tomato___Early_blight,Tomato___Early_blight,0.78177804,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_d7369ff55ffa.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.28400198,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_13e3435878b5.jpg,Apple Scab Leaf,Apple___Apple_scab,Squash___Powdery_mildew,Squash___Powdery_mildew,0.6649224,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_d54161cef0b3.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.9532428,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_8904219b8a0f.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.7665463,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_7f297daeb94e.jpg,Apple Scab Leaf,Apple___Apple_scab,Blueberry___healthy,Blueberry___healthy,0.64334124,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_12390d7a8675.jpg,Apple Scab Leaf,Apple___Apple_scab,Potato___Late_blight,Potato___Late_blight,0.33697775,True,False
+data/field_test/plantdoc/Apple Scab Leaf/train_faacf2df3e9c.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.73139167,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_d2a1b277b583.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.66421616,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_410db5d11a5c.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.95293504,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_f617f42a231c.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.8477677,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_a471ef37f2eb.jpg,Apple Scab Leaf,Apple___Apple_scab,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.9348448,False,False
+data/field_test/plantdoc/Apple Scab Leaf/train_ac3177680cc4.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.9816175,False,True
+data/field_test/plantdoc/Apple Scab Leaf/train_3c83eb685b89.jpg,Apple Scab Leaf,Apple___Apple_scab,Apple___Apple_scab,Apple___Apple_scab,0.9648604,False,True
+data/field_test/plantdoc/Apple leaf/train_ce2c2e7fe438.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.9352282,True,True
+data/field_test/plantdoc/Apple leaf/train_34c968722a4b.jpg,Apple leaf,Apple___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.26735145,True,False
+data/field_test/plantdoc/Apple leaf/train_1e61ff9403eb.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.8281582,True,True
+data/field_test/plantdoc/Apple leaf/train_7e510588f3d8.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.7535166,False,True
+data/field_test/plantdoc/Apple leaf/train_e19799f17ecb.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.6289684,True,True
+data/field_test/plantdoc/Apple leaf/train_b750b1750f56.jpg,Apple leaf,Apple___healthy,Peach___healthy,Peach___healthy,0.30011523,True,False
+data/field_test/plantdoc/Apple leaf/train_bb5a30f919bd.jpg,Apple leaf,Apple___healthy,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.74981433,True,False
+data/field_test/plantdoc/Apple leaf/train_568f5f754dda.jpg,Apple leaf,Apple___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.6491424,False,False
+data/field_test/plantdoc/Apple leaf/train_6d9506584e01.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.97456795,True,True
+data/field_test/plantdoc/Apple leaf/train_4011653392a4.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.99980384,True,True
+data/field_test/plantdoc/Apple leaf/train_97c575918f70.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.98735297,True,True
+data/field_test/plantdoc/Apple leaf/train_02156fe8e361.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.98843944,True,True
+data/field_test/plantdoc/Apple leaf/train_c271e53a131d.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.94366246,True,True
+data/field_test/plantdoc/Apple leaf/train_e7823c253a57.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.99075365,True,True
+data/field_test/plantdoc/Apple leaf/train_74a8940924be.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.32508937,True,True
+data/field_test/plantdoc/Apple leaf/train_57d062fff841.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.9978532,False,True
+data/field_test/plantdoc/Apple leaf/train_792017c76acd.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.6909396,False,True
+data/field_test/plantdoc/Apple leaf/train_e54e46d86d5e.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.8484595,True,True
+data/field_test/plantdoc/Apple leaf/train_b294f15bbce1.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.9433392,True,True
+data/field_test/plantdoc/Apple leaf/train_89af2056b5c0.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.9991812,True,True
+data/field_test/plantdoc/Apple leaf/train_faf4e9accec0.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.45692965,True,True
+data/field_test/plantdoc/Apple leaf/train_c55799489371.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.996231,False,True
+data/field_test/plantdoc/Apple leaf/train_15134f0efa18.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.9886706,False,True
+data/field_test/plantdoc/Apple leaf/train_ce7643cdc999.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.9994856,True,True
+data/field_test/plantdoc/Apple leaf/train_615d6d158767.jpg,Apple leaf,Apple___healthy,Apple___healthy,Apple___healthy,0.99027365,True,True
+data/field_test/plantdoc/Apple rust leaf/train_6dfe1dc6d11d.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Apple_scab,Apple___Apple_scab,0.9681691,False,False
+data/field_test/plantdoc/Apple rust leaf/train_0c12bef34d68.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Apple_scab,Apple___Apple_scab,0.57860374,False,False
+data/field_test/plantdoc/Apple rust leaf/train_87330314c4b4.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.99419796,False,True
+data/field_test/plantdoc/Apple rust leaf/train_c82e7b43ea91.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Apple_scab,Apple___Apple_scab,0.82501185,False,False
+data/field_test/plantdoc/Apple rust leaf/train_bd5bca1bbd5f.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.9878935,False,True
+data/field_test/plantdoc/Apple rust leaf/train_4fddf2a9045f.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.36345017,True,False
+data/field_test/plantdoc/Apple rust leaf/train_dfeac00c8771.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Apple_scab,Apple___Apple_scab,0.39608788,True,False
+data/field_test/plantdoc/Apple rust leaf/train_f42eaef55cb6.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.94673747,False,True
+data/field_test/plantdoc/Apple rust leaf/train_8f14c63080cd.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.550615,False,False
+data/field_test/plantdoc/Apple rust leaf/train_db461f36821f.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.95921427,False,True
+data/field_test/plantdoc/Apple rust leaf/train_0630d927b9b3.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.22421524,True,False
+data/field_test/plantdoc/Apple rust leaf/train_0bf6a3fba815.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Grape___Black_rot,Grape___Black_rot,0.6819328,False,False
+data/field_test/plantdoc/Apple rust leaf/train_f197615af8ad.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.9188486,False,True
+data/field_test/plantdoc/Apple rust leaf/train_dd65342a04a8.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.970983,False,True
+data/field_test/plantdoc/Apple rust leaf/train_8e142249a3e5.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.73954916,False,True
+data/field_test/plantdoc/Apple rust leaf/train_9cee6c381605.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.9862748,False,True
+data/field_test/plantdoc/Apple rust leaf/train_5b1f2c5e661d.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.99033093,False,True
+data/field_test/plantdoc/Apple rust leaf/train_7bd83b6d332f.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.97417635,False,True
+data/field_test/plantdoc/Apple rust leaf/train_276e886b9bba.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.69205534,False,True
+data/field_test/plantdoc/Apple rust leaf/train_f213075bb1ad.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Potato___Early_blight,Potato___Early_blight,0.4422419,True,False
+data/field_test/plantdoc/Apple rust leaf/train_8b3b31cafc13.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.42655724,True,False
+data/field_test/plantdoc/Apple rust leaf/train_038c42241463.jpg,Apple rust leaf,Apple___Cedar_apple_rust,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.93073875,False,False
+data/field_test/plantdoc/Apple rust leaf/train_11ede2aa9658.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Peach___healthy,Peach___healthy,0.31000432,True,False
+data/field_test/plantdoc/Apple rust leaf/train_4f937bab7b5f.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.48738888,True,True
+data/field_test/plantdoc/Apple rust leaf/train_c39f72a870f3.jpg,Apple rust leaf,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.6442475,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_fac4ef5554f6.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy","Pepper,_bell___healthy",0.86143494,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_2355ae32cad5.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.86695516,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_39f05bdda3dc.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Potato___Early_blight,Potato___Early_blight,0.24725306,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_f9c14abb6180.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.99604404,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_c646f096ceb5.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy","Pepper,_bell___healthy",0.8254138,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_43ef5e2e0d08.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Tomato___Late_blight,Tomato___Late_blight,0.47680876,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_e0e5754ac814.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.9833402,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_4b42bfd4a428.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy","Pepper,_bell___healthy",0.4001615,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_bee2ed87045e.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.39953917,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_21c29ba4d055.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.85168296,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_3924887a3e0d.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.9694159,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_5dc668586ef0.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.35996732,True,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_1dc6822a1675.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Apple___Apple_scab,Apple___Apple_scab,0.41443047,True,False
+data/field_test/plantdoc/Bell_pepper leaf spot/train_29e39cedabf3.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.9865415,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_b562f001deb7.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.96981066,False,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_309ffbac1dba.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.48203233,True,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_dcd143f5c1f2.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.50790316,True,True
+data/field_test/plantdoc/Bell_pepper leaf spot/train_7656076caa31.jpg,Bell_pepper leaf spot,"Pepper,_bell___Bacterial_spot",Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.90522736,False,False
+data/field_test/plantdoc/Bell_pepper leaf/train_5def7a4baa81.jpg,Bell_pepper leaf,"Pepper,_bell___healthy",Tomato___healthy,Tomato___healthy,0.5521216,False,False
+data/field_test/plantdoc/Bell_pepper leaf/train_d80c9f33b85c.jpg,Bell_pepper leaf,"Pepper,_bell___healthy",Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.20815107,True,False
+data/field_test/plantdoc/Bell_pepper leaf/train_22eb91d9f028.jpg,Bell_pepper leaf,"Pepper,_bell___healthy",Tomato___healthy,Tomato___healthy,0.35041603,True,False
+data/field_test/plantdoc/Bell_pepper leaf/train_2ab80e4b730e.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.9163568,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_b827d1bd6cad.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.996944,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_b667a4434957.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.96436244,False,True
+data/field_test/plantdoc/Bell_pepper leaf/train_f875e7e24849.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.94750506,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_c025670bc4af.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.5317646,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_1b967dc940e1.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.7102636,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_91ec8f18c0ec.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.54238,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_40961966055f.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.8270143,False,True
+data/field_test/plantdoc/Bell_pepper leaf/train_423131175569.jpg,Bell_pepper leaf,"Pepper,_bell___healthy",Blueberry___healthy,Blueberry___healthy,0.97671163,False,False
+data/field_test/plantdoc/Bell_pepper leaf/train_7299593d4794.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.7922728,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_07f1e543f429.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.68168396,True,True
+data/field_test/plantdoc/Bell_pepper leaf/train_57e7c791e7ed.jpg,Bell_pepper leaf,"Pepper,_bell___healthy",Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.9957694,True,False
+data/field_test/plantdoc/Bell_pepper leaf/train_e289c9719449.jpg,Bell_pepper leaf,"Pepper,_bell___healthy","Pepper,_bell___healthy","Pepper,_bell___healthy",0.86054134,False,True
+data/field_test/plantdoc/Blueberry leaf/train_fcf7080a8ca3.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.5054389,False,True
+data/field_test/plantdoc/Blueberry leaf/train_0a0b32662481.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.55732405,True,True
+data/field_test/plantdoc/Blueberry leaf/train_250283d46f5f.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9301615,False,True
+data/field_test/plantdoc/Blueberry leaf/train_6204c2c37c96.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99965084,True,True
+data/field_test/plantdoc/Blueberry leaf/train_3766d6c2778d.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.88913715,True,True
+data/field_test/plantdoc/Blueberry leaf/train_210be63981c1.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99153566,True,True
+data/field_test/plantdoc/Blueberry leaf/train_c36f527c01a1.jpg,Blueberry leaf,Blueberry___healthy,Soybean___healthy,Soybean___healthy,0.53964394,False,False
+data/field_test/plantdoc/Blueberry leaf/train_f9cb6d4621bb.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.75850487,True,True
+data/field_test/plantdoc/Blueberry leaf/train_3cd7c75eaae7.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99947256,True,True
+data/field_test/plantdoc/Blueberry leaf/train_0a159cca1132.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9644443,False,True
+data/field_test/plantdoc/Blueberry leaf/train_ac2f6026aace.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.903995,True,True
+data/field_test/plantdoc/Blueberry leaf/train_3dc6dc1eab26.jpg,Blueberry leaf,Blueberry___healthy,Tomato___healthy,Tomato___healthy,0.93313724,True,False
+data/field_test/plantdoc/Blueberry leaf/train_14fc5b07b9c3.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9681681,True,True
+data/field_test/plantdoc/Blueberry leaf/train_f911998d0e7c.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99241793,False,True
+data/field_test/plantdoc/Blueberry leaf/train_37758bd60c93.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.8182122,False,True
+data/field_test/plantdoc/Blueberry leaf/train_8ca921208f6e.jpg,Blueberry leaf,Blueberry___healthy,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.91490734,False,False
+data/field_test/plantdoc/Blueberry leaf/train_9af31f9f0357.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99452716,True,True
+data/field_test/plantdoc/Blueberry leaf/train_7f4664dcb271.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.930846,False,True
+data/field_test/plantdoc/Blueberry leaf/train_d309ed2d0e3c.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.988096,True,True
+data/field_test/plantdoc/Blueberry leaf/train_5100ff2290c0.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.990231,False,True
+data/field_test/plantdoc/Blueberry leaf/train_8b7f06be28b0.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.4680127,True,True
+data/field_test/plantdoc/Blueberry leaf/train_d42141aeeccb.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9951414,False,True
+data/field_test/plantdoc/Blueberry leaf/train_2c525ea85392.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9879254,False,True
+data/field_test/plantdoc/Blueberry leaf/train_4a3fdb75007a.jpg,Blueberry leaf,Blueberry___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.5933426,False,False
+data/field_test/plantdoc/Blueberry leaf/train_876c05a8a278.jpg,Blueberry leaf,Blueberry___healthy,Soybean___healthy,Soybean___healthy,0.7797253,False,False
+data/field_test/plantdoc/Blueberry leaf/train_5aeccb91698a.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99518186,True,True
+data/field_test/plantdoc/Blueberry leaf/train_c9173328ff0c.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9977043,False,True
+data/field_test/plantdoc/Blueberry leaf/train_758966af38e5.jpg,Blueberry leaf,Blueberry___healthy,Soybean___healthy,Soybean___healthy,0.6611417,False,False
+data/field_test/plantdoc/Blueberry leaf/train_2cf039ef1e4a.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9996953,False,True
+data/field_test/plantdoc/Blueberry leaf/train_dd9b8a2a38e8.jpg,Blueberry leaf,Blueberry___healthy,Peach___healthy,Peach___healthy,0.40899622,True,False
+data/field_test/plantdoc/Blueberry leaf/train_1aec95c4f133.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9970407,False,True
+data/field_test/plantdoc/Blueberry leaf/train_92dcbd4724bd.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9919258,True,True
+data/field_test/plantdoc/Blueberry leaf/train_902f399bc959.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.8265887,False,True
+data/field_test/plantdoc/Blueberry leaf/train_fbaaa67d216a.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.99341416,True,True
+data/field_test/plantdoc/Blueberry leaf/train_3a74ecd3ef54.jpg,Blueberry leaf,Blueberry___healthy,Blueberry___healthy,Blueberry___healthy,0.9750523,True,True
+data/field_test/plantdoc/Cherry leaf/train_7574c5ad7376.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Peach___healthy,Peach___healthy,0.5795972,False,False
+data/field_test/plantdoc/Cherry leaf/train_7d0cd460dff8.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.98339105,True,True
+data/field_test/plantdoc/Cherry leaf/train_ba16b08ea53b.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Apple___healthy,Apple___healthy,0.4802314,True,False
+data/field_test/plantdoc/Cherry leaf/train_678637a41d96.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.99212873,True,True
+data/field_test/plantdoc/Cherry leaf/train_9fa31b27bc64.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.6689973,False,True
+data/field_test/plantdoc/Cherry leaf/train_7907b91c3efb.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.83755094,True,True
+data/field_test/plantdoc/Cherry leaf/train_7169c412ab8c.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.42465588,True,True
+data/field_test/plantdoc/Cherry leaf/train_65c5ab16616e.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.7324315,True,True
+data/field_test/plantdoc/Cherry leaf/train_2ccdcf2f313c.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Strawberry___healthy,Strawberry___healthy,0.41027382,True,False
+data/field_test/plantdoc/Cherry leaf/train_17c89883bcf7.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.5156336,True,True
+data/field_test/plantdoc/Cherry leaf/train_d9b85ef9f959.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.9897766,True,True
+data/field_test/plantdoc/Cherry leaf/train_24b4e2e8be06.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.75260067,False,True
+data/field_test/plantdoc/Cherry leaf/train_dbe028e9b131.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.58616334,True,True
+data/field_test/plantdoc/Cherry leaf/train_7fa59448beb4.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.8749537,True,True
+data/field_test/plantdoc/Cherry leaf/train_28fec240c14f.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.8315051,True,True
+data/field_test/plantdoc/Cherry leaf/train_fe342b4c28ba.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.936607,True,True
+data/field_test/plantdoc/Cherry leaf/train_5080de25aaea.jpg,Cherry leaf,Cherry_(including_sour)___healthy,Peach___healthy,Peach___healthy,0.5933305,True,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_f3a01064601f.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.49737698,True,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_8f303e200489.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.985753,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_fa4b2c056d45.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.64160275,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_8e66c862f138.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.8644262,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_9bc29b91cf82.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.9297727,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_c801fb622dfb.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.937365,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_0eea394968fb.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.3623928,True,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_33856638f9fa.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.62997365,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_28a12399f9ee.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9603018,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_0274eacb7a17.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.94676214,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_feea4ce8d670.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.52380246,True,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_634d71235d13.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9351556,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_f0aebde2788a.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.868148,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_d80b090bf718.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.971787,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_6f8a570224ad.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.901826,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_97e86785ce6f.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.8974123,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_d2b94ff35449.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.746406,False,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_0749f68e0ea4.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.52412325,False,False
+data/field_test/plantdoc/Corn Gray leaf spot/train_aea7a922219b.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.4455976,True,True
+data/field_test/plantdoc/Corn Gray leaf spot/train_106ce3bfd8c2.jpg,Corn Gray leaf spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.53286505,False,False
+data/field_test/plantdoc/Corn leaf blight/train_4b18d95e5429.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99454355,False,True
+data/field_test/plantdoc/Corn leaf blight/train_ac7251ed3422.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.8834094,False,True
+data/field_test/plantdoc/Corn leaf blight/train_bc1b74bfd20b.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.70560527,False,False
+data/field_test/plantdoc/Corn leaf blight/train_6bf2c224fc75.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9740151,False,True
+data/field_test/plantdoc/Corn leaf blight/train_13ac2a861cf5.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99546105,True,True
+data/field_test/plantdoc/Corn leaf blight/train_124a8a83f4d7.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9896555,False,True
+data/field_test/plantdoc/Corn leaf blight/train_82e509e27a63.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.98159814,False,True
+data/field_test/plantdoc/Corn leaf blight/train_1adefa2cbf58.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99493116,True,True
+data/field_test/plantdoc/Corn leaf blight/train_c5001673684b.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9153184,False,True
+data/field_test/plantdoc/Corn leaf blight/train_cf61391ac24c.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.96260434,False,True
+data/field_test/plantdoc/Corn leaf blight/train_42811350c20c.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9990982,True,True
+data/field_test/plantdoc/Corn leaf blight/train_cf01709e793f.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9968278,True,True
+data/field_test/plantdoc/Corn leaf blight/train_6f97a8e7efa8.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9449048,False,True
+data/field_test/plantdoc/Corn leaf blight/train_232736edf250.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.7832227,False,False
+data/field_test/plantdoc/Corn leaf blight/train_9dd193a65bb8.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9993005,False,True
+data/field_test/plantdoc/Corn leaf blight/train_c39a3622ded4.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9654318,False,True
+data/field_test/plantdoc/Corn leaf blight/train_9859072283b4.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9051043,False,True
+data/field_test/plantdoc/Corn leaf blight/train_7186a3920e5e.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.730812,False,False
+data/field_test/plantdoc/Corn leaf blight/train_7ceedd99e698.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9947003,False,True
+data/field_test/plantdoc/Corn leaf blight/train_fb9b6274024f.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9655929,False,True
+data/field_test/plantdoc/Corn leaf blight/train_327b9aa5f5e7.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9659263,False,True
+data/field_test/plantdoc/Corn leaf blight/train_c9cc72f8a8d2.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.97985816,False,True
+data/field_test/plantdoc/Corn leaf blight/train_b961df6a9e5a.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9934633,False,True
+data/field_test/plantdoc/Corn leaf blight/train_34e35cc3e1f1.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9966018,False,True
+data/field_test/plantdoc/Corn leaf blight/train_3b2cdb9d968a.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9637409,False,True
+data/field_test/plantdoc/Corn leaf blight/train_ed37fb851493.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99883074,False,True
+data/field_test/plantdoc/Corn leaf blight/train_5fea33787214.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.97909033,False,True
+data/field_test/plantdoc/Corn leaf blight/train_6e25d40c1aae.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9491267,False,True
+data/field_test/plantdoc/Corn leaf blight/train_b76c824a99d0.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.96688986,False,True
+data/field_test/plantdoc/Corn leaf blight/train_ab66038bd831.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9084142,False,True
+data/field_test/plantdoc/Corn leaf blight/train_af2cc5c5b597.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.7234948,False,True
+data/field_test/plantdoc/Corn leaf blight/train_209aceb67a9d.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.82074827,True,True
+data/field_test/plantdoc/Corn leaf blight/train_2b1fe35de950.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9536072,False,True
+data/field_test/plantdoc/Corn leaf blight/train_a10f1c5fe912.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9995467,False,True
+data/field_test/plantdoc/Corn leaf blight/train_a8da136bb88c.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.8425533,False,True
+data/field_test/plantdoc/Corn leaf blight/train_4a903aaa5ec0.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.42080644,True,True
+data/field_test/plantdoc/Corn leaf blight/train_885725ae11fb.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9519798,False,True
+data/field_test/plantdoc/Corn leaf blight/train_5bea1c50723e.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.65537894,False,False
+data/field_test/plantdoc/Corn leaf blight/train_c0880677a656.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99596244,False,True
+data/field_test/plantdoc/Corn leaf blight/train_e3dcdd1be415.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9404669,False,True
+data/field_test/plantdoc/Corn leaf blight/train_e141a076c31b.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9981962,False,True
+data/field_test/plantdoc/Corn leaf blight/train_a59fe587dd4c.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.903771,False,True
+data/field_test/plantdoc/Corn leaf blight/train_67b7054536c4.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9130555,False,True
+data/field_test/plantdoc/Corn leaf blight/train_1e4fea8fc39f.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.8247451,False,True
+data/field_test/plantdoc/Corn leaf blight/train_fc54904f0101.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9952781,False,True
+data/field_test/plantdoc/Corn leaf blight/train_cf07b28ffba1.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9556968,True,True
+data/field_test/plantdoc/Corn leaf blight/train_0d5b1c4c7f72.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.8697287,False,True
+data/field_test/plantdoc/Corn leaf blight/train_8b5fe02ff6ad.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99952114,False,True
+data/field_test/plantdoc/Corn leaf blight/train_b6fcd8e2f3c5.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9424481,False,True
+data/field_test/plantdoc/Corn leaf blight/train_d94b7e93558b.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9988237,True,True
+data/field_test/plantdoc/Corn leaf blight/train_0a44ef0bf2e4.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9963521,False,True
+data/field_test/plantdoc/Corn leaf blight/train_0e8686278cdf.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.998198,True,True
+data/field_test/plantdoc/Corn leaf blight/train_1ff99029d042.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.6102509,False,True
+data/field_test/plantdoc/Corn leaf blight/train_e98ad8fb9ac5.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99807215,True,True
+data/field_test/plantdoc/Corn leaf blight/train_0f11026847f5.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.986388,False,True
+data/field_test/plantdoc/Corn leaf blight/train_4e7d14338a15.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9535607,False,True
+data/field_test/plantdoc/Corn leaf blight/train_e0428f57a1f0.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9840566,False,True
+data/field_test/plantdoc/Corn leaf blight/train_2cbe40d9f0b5.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9993042,False,True
+data/field_test/plantdoc/Corn leaf blight/train_ebe72f946d35.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.99732333,False,True
+data/field_test/plantdoc/Corn leaf blight/train_5e560df93e0b.jpg,Corn leaf blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.6389756,False,True
+data/field_test/plantdoc/Corn rust leaf/train_de9276f3ab52.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.5227781,False,False
+data/field_test/plantdoc/Corn rust leaf/train_4d6be94d618d.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.616957,False,True
+data/field_test/plantdoc/Corn rust leaf/train_f1564027e5ca.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.63504946,False,True
+data/field_test/plantdoc/Corn rust leaf/train_8c90b7d3889c.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.4692003,True,True
+data/field_test/plantdoc/Corn rust leaf/train_03cff617db5c.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.99087054,False,True
+data/field_test/plantdoc/Corn rust leaf/train_1e1b11161ecd.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.6749899,True,True
+data/field_test/plantdoc/Corn rust leaf/train_8474affdf49e.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.93852115,False,False
+data/field_test/plantdoc/Corn rust leaf/train_b675a76fdfa5.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.7918826,True,False
+data/field_test/plantdoc/Corn rust leaf/train_76426f8956ea.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.6375623,False,False
+data/field_test/plantdoc/Corn rust leaf/train_7807a77560e1.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.43095127,True,True
+data/field_test/plantdoc/Corn rust leaf/train_2487a437be27.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.9904322,False,True
+data/field_test/plantdoc/Corn rust leaf/train_390d37d3d87f.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9705045,False,False
+data/field_test/plantdoc/Corn rust leaf/train_c077c2d7f82b.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.99794227,False,True
+data/field_test/plantdoc/Corn rust leaf/train_ec2f09ba2af3.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.62686,False,False
+data/field_test/plantdoc/Corn rust leaf/train_378fcd20b8a8.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.63941425,False,False
+data/field_test/plantdoc/Corn rust leaf/train_3810b3709937.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.8143159,False,True
+data/field_test/plantdoc/Corn rust leaf/train_757af23cfbf4.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.704631,False,True
+data/field_test/plantdoc/Corn rust leaf/train_c95ccb0ad40d.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9387605,False,False
+data/field_test/plantdoc/Corn rust leaf/train_be06951b843c.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.973639,False,True
+data/field_test/plantdoc/Corn rust leaf/train_cd730fb32a3e.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.7686547,True,True
+data/field_test/plantdoc/Corn rust leaf/train_7f66a3e493f4.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.7464014,True,True
+data/field_test/plantdoc/Corn rust leaf/train_ff71cc864126.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.9976451,False,True
+data/field_test/plantdoc/Corn rust leaf/train_8e020e87008b.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.87589735,False,False
+data/field_test/plantdoc/Corn rust leaf/train_e5d67599bbb6.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9806685,False,False
+data/field_test/plantdoc/Corn rust leaf/train_50e28d7b886c.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.8428164,False,True
+data/field_test/plantdoc/Corn rust leaf/train_35ea88bc7513.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.9843664,False,True
+data/field_test/plantdoc/Corn rust leaf/train_93ea7b71370e.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.9962747,False,False
+data/field_test/plantdoc/Corn rust leaf/train_a8c732674256.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.5634374,False,True
+data/field_test/plantdoc/Corn rust leaf/train_1e2af9115df9.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.40207005,True,False
+data/field_test/plantdoc/Corn rust leaf/train_f5ff97e4d33f.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.7019897,False,True
+data/field_test/plantdoc/Corn rust leaf/train_5c54f361906d.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.9874737,False,True
+data/field_test/plantdoc/Corn rust leaf/train_e4275cdb94ef.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.8441842,False,True
+data/field_test/plantdoc/Corn rust leaf/train_fe298eb582d0.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.33572286,True,True
+data/field_test/plantdoc/Corn rust leaf/train_6a5c28d0e70e.jpg,Corn rust leaf,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,0.99953043,False,True
+data/field_test/plantdoc/Peach leaf/train_23a13f6c511e.jpg,Peach leaf,Peach___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.4051846,True,False
+data/field_test/plantdoc/Peach leaf/train_8b5b5626ddee.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9686583,True,True
+data/field_test/plantdoc/Peach leaf/train_0442909cb042.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9965072,True,True
+data/field_test/plantdoc/Peach leaf/train_f3cc4173be28.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9939469,True,True
+data/field_test/plantdoc/Peach leaf/train_bcdf34eda889.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.79852676,False,True
+data/field_test/plantdoc/Peach leaf/train_8ad86a3bc81d.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9943409,True,True
+data/field_test/plantdoc/Peach leaf/train_2adcecdbd1b7.jpg,Peach leaf,Peach___healthy,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Northern_Leaf_Blight,0.31306896,True,False
+data/field_test/plantdoc/Peach leaf/train_c6b9becea9ea.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.99580693,True,True
+data/field_test/plantdoc/Peach leaf/train_35ad60b8015f.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.971009,True,True
+data/field_test/plantdoc/Peach leaf/train_c4b180b6cedf.jpg,Peach leaf,Peach___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.8614339,False,False
+data/field_test/plantdoc/Peach leaf/train_270c506664d8.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.80287516,True,True
+data/field_test/plantdoc/Peach leaf/train_0d01f5cefc4c.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.89235073,True,True
+data/field_test/plantdoc/Peach leaf/train_dc1d06c94ed6.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9996972,True,True
+data/field_test/plantdoc/Peach leaf/train_092708b576d5.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.88734883,True,True
+data/field_test/plantdoc/Peach leaf/train_edc3e280ae9d.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9993032,True,True
+data/field_test/plantdoc/Peach leaf/train_445d4076c4a3.jpg,Peach leaf,Peach___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.8345023,True,False
+data/field_test/plantdoc/Peach leaf/train_9aa13e38d426.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9743669,True,True
+data/field_test/plantdoc/Peach leaf/train_9b8f9855e890.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.987364,False,True
+data/field_test/plantdoc/Peach leaf/train_6b5c378b07fa.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9991241,False,True
+data/field_test/plantdoc/Peach leaf/train_b3aebf2fd945.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9997451,True,True
+data/field_test/plantdoc/Peach leaf/train_26a73fb44a61.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.99981564,True,True
+data/field_test/plantdoc/Peach leaf/train_c68d6ea290f6.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9195405,True,True
+data/field_test/plantdoc/Peach leaf/train_d7aa51b1fcad.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9676486,True,True
+data/field_test/plantdoc/Peach leaf/train_4590e0f895f3.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.85859287,True,True
+data/field_test/plantdoc/Peach leaf/train_b67a9e3c4488.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9993395,True,True
+data/field_test/plantdoc/Peach leaf/train_0753218d1d02.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.99995625,True,True
+data/field_test/plantdoc/Peach leaf/train_c802a1ea89b9.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.99976116,True,True
+data/field_test/plantdoc/Peach leaf/train_402ffd7f8e9d.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9008768,True,True
+data/field_test/plantdoc/Peach leaf/train_074ff54849c9.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.99908495,True,True
+data/field_test/plantdoc/Peach leaf/train_c3a95c30f198.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9993231,False,True
+data/field_test/plantdoc/Peach leaf/train_1b392b2ac850.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.70974994,False,True
+data/field_test/plantdoc/Peach leaf/train_d6a0c11b1975.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9413817,True,True
+data/field_test/plantdoc/Peach leaf/train_ef9f170aac9e.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9849974,False,True
+data/field_test/plantdoc/Peach leaf/train_641f3b071665.jpg,Peach leaf,Peach___healthy,Peach___healthy,Peach___healthy,0.9982327,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_fb79ebcd5ac3.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.6983964,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_4f8ad4b739f6.jpg,Potato leaf early blight,Potato___Early_blight,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.24223325,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_12b7e07c2610.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.5336447,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_8c02cf49f13f.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.70300525,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_20e7760ba316.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.6403942,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_5f3432d47bc6.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.9295187,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_c030764bb281.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.97960967,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_903e2c0aed3b.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.58945477,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_634c2e37a95c.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.56791216,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_72a909196493.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.4315216,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_d6eea94dfc2a.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.68631315,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_64360df9588e.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.9978896,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_7118d0988354.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.5786903,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_fb5b13a39a72.jpg,Potato leaf early blight,Potato___Early_blight,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.41797414,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_e65dc99345ad.jpg,Potato leaf early blight,Potato___Early_blight,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.5935803,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_4c9450b9e946.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.7928361,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_5e1accd984e0.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.5735963,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_6e81f31e71f9.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.5039144,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_ba9c845e5592.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.9870896,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_be93d05ff648.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.33562815,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_7c88848378bd.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.55403095,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_c2d48c29009c.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.9550315,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_d868e5e4cb92.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.9089467,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_7f2735db60c4.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.31093067,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_a65e8aa12dfa.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.84122145,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_3fb2db6cccf4.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.81515604,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_76a7f5d5e271.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.6325412,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_dc81ab288e5e.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.5158798,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_c4eff5c4b98c.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.7308178,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_d5dc01a9e1c9.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.84763277,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_203639eba8a1.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.3422869,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_9d2d27643822.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.9955018,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_711b882ae259.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.7059531,False,True
+data/field_test/plantdoc/Potato leaf early blight/train_86c3ac2f5102.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.86701244,False,False
+data/field_test/plantdoc/Potato leaf early blight/train_3e1906a7b1b0.jpg,Potato leaf early blight,Potato___Early_blight,Tomato___healthy,Tomato___healthy,0.6596094,True,False
+data/field_test/plantdoc/Potato leaf early blight/train_e2e7c5c97f80.jpg,Potato leaf early blight,Potato___Early_blight,Potato___Late_blight,Potato___Late_blight,0.41752842,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_a66b9a8cec64.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.4604714,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_540ee80b7e90.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.32854998,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_d57416204e65.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.69625914,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_fbbf1270f0e5.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.48926568,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_ecbe10bb2438.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.9352949,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_b71f7aee7a83.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.857686,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_c5d17f88418a.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.31297958,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_8f0a405fcf76.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.7176766,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_d7d257bba606.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.70004374,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_b11bad5b5322.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.9147183,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_ebf94e35b12c.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.94701535,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_d04d547bea5a.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.9880311,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_a6c6918eab29.jpg,Potato leaf late blight,Potato___Late_blight,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.60833246,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_085a9bf5ff17.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.99941266,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_bd35486ed353.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.7004923,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_ff8ce2fdb127.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.515017,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_061273542a42.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.9556852,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_26a581520ecc.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.91464776,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_fe4f4f180c13.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.76683205,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_8dc9ee1076bf.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.22758311,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_df8d16761a07.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___healthy,Tomato___healthy,0.5880374,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_a04d3b3bf04e.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.9852535,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_27f7b1b281a3.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.59494215,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_c6bc2e81a5d6.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.8196761,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_5e383c3405fb.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.88239956,False,False
+data/field_test/plantdoc/Potato leaf late blight/train_3a857a1f79a5.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.49901804,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_cf7e1928bb5c.jpg,Potato leaf late blight,Potato___Late_blight,Tomato___Early_blight,Tomato___Early_blight,0.42334613,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_d99a132ba60b.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.8921793,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_1017ddb24301.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.7277332,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_ea1fb8261d56.jpg,Potato leaf late blight,Potato___Late_blight,Soybean___healthy,Soybean___healthy,0.65416574,True,False
+data/field_test/plantdoc/Potato leaf late blight/train_5ca176bed6ad.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.94755244,False,True
+data/field_test/plantdoc/Potato leaf late blight/train_97283f64bd2f.jpg,Potato leaf late blight,Potato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.97314274,False,True
+data/field_test/plantdoc/Raspberry leaf/train_2c9d774cc3ec.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.69357264,False,True
+data/field_test/plantdoc/Raspberry leaf/train_ed40f7f74918.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9677528,False,True
+data/field_test/plantdoc/Raspberry leaf/train_e63ff41821e0.jpg,Raspberry leaf,Raspberry___healthy,Strawberry___healthy,Strawberry___healthy,0.747135,True,False
+data/field_test/plantdoc/Raspberry leaf/train_8cfc776df2d1.jpg,Raspberry leaf,Raspberry___healthy,Grape___Black_rot,Grape___Black_rot,0.33421695,True,False
+data/field_test/plantdoc/Raspberry leaf/train_554980dc24d2.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.97795266,False,True
+data/field_test/plantdoc/Raspberry leaf/train_771bd9595916.jpg,Raspberry leaf,Raspberry___healthy,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.35346302,True,False
+data/field_test/plantdoc/Raspberry leaf/train_d8e9991d386e.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.61537856,False,True
+data/field_test/plantdoc/Raspberry leaf/train_0a3606411b32.jpg,Raspberry leaf,Raspberry___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.93389183,True,False
+data/field_test/plantdoc/Raspberry leaf/train_85a150134c4b.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9358368,False,True
+data/field_test/plantdoc/Raspberry leaf/train_4a260dfcaba8.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.97423756,False,True
+data/field_test/plantdoc/Raspberry leaf/train_ea914bd52ab0.jpg,Raspberry leaf,Raspberry___healthy,Grape___healthy,Grape___healthy,0.69599354,True,False
+data/field_test/plantdoc/Raspberry leaf/train_3f425b89ece2.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.59602267,False,True
+data/field_test/plantdoc/Raspberry leaf/train_9190896b7c80.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.66448605,False,True
+data/field_test/plantdoc/Raspberry leaf/train_0d274120a925.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.78180367,False,True
+data/field_test/plantdoc/Raspberry leaf/train_5a533c98aa4a.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.99413294,True,True
+data/field_test/plantdoc/Raspberry leaf/train_f341195b2a06.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9414907,False,True
+data/field_test/plantdoc/Raspberry leaf/train_dc6b6cfd850d.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.96402645,False,True
+data/field_test/plantdoc/Raspberry leaf/train_4af9480f81cf.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.98942447,False,True
+data/field_test/plantdoc/Raspberry leaf/train_84b044ec5f51.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.77918607,False,True
+data/field_test/plantdoc/Raspberry leaf/train_13181710f266.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9543251,False,True
+data/field_test/plantdoc/Raspberry leaf/train_e1b603be478d.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9991565,False,True
+data/field_test/plantdoc/Raspberry leaf/train_4da067d2959f.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.98631513,False,True
+data/field_test/plantdoc/Raspberry leaf/train_5a405b908ebc.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.7589539,True,True
+data/field_test/plantdoc/Raspberry leaf/train_e25b0f8b44a5.jpg,Raspberry leaf,Raspberry___healthy,Potato___Late_blight,Potato___Late_blight,0.43889606,True,False
+data/field_test/plantdoc/Raspberry leaf/train_1348b68566f4.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.98172164,False,True
+data/field_test/plantdoc/Raspberry leaf/train_7aa112b99c4c.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.74416566,False,True
+data/field_test/plantdoc/Raspberry leaf/train_b040fd9ebe88.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.75133175,False,True
+data/field_test/plantdoc/Raspberry leaf/train_998654374423.jpg,Raspberry leaf,Raspberry___healthy,Tomato___healthy,Tomato___healthy,0.46451825,True,False
+data/field_test/plantdoc/Raspberry leaf/train_c8cc2c3dfe3f.jpg,Raspberry leaf,Raspberry___healthy,Strawberry___healthy,Strawberry___healthy,0.53413534,True,False
+data/field_test/plantdoc/Raspberry leaf/train_f35d080abff5.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.79491776,True,True
+data/field_test/plantdoc/Raspberry leaf/train_b0aecba8baa1.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.71497494,False,True
+data/field_test/plantdoc/Raspberry leaf/train_9c8257fcd075.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.53119916,True,True
+data/field_test/plantdoc/Raspberry leaf/train_5b8d318e11fe.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9469961,False,True
+data/field_test/plantdoc/Raspberry leaf/train_b9767fed9c31.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.98582274,False,True
+data/field_test/plantdoc/Raspberry leaf/train_e73708895332.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.8764606,True,True
+data/field_test/plantdoc/Raspberry leaf/train_1b791d9ac03d.jpg,Raspberry leaf,Raspberry___healthy,Raspberry___healthy,Raspberry___healthy,0.96314967,False,True
+data/field_test/plantdoc/Soyabean leaf/train_7d63c4ce039b.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.6316327,False,True
+data/field_test/plantdoc/Soyabean leaf/train_8bb55e66a94f.jpg,Soyabean leaf,Soybean___healthy,Potato___Early_blight,Potato___Early_blight,0.26454774,True,False
+data/field_test/plantdoc/Soyabean leaf/train_221492ff0a97.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.9193203,True,True
+data/field_test/plantdoc/Soyabean leaf/train_056fd76d54f8.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.69113773,False,True
+data/field_test/plantdoc/Soyabean leaf/train_7dfc056e2f2a.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.95788544,False,True
+data/field_test/plantdoc/Soyabean leaf/train_fc1fab08db04.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.732799,False,True
+data/field_test/plantdoc/Soyabean leaf/train_3a2bf9601acd.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.9982717,True,True
+data/field_test/plantdoc/Soyabean leaf/train_afd206de34e4.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.67027146,True,True
+data/field_test/plantdoc/Soyabean leaf/train_99bab664b9ba.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.9947239,False,True
+data/field_test/plantdoc/Soyabean leaf/train_00d16d419f43.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.6693834,False,True
+data/field_test/plantdoc/Soyabean leaf/train_8df9e439cfe1.jpg,Soyabean leaf,Soybean___healthy,Apple___healthy,Apple___healthy,0.38464022,True,False
+data/field_test/plantdoc/Soyabean leaf/train_7de70af6a268.jpg,Soyabean leaf,Soybean___healthy,Apple___Apple_scab,Apple___Apple_scab,0.44379896,True,False
+data/field_test/plantdoc/Soyabean leaf/train_230d71862e10.jpg,Soyabean leaf,Soybean___healthy,Peach___healthy,Peach___healthy,0.9033285,True,False
+data/field_test/plantdoc/Soyabean leaf/train_0fd0759bfbc3.jpg,Soyabean leaf,Soybean___healthy,Soybean___healthy,Soybean___healthy,0.93636566,False,True
+data/field_test/plantdoc/Soyabean leaf/train_771e4a2fdc94.jpg,Soyabean leaf,Soybean___healthy,Blueberry___healthy,Blueberry___healthy,0.8766033,False,False
+data/field_test/plantdoc/Soyabean leaf/train_cdf44b0a6287.jpg,Soyabean leaf,Soybean___healthy,Blueberry___healthy,Blueberry___healthy,0.5053208,True,False
+data/field_test/plantdoc/Soyabean leaf/train_de036ab58017.jpg,Soyabean leaf,Soybean___healthy,Blueberry___healthy,Blueberry___healthy,0.6980368,False,False
+data/field_test/plantdoc/Soyabean leaf/train_f202c17a8060.jpg,Soyabean leaf,Soybean___healthy,Blueberry___healthy,Blueberry___healthy,0.46629956,True,False
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_d74941df955f.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.92918366,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_eee3ea75ca4d.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.999488,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_04a71c44820d.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.99987495,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_44477e7b4e68.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.99996006,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_3d80aa610203.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.99985075,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_f19c95b5f7f2.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.8442059,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_cc01e59e77e9.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9985581,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_83275f1fd808.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Tomato___Late_blight,Tomato___Late_blight,0.4476229,True,False
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_2f54cafefc34.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.540855,True,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_460cdc36066e.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.4040774,True,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_b828c34bac55.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9992156,True,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_040834c5fe77.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Tomato___healthy,Tomato___healthy,0.2660034,True,False
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_800eb175600e.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.96091175,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_eae649804304.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.56112057,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_a56c2954b2f3.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.8913444,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_a02f778d878e.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.99360186,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_4a27deb09fe7.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.7439578,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_0a3949e46ff9.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9795521,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_60a0966d9eba.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.83096105,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_e8f32613cc52.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.3668878,True,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_2d76a2cd4a26.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.98962885,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_07a8141a02c1.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.5593584,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_912fe72fa09e.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.73503745,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_deedbc4e314f.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.32755396,True,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_9ac596e17c28.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.7898642,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_704b27084030.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.98178285,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_c1aafa5d7d62.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9991937,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_d830b10fa5a9.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9896321,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_33ca17b6d15e.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9968104,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_bc93b6833080.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9505928,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_318dd7d18c61.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.67079973,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_456a8aeba91e.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Grape___Black_rot,Grape___Black_rot,0.78113425,False,False
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_00bb43d8e3c6.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9465518,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_60fb966b6c2d.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.24235104,True,False
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_bace0ab5b521.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9266312,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_6dd530f30407.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9999871,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_b5a31aa2ea76.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.95604986,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_ff457cf0d742.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.99987924,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_f313a83a19c9.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9998708,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_cae19038f65c.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Grape___Black_rot,Grape___Black_rot,0.77953666,False,False
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_aebb75856ab3.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.99700624,False,True
+data/field_test/plantdoc/Squash Powdery mildew leaf/train_33cc0f1ca5a7.jpg,Squash Powdery mildew leaf,Squash___Powdery_mildew,Squash___Powdery_mildew,Squash___Powdery_mildew,0.9931263,False,True
+data/field_test/plantdoc/Strawberry leaf/train_75502940705f.jpg,Strawberry leaf,Strawberry___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.43548554,True,False
+data/field_test/plantdoc/Strawberry leaf/train_de20c1df4408.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.99242276,False,True
+data/field_test/plantdoc/Strawberry leaf/train_be6ee10a436d.jpg,Strawberry leaf,Strawberry___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.7128425,True,False
+data/field_test/plantdoc/Strawberry leaf/train_fd107bec4a5e.jpg,Strawberry leaf,Strawberry___healthy,Raspberry___healthy,Raspberry___healthy,0.9195253,False,False
+data/field_test/plantdoc/Strawberry leaf/train_fe5df232cafa.jpg,Strawberry leaf,Strawberry___healthy,Raspberry___healthy,Raspberry___healthy,0.75130886,False,False
+data/field_test/plantdoc/Strawberry leaf/train_312626b8e598.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.99278086,False,True
+data/field_test/plantdoc/Strawberry leaf/train_7a1200b325aa.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.8613528,False,True
+data/field_test/plantdoc/Strawberry leaf/train_4105001ee3c2.jpg,Strawberry leaf,Strawberry___healthy,Raspberry___healthy,Raspberry___healthy,0.19982639,True,False
+data/field_test/plantdoc/Strawberry leaf/train_b9fb9de1c271.jpg,Strawberry leaf,Strawberry___healthy,Raspberry___healthy,Raspberry___healthy,0.5413455,False,False
+data/field_test/plantdoc/Strawberry leaf/train_76b39fa346c5.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.7553496,False,True
+data/field_test/plantdoc/Strawberry leaf/train_db90103bf1ef.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.4862781,True,True
+data/field_test/plantdoc/Strawberry leaf/train_b2a99119f0e6.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.99437076,False,True
+data/field_test/plantdoc/Strawberry leaf/train_1af19791f70f.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.99485403,False,True
+data/field_test/plantdoc/Strawberry leaf/train_f6b8b37f018c.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9987606,False,True
+data/field_test/plantdoc/Strawberry leaf/train_e2158ca28911.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9062639,False,True
+data/field_test/plantdoc/Strawberry leaf/train_649c8c7a97ae.jpg,Strawberry leaf,Strawberry___healthy,Raspberry___healthy,Raspberry___healthy,0.5900618,True,False
+data/field_test/plantdoc/Strawberry leaf/train_f221de951a5c.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9094719,False,True
+data/field_test/plantdoc/Strawberry leaf/train_815e7c07abc9.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9992151,False,True
+data/field_test/plantdoc/Strawberry leaf/train_06c9d501172a.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.939711,False,True
+data/field_test/plantdoc/Strawberry leaf/train_9e45196a2b1a.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.99474335,False,True
+data/field_test/plantdoc/Strawberry leaf/train_e6bb7987ed5d.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9841245,False,True
+data/field_test/plantdoc/Strawberry leaf/train_658074e6fc02.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.7907124,False,True
+data/field_test/plantdoc/Strawberry leaf/train_2cc33195b246.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9963636,False,True
+data/field_test/plantdoc/Strawberry leaf/train_2b304ef19c7d.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.92873126,False,True
+data/field_test/plantdoc/Strawberry leaf/train_5514630c5184.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.764501,False,True
+data/field_test/plantdoc/Strawberry leaf/train_2b1f634a478a.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9937688,False,True
+data/field_test/plantdoc/Strawberry leaf/train_f61e3d485616.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.52146196,False,True
+data/field_test/plantdoc/Strawberry leaf/train_1dedb8ae5e02.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.9989214,False,True
+data/field_test/plantdoc/Strawberry leaf/train_9b50b0f9aed0.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.3176243,True,True
+data/field_test/plantdoc/Strawberry leaf/train_4f2000458c62.jpg,Strawberry leaf,Strawberry___healthy,Strawberry___healthy,Strawberry___healthy,0.8123073,True,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_cc8a76e4e88b.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.7937695,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_da261103c6c3.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.20990533,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_ddd4ac788249.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.9859606,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_5090cc403aaf.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.30026233,True,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_3e0b3b50aff9.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.44889686,True,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_55fd13e4494c.jpg,Tomato Early blight leaf,Tomato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.6047217,False,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_c86018de5cca.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.4841382,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_1be5a8a92c53.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.85828614,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_63638076ec55.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.661407,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_b8efc208b18b.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.47650898,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_d438f6ab2946.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.72563386,False,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_238262b8043c.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.63720447,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_a18a78058604.jpg,Tomato Early blight leaf,Tomato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.6420134,False,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_49f949211c19.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.37570718,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_ab811ca0d034.jpg,Tomato Early blight leaf,Tomato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.9629985,False,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_f8a9a20a2030.jpg,Tomato Early blight leaf,Tomato___Early_blight,Potato___Early_blight,Potato___Early_blight,0.97693104,False,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_5727f6bc2f8a.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.57165974,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_fd32f4389713.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Late_blight,Tomato___Late_blight,0.43461815,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_73abc217ca35.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.9337427,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_0f43c7ac3f11.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.24250413,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_e1dcbbd49347.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.55856764,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_baeffc71520d.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.3671871,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_d041331b4028.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Early_blight,Tomato___Early_blight,0.65260595,False,True
+data/field_test/plantdoc/Tomato Early blight leaf/train_0b9d6a968384.jpg,Tomato Early blight leaf,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.4652107,True,False
+data/field_test/plantdoc/Tomato Early blight leaf/train_f512dfa14cc0.jpg,Tomato Early blight leaf,Tomato___Early_blight,Strawberry___healthy,Strawberry___healthy,0.38738886,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_fb0847a57257.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.48093104,True,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_b6128d830e2f.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.6190724,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_34c20997686c.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___healthy,Tomato___healthy,0.501574,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_46d40fae183d.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.3748548,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_8af457018d4f.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.98471874,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_9d15ef575f9d.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Squash___Powdery_mildew,Squash___Powdery_mildew,0.81157225,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_b90ad4f4992c.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Early_blight,Tomato___Early_blight,0.3398816,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_a742949993c3.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.54256886,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_b188f154a1dd.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.55039334,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_c54955bc6a4f.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___healthy,Tomato___healthy,0.30819592,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_65d7d6112e78.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.8683694,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_a881a16e12c9.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Early_blight,Tomato___Early_blight,0.89305913,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_59a71f71e444.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___healthy,Tomato___healthy,0.3899052,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_6fb640350664.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.8322999,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_4d464511fb01.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.5268062,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_dedba7c6e0d1.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Early_blight,Tomato___Early_blight,0.47149462,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_6690f6162213.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Spider_mites Two-spotted_spider_mite,Cherry_(including_sour)___healthy,0.2875287,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_6d67b19d4102.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.9259504,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_3ca5c84b2c90.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.91387254,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_4313994b395d.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.5071988,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_7ae082d9d7af.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.6835519,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_bfd4a861954d.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.43303967,True,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_70b1e2f825ee.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Potato___Early_blight,Potato___Early_blight,0.48611328,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_c37bd2796d3e.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.7766492,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_1cc966f9eec5.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.69559157,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_797f30ec5660.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Soybean___healthy,Soybean___healthy,0.82478833,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_5f6321488b67.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.5157111,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_06fdec6ee4e3.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.46302724,True,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_bdd50fdc19ab.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.66378087,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_a1995cf8c174.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.71567124,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_7a22b4a139d2.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.47341686,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_37824e34c608.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.24475956,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_a8b0a717f100.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.4524185,True,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_6c6b9d517072.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.7946585,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_b1d4fc06bc70.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Potato___Early_blight,Potato___Early_blight,0.5007625,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_0dc839aefd8e.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.5313563,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_8105254566bd.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.96188533,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_5de8dca46bf5.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.70710135,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_2329013a33f8.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.7058326,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_1c796d1ba3e3.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.51520926,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_3af37d61c728.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.2963408,True,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_c50d859b0982.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Late_blight,Tomato___Late_blight,0.5811581,False,False
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_0964e658ed4b.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.79669505,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_d0c8b27b8a27.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.8278205,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_93f83d0dd504.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.58633626,False,True
+data/field_test/plantdoc/Tomato Septoria leaf spot/train_c91c11d1b4b9.jpg,Tomato Septoria leaf spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.522222,False,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_8d03984e484a.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Early_blight,Tomato___Early_blight,0.84473646,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_d258d288aa9f.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.28871268,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_f03c5c8c6507.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Early_blight,Tomato___Early_blight,0.4693926,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_f4996264325c.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.53262955,False,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_08656e50e4bc.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.4845693,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_1dc80904eae8.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.45788184,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_1d91c27ac08a.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___healthy,Tomato___healthy,0.2919894,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_5cd158fbf01a.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Peach___healthy,Peach___healthy,0.87184227,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_57e9ead8b2c4.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Potato___Early_blight,Potato___Early_blight,0.4747209,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_f91c7fb1115e.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Potato___Late_blight,Potato___Late_blight,0.4632957,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_f0771f5a3abc.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.87367344,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_6643f557b408.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.31099626,True,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_f70c9c5c2c9d.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.74270236,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_03a35b7ef384.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Early_blight,Tomato___Early_blight,0.97480315,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_55ea3fdbb1a5.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.88880527,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_869355f97dc3.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.94298524,False,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_bc6401db87a2.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Late_blight,Tomato___Late_blight,0.75931114,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_1994f7c42399.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.46425053,True,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_40531f2bda3e.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.5279974,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_423bb80a1204.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.9619758,False,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_9a8e2415828a.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.57574815,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_34743c979a45.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.75944,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_6ab50bbd2f5c.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.6169625,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_67a19fda84c1.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.6096332,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_a7dd8c1bbea0.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.388805,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_62e38c122fb4.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.7689985,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_4857f46bc114.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.8194367,False,True
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_105db86638e8.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___healthy,Tomato___healthy,0.43312883,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_52c1f4556bdd.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Early_blight,Tomato___Early_blight,0.475624,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_2d4e0f2270bd.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___healthy,Tomato___healthy,0.92980677,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_c6439788c2d3.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Potato___Early_blight,Potato___Early_blight,0.4467465,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_8b22346244d7.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Early_blight,Tomato___Early_blight,0.41958654,True,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_dfe19c353fd7.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.5597786,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_eca132070997.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.74072105,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_5deebaec0a3d.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Early_blight,Tomato___Early_blight,0.59008694,False,False
+data/field_test/plantdoc/Tomato leaf bacterial spot/train_6be321693fa4.jpg,Tomato leaf bacterial spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.38943607,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_aeb00f31c6f1.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.29881185,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_573ad6f34546.jpg,Tomato leaf late blight,Tomato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.8000782,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_0d426775e183.jpg,Tomato leaf late blight,Tomato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.30789942,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_5bcc6538e26f.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.8080998,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_5ca388571fed.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.7419674,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_6868b415f664.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.31445512,True,True
+data/field_test/plantdoc/Tomato leaf late blight/train_9197a071b9d2.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Early_blight,Tomato___Early_blight,0.9427471,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_da3268f4e842.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.33295453,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_3f74ac33764e.jpg,Tomato leaf late blight,Tomato___Late_blight,Potato___Early_blight,Potato___Early_blight,0.8000783,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_c943f76ff342.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.6884,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_3b2eef9f9aa4.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.33965907,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_c56306811cdd.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.5463357,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_4366d4c2d7d9.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9378148,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_86711414b8e3.jpg,Tomato leaf late blight,Tomato___Late_blight,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.8758089,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_bbf1ce9756ca.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9838103,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_97e155300a06.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Early_blight,Tomato___Early_blight,0.8818587,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_ba8d4363882b.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9218643,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_e5cc7a9ae7c3.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.69229585,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_1d81c5cf95d5.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9307349,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_428a65fc8154.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9257257,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_83fb85a77521.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.7111197,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_ba20a697c60f.jpg,Tomato leaf late blight,Tomato___Late_blight,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.36954024,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_c0bbfc24479f.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.96175325,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_2d4b4d409252.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Early_blight,Tomato___Early_blight,0.33808517,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_f82debc0ede0.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.92366457,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_b75098dd2a47.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9979906,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_c40221578430.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.6188056,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_d7f1c10cd020.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Late_blight,Tomato___Late_blight,0.9844615,False,True
+data/field_test/plantdoc/Tomato leaf late blight/train_22e374154c8a.jpg,Tomato leaf late blight,Tomato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.73750263,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_8a9908d2d67d.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.32906842,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_0c66c5d7f427.jpg,Tomato leaf late blight,Tomato___Late_blight,Potato___Late_blight,Potato___Late_blight,0.91058946,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_235463a90465.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.9586605,False,False
+data/field_test/plantdoc/Tomato leaf late blight/train_09b44a619572.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.34281066,True,False
+data/field_test/plantdoc/Tomato leaf late blight/train_6c262c0f1ca0.jpg,Tomato leaf late blight,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.6404422,False,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_329390c869ed.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.72142583,False,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_386ee9330d20.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.98144174,False,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_95e24b3948a9.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.32274267,True,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_7a72d8548f17.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.89562315,False,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_cfb2012d3f43.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.33657476,True,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_7f7b2593dcda.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Grape___Black_rot,Grape___Black_rot,0.24445403,True,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_820dafdc71e7.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.97239923,False,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_c98e26800b2f.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.56711036,True,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_4448f6960b9d.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Late_blight,Tomato___Late_blight,0.27055684,True,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_d5bf37242d52.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.7602403,False,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_37584f08fdff.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.9010474,False,True
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_853909bf2fe4.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Squash___Powdery_mildew,Squash___Powdery_mildew,0.58431727,True,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_bdca02244b23.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.33731762,True,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_c8dc8c6ddf2a.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,Tomato___healthy,Tomato___healthy,0.8074387,False,False
+data/field_test/plantdoc/Tomato leaf mosaic virus/train_75cd8f76db3e.jpg,Tomato leaf mosaic virus,Tomato___Tomato_mosaic_virus,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.4190598,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_3499512060c7.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.8646277,False,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_c3e8ac018198.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.8872013,True,True
+data/field_test/plantdoc/Tomato leaf yellow virus/train_c71851788ac7.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.9311073,True,True
+data/field_test/plantdoc/Tomato leaf yellow virus/train_696241dd397f.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.62608474,False,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_f5a86704821a.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Potato___Early_blight,Potato___Early_blight,0.4400332,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_0e6609940b6a.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.52234435,False,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_455a6e980b9d.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.93811065,False,True
+data/field_test/plantdoc/Tomato leaf yellow virus/train_0689745838db.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.675206,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_fa8ad10d49c0.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.6151131,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_c236d51a01d6.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___healthy,Tomato___healthy,0.6195062,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_2db0423b718a.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Potato___Early_blight,Potato___Early_blight,0.19691345,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_861c7dff6739.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.7037894,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_74f9dd281cff.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.74172884,False,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_78bca5fccafa.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Grape___healthy,Grape___healthy,0.28912964,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_ca563ba1dd50.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.5947071,False,True
+data/field_test/plantdoc/Tomato leaf yellow virus/train_272350bf9c8a.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.2947388,True,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_112bccc0605d.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.67754096,True,True
+data/field_test/plantdoc/Tomato leaf yellow virus/train_32d340c66b20.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.22144015,True,True
+data/field_test/plantdoc/Tomato leaf yellow virus/train_7346a95f1ef8.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.5623435,False,False
+data/field_test/plantdoc/Tomato leaf yellow virus/train_c1bffb5b7bc2.jpg,Tomato leaf yellow virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.48656723,True,False
+data/field_test/plantdoc/Tomato leaf/train_d9f4b6f636f5.jpg,Tomato leaf,Tomato___healthy,Tomato___Tomato_mosaic_virus,Tomato___Tomato_mosaic_virus,0.37353435,True,False
+data/field_test/plantdoc/Tomato leaf/train_728e6b6afde3.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.9964868,True,True
+data/field_test/plantdoc/Tomato leaf/train_c8eb9897f443.jpg,Tomato leaf,Tomato___healthy,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Tomato_mosaic_virus,0.4501211,True,False
+data/field_test/plantdoc/Tomato leaf/train_b78fa37e327e.jpg,Tomato leaf,Tomato___healthy,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.27888048,True,False
+data/field_test/plantdoc/Tomato leaf/train_d09f01294cf8.jpg,Tomato leaf,Tomato___healthy,Tomato___Late_blight,Tomato___Late_blight,0.35654047,True,False
+data/field_test/plantdoc/Tomato leaf/train_ec48a4eefc26.jpg,Tomato leaf,Tomato___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.63970655,False,False
+data/field_test/plantdoc/Tomato leaf/train_0d34fa5a5582.jpg,Tomato leaf,Tomato___healthy,Soybean___healthy,Soybean___healthy,0.9855138,False,False
+data/field_test/plantdoc/Tomato leaf/train_1b388bce0b95.jpg,Tomato leaf,Tomato___healthy,Soybean___healthy,Soybean___healthy,0.55063957,True,False
+data/field_test/plantdoc/Tomato leaf/train_9308110ce8d7.jpg,Tomato leaf,Tomato___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.9902824,True,False
+data/field_test/plantdoc/Tomato leaf/train_d47b123b79e4.jpg,Tomato leaf,Tomato___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.4832201,True,False
+data/field_test/plantdoc/Tomato leaf/train_28c0949d1616.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.7473114,False,True
+data/field_test/plantdoc/Tomato leaf/train_a236da0ad5a2.jpg,Tomato leaf,Tomato___healthy,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.38673556,True,False
+data/field_test/plantdoc/Tomato leaf/train_807f9d50dd1b.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.9958619,False,True
+data/field_test/plantdoc/Tomato leaf/train_9a955b6e291f.jpg,Tomato leaf,Tomato___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.9794129,True,False
+data/field_test/plantdoc/Tomato leaf/train_d22217a587ab.jpg,Tomato leaf,Tomato___healthy,"Pepper,_bell___healthy","Pepper,_bell___healthy",0.7381458,True,False
+data/field_test/plantdoc/Tomato leaf/train_fa6ade2d26fe.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.9636714,True,True
+data/field_test/plantdoc/Tomato leaf/train_62b662b9f213.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.9145529,False,True
+data/field_test/plantdoc/Tomato leaf/train_9708013dd9fb.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.31772193,True,True
+data/field_test/plantdoc/Tomato leaf/train_9e809bc309b7.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.9883857,False,True
+data/field_test/plantdoc/Tomato leaf/train_2f7b966373f7.jpg,Tomato leaf,Tomato___healthy,Tomato___healthy,Tomato___healthy,0.9990075,True,True
+data/field_test/plantdoc/Tomato mold leaf/train_a046f3201602.jpg,Tomato mold leaf,Tomato___Leaf_Mold,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.71115655,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_aa9566b82d16.jpg,Tomato mold leaf,Tomato___Leaf_Mold,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.85499,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_7e1fc59888bf.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.5726667,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_fc67c19bd055.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Potato___Late_blight,Potato___Late_blight,0.9666509,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_bcc567067552.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___healthy,Tomato___healthy,0.4526633,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_1af176be3227.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.46222,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_9593f2f27f98.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Potato___Early_blight,Potato___Early_blight,0.889137,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_f4bf79c3a8b5.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.88493216,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_bb6935dc76e8.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.98409927,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_59c9286a5237.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Early_blight,Tomato___Early_blight,0.51296294,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_37f0405eea74.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Late_blight,Tomato___Late_blight,0.69141436,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_463707e07063.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.95772415,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_a9896e7185bb.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.82904136,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_401a519a46dc.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.62531096,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_58478cad9f1e.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Early_blight,Tomato___Early_blight,0.42400378,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_5c8cdc93debf.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.3618497,True,True
+data/field_test/plantdoc/Tomato mold leaf/train_3d059fd69df8.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.9639048,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_3e36f54a5caf.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.76160014,True,True
+data/field_test/plantdoc/Tomato mold leaf/train_9de45b7b7677.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.91404074,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_dafde5d60e74.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.8843443,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_f8d996042e13.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.9333754,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_9b86e94f3e2e.jpg,Tomato mold leaf,Tomato___Leaf_Mold,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.35866824,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_a150f2a8127c.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.4920782,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_e63da1acd4aa.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.48934978,True,True
+data/field_test/plantdoc/Tomato mold leaf/train_e0bbe4038c7e.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.24368978,True,False
+data/field_test/plantdoc/Tomato mold leaf/train_a67362775362.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.6884895,False,False
+data/field_test/plantdoc/Tomato mold leaf/train_7cdcf609f372.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.8240432,False,True
+data/field_test/plantdoc/Tomato mold leaf/train_6c564f1b71d8.jpg,Tomato mold leaf,Tomato___Leaf_Mold,Tomato___Leaf_Mold,Tomato___Leaf_Mold,0.9621972,False,True
+data/field_test/plantdoc/grape leaf black rot/train_7540f28d60f3.jpg,grape leaf black rot,Grape___Black_rot,Tomato___healthy,Tomato___healthy,0.90968084,False,False
+data/field_test/plantdoc/grape leaf black rot/train_4627f5d3a128.jpg,grape leaf black rot,Grape___Black_rot,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.47785643,True,False
+data/field_test/plantdoc/grape leaf black rot/train_b9530b72f5d0.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.9506076,False,True
+data/field_test/plantdoc/grape leaf black rot/train_bd39b64e0875.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.7025008,False,True
+data/field_test/plantdoc/grape leaf black rot/train_c9cd688f193e.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.797381,False,True
+data/field_test/plantdoc/grape leaf black rot/train_eee58f80cdd2.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.98183125,False,True
+data/field_test/plantdoc/grape leaf black rot/train_97d58088e635.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.7338034,False,True
+data/field_test/plantdoc/grape leaf black rot/train_2e82911986f3.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.92339474,False,True
+data/field_test/plantdoc/grape leaf black rot/train_e71307dded29.jpg,grape leaf black rot,Grape___Black_rot,Tomato___Bacterial_spot,Tomato___Bacterial_spot,0.6381727,False,False
+data/field_test/plantdoc/grape leaf black rot/train_3b9808dee4e0.jpg,grape leaf black rot,Grape___Black_rot,Grape___healthy,Grape___healthy,0.28115308,True,False
+data/field_test/plantdoc/grape leaf black rot/train_b928eeec1f82.jpg,grape leaf black rot,Grape___Black_rot,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot,0.35926983,True,False
+data/field_test/plantdoc/grape leaf black rot/train_9000b3b83ce4.jpg,grape leaf black rot,Grape___Black_rot,Blueberry___healthy,Blueberry___healthy,0.8453047,False,False
+data/field_test/plantdoc/grape leaf black rot/train_4df1cb025c24.jpg,grape leaf black rot,Grape___Black_rot,"Pepper,_bell___Bacterial_spot","Pepper,_bell___Bacterial_spot",0.4868712,True,False
+data/field_test/plantdoc/grape leaf black rot/train_2bec17fff5fd.jpg,grape leaf black rot,Grape___Black_rot,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.5160773,False,False
+data/field_test/plantdoc/grape leaf black rot/train_1331ca29db49.jpg,grape leaf black rot,Grape___Black_rot,Grape___healthy,Grape___healthy,0.22867331,True,False
+data/field_test/plantdoc/grape leaf black rot/train_6e178a2c020c.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.6900272,False,True
+data/field_test/plantdoc/grape leaf black rot/train_b572224d88f0.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.364772,True,True
+data/field_test/plantdoc/grape leaf black rot/train_d62794b6b193.jpg,grape leaf black rot,Grape___Black_rot,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,0.75776285,False,False
+data/field_test/plantdoc/grape leaf black rot/train_4b0ed828823f.jpg,grape leaf black rot,Grape___Black_rot,Grape___Black_rot,Grape___Black_rot,0.5365369,False,True
+data/field_test/plantdoc/grape leaf/train_ab229f832beb.jpg,grape leaf,Grape___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.7508793,True,False
+data/field_test/plantdoc/grape leaf/train_1e2502308501.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.9731293,False,True
+data/field_test/plantdoc/grape leaf/train_074c00c404e7.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.97501785,False,True
+data/field_test/plantdoc/grape leaf/train_51fa12de3105.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.95675653,False,True
+data/field_test/plantdoc/grape leaf/train_f2d4e678d453.jpg,grape leaf,Grape___healthy,Cherry_(including_sour)___healthy,Cherry_(including_sour)___healthy,0.91629416,False,False
+data/field_test/plantdoc/grape leaf/train_becfadc14ea5.jpg,grape leaf,Grape___healthy,Grape___Black_rot,Grape___Black_rot,0.77958804,False,False
+data/field_test/plantdoc/grape leaf/train_53b66f6600bb.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.67338365,False,True
+data/field_test/plantdoc/grape leaf/train_ec513a66756c.jpg,grape leaf,Grape___healthy,Potato___Early_blight,Potato___Early_blight,0.590379,True,False
+data/field_test/plantdoc/grape leaf/train_a73611cff289.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.9826146,False,True
+data/field_test/plantdoc/grape leaf/train_575b8fad4547.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.8851303,False,True
+data/field_test/plantdoc/grape leaf/train_9b6bdac3a2d2.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.99371535,False,True
+data/field_test/plantdoc/grape leaf/train_aff3cf22b5a1.jpg,grape leaf,Grape___healthy,Blueberry___healthy,Blueberry___healthy,0.917387,False,False
+data/field_test/plantdoc/grape leaf/train_8d3c851aa401.jpg,grape leaf,Grape___healthy,Soybean___healthy,Soybean___healthy,0.96984696,True,False
+data/field_test/plantdoc/grape leaf/train_989ddd8536e1.jpg,grape leaf,Grape___healthy,Grape___Black_rot,Grape___Black_rot,0.7330787,False,False
+data/field_test/plantdoc/grape leaf/train_ab7b77b9f037.jpg,grape leaf,Grape___healthy,Grape___healthy,Grape___healthy,0.89687824,False,True
+data/field_test/plantdoc/grape leaf/train_93e7d1a019c8.jpg,grape leaf,Grape___healthy,Grape___Black_rot,Grape___Black_rot,0.6185988,False,False

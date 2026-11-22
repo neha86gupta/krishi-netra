@@ -1,0 +1,21 @@
+true,predicted,count
+Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,33
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Spider_mites Two-spotted_spider_mite,28
+Tomato___Bacterial_spot,Tomato___Target_Spot,23
+Tomato___Bacterial_spot,Tomato___Late_blight,21
+Tomato___Bacterial_spot,Tomato___Early_blight,16
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,16
+Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,15
+Soybean___healthy,"Pepper,_bell___healthy",15
+Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,15
+Grape___Esca_(Black_Measles),Grape___Black_rot,11
+Soybean___healthy,Potato___healthy,11
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,10
+Tomato___Target_Spot,Tomato___healthy,10
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,9
+"Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy",9
+Tomato___Early_blight,Tomato___Late_blight,9
+Tomato___Late_blight,Tomato___Early_blight,9
+Soybean___healthy,Blueberry___healthy,8
+Tomato___Late_blight,Potato___Late_blight,8
+Tomato___Leaf_Mold,Tomato___Spider_mites Two-spotted_spider_mite,8
