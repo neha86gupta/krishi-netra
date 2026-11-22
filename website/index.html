@@ -217,40 +217,7 @@
     }
 
     .nav-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-    .lang-pill {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--green-200);
-      border: 1.5px solid rgba(200, 230, 201, 0.4);
-      padding: 5px 12px;
-      border-radius: 999px;
-      white-space: nowrap;
-      background: rgba(9, 33, 13, 0.65);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      transition: all 0.2s ease;
-      user-select: none;
-      outline: none;
-    }
-    .lang-pill:hover, .lang-pill:focus-visible {
-      border-color: rgba(200, 230, 201, 0.9);
-      background: rgba(20, 54, 26, 0.9);
-      box-shadow: 0 0 10px rgba(102, 187, 106, 0.35);
-      transform: translateY(-1px);
-    }
-    .lang-pill .lang-opt {
-      transition: all 0.2s ease;
-    }
-    .lang-pill .lang-active {
-      color: #ffffff !important;
-      font-weight: 800 !important;
-      text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-    }
-    .lang-pill .lang-inactive {
-      opacity: 0.6;
-    }
+
 
     .mobile-menu-btn {
       display: none;
@@ -888,26 +855,7 @@
     .demo-sev-fill { height: 100%; background: linear-gradient(90deg, #22c55e 0%, #eab308 55%, #ef4444 100%); transition: width 0.45s ease; }
 
   
-    /* ---- LANGUAGE DROPDOWN ---- */
-    .lang-dropdown { position: relative; display: inline-block; }
-    .lang-dropdown .lang-pill { display: flex; align-items: center; gap: 4px; cursor: pointer; }
-    .lang-dropdown-menu {
-      position: absolute; top: 100%; right: 0; margin-top: 6px;
-      background: var(--surface-card); border: 1px solid var(--border-light);
-      border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-      min-width: 160px; padding: 6px; z-index: 9999;
-      opacity: 0; visibility: hidden; transform: translateY(-8px);
-      transition: all 0.2s ease;
-    }
-    .lang-dropdown.open .lang-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-    .lang-option {
-      display: flex; align-items: center; gap: 8px; width: 100%;
-      padding: 10px 14px; border: none; background: transparent;
-      color: var(--ink-secondary); font-size: 0.92rem; cursor: pointer;
-      border-radius: 8px; transition: background 0.15s;
-    }
-    .lang-option:hover { background: rgba(74,222,128,0.12); color: var(--ink-primary); }
-    .lang-option-active { color: var(--green-500); font-weight: 600; background: rgba(74,222,128,0.08); }
+
 
 
     /* ---- ENHANCED UI ANIMATIONS ---- */
@@ -1054,21 +1002,7 @@
       </nav>
 
       <div class="nav-actions">
-        <div class="lang-dropdown" id="langDropdown">
-          <button type="button" class="lang-pill" id="globalLangToggleBtn" onclick="document.getElementById('langDropdown').classList.toggle('open')" title="Switch Language" aria-label="Switch Language" aria-expanded="false">
-            <span id="langCurrentLabel">🌐 English</span>
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" style="margin-left:4px;"><path d="M2 4l4 4 4-4z"/></svg>
-          </button>
-          <div class="lang-dropdown-menu" id="langMenu">
-            <button type="button" class="lang-option lang-option-active" data-lang-choice="en" onclick="selectLanguage('en')">
-              <span>🇬🇧</span> English
-            </button>
-            <button type="button" class="lang-option" data-lang-choice="hi" onclick="selectLanguage('hi')">
-              <span>🇮🇳</span> हिंदी (Hindi)
-            </button>
-          </div>
-        </div>
-        <a href="#launch-app" data-launch-app class="btn btn-light btn-sm">Launch App ↗</a>
+        <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" data-launch-app class="btn btn-light btn-sm">Launch Tool ↗</a>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="primaryNavLinks" aria-label="Toggle navigation menu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -1089,14 +1023,14 @@
         <div class="hero-grid-bg" aria-hidden="true"></div>
         <div class="container hero-layout">
           <div>
-            <div class="eyebrow eyebrow-dark">AI Leaf Disease Detector · Bilingual EN / हिंदी</div>
+            <div class="eyebrow eyebrow-dark">AI Crop Leaf Disease Detector &amp; Diagnostic Platform</div>
             <h1>Spot crop disease early. Just photograph the leaf.</h1>
             <p class="hero-subtitle">
               Krishi Netra looks at one leaf photo, names the crop and the likely condition across 38 classes, shows where it looked using Grad-CAM, and points you to static reference care advice and your nearest Krishi Vigyan Kendra (KVK).
             </p>
 
             <div class="hero-cta-group">
-              <a href="#launch-app" data-launch-app class="btn btn-light">Open Full App ↗</a>
+              <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" data-launch-app class="btn btn-light">Launch Tool ↗</a>
               <a href="#how-it-works" data-route="how-it-works" class="btn btn-outline-light">See How It Works</a>
               <a href="#performance" data-route="performance" class="btn btn-outline-light">Lab vs. Field Results</a>
             </div>
@@ -1173,20 +1107,66 @@
         </div>
       </section>
 
-      <section class="section-sm">
+      <!-- Dedicated Notice & Guide: Must Launch Tool for Diagnosis -->
+      <section class="section-sm" id="launch-notice-section">
         <div class="container">
-          <div class="cta-banner">
-            <div>
-              <div class="eyebrow eyebrow-dark">Ready for Testing &amp; Demonstration</div>
-              <h2>Test Krishi Netra on a leaf photograph</h2>
-              <p>
-                Open the Krishi Netra detection application to upload a leaf image, inspect top-3 class probabilities, view Grad-CAM overlays, and read static reference guidance in English or Hindi.
-              </p>
+          <div style="background: linear-gradient(135deg, #0d3d19 0%, #1b5e20 60%, #2e7d32 100%); border: 2px solid #86efac; border-radius: var(--radius-lg); padding: 36px 32px; box-shadow: 0 16px 40px rgba(13, 61, 25, 0.35); color: #ffffff;">
+            
+            <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin-bottom:28px;">
+              <div style="max-width:760px;">
+                <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.35); padding:6px 14px; border-radius:20px; font-size:0.84rem; font-weight:700; color:#bbf7d0; margin-bottom:14px;">
+                  <span>⚡ IMPORTANT NOTICE</span>
+                </div>
+                <h2 style="font-size: clamp(1.65rem, 2.9vw, 2.3rem); margin: 0 0 12px; color: #ffffff; line-height:1.2;">
+                  To Test or Diagnose Leaves, You Must Launch the Tool
+                </h2>
+                <p style="font-size: 1.05rem; color: #dcfce7; line-height: 1.6; margin: 0;">
+                  This website is the <strong>project overview, research presentation, and technical documentation portal</strong>. 
+                  To upload actual crop leaf photographs, use your camera scanner, run our MobileNetV3 AI classifier, and inspect Grad-CAM heatmaps, you must launch the dedicated <strong>Krishi Netra AI Tool</strong>.
+                </p>
+              </div>
+              <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" data-launch-app class="btn btn-light" style="font-size:1.05rem; padding:15px 28px; font-weight:700; white-space:nowrap; box-shadow: 0 8px 24px rgba(0,0,0,0.25);">
+                🚀 Launch Krishi Netra Tool ↗
+              </a>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:12px;">
-              <a href="#launch-app" data-launch-app class="btn btn-light">Launch Krishi Netra App ↗</a>
-              <a href="#datasets" data-route="datasets" class="btn btn-outline-light">Datasets &amp; Credits</a>
+
+            <div class="grid-3" style="gap:18px;">
+              <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:12px; padding:20px; backdrop-filter:blur(6px);">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+                  <div style="width:30px; height:30px; border-radius:50%; background:#86efac; color:#14532d; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem;">1</div>
+                  <h3 style="font-size:1.08rem; margin:0; color:#ffffff;">Click "Launch Tool"</h3>
+                </div>
+                <p style="font-size:0.9rem; color:#dcfce7; margin:0; line-height:1.5;">
+                  Click any green <strong>Launch Tool</strong> button or open <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" style="color:#fef08a; text-decoration:underline;">krishi-netra.streamlit.app</a> in a new tab.
+                </p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:12px; padding:20px; backdrop-filter:blur(6px);">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+                  <div style="width:30px; height:30px; border-radius:50%; background:#86efac; color:#14532d; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem;">2</div>
+                  <h3 style="font-size:1.08rem; margin:0; color:#ffffff;">Upload Leaf Photo</h3>
+                </div>
+                <p style="font-size:0.9rem; color:#dcfce7; margin:0; line-height:1.5;">
+                  Go to the <strong>Diagnose</strong> tab, snap a leaf photo using your phone camera, or upload a clear JPG/PNG picture in good daylight.
+                </p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:12px; padding:20px; backdrop-filter:blur(6px);">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+                  <div style="width:30px; height:30px; border-radius:50%; background:#86efac; color:#14532d; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem;">3</div>
+                  <h3 style="font-size:1.08rem; margin:0; color:#ffffff;">Instant AI Diagnosis</h3>
+                </div>
+                <p style="font-size:0.9rem; color:#dcfce7; margin:0; line-height:1.5;">
+                  View healthy/diseased verdict, top-3 predicted diseases, calibrated confidence percentages, Grad-CAM heatmap, and verified KVK care advice.
+                </p>
+              </div>
             </div>
+
+            <div style="margin-top:22px; padding-top:16px; border-top:1px dashed rgba(255,255,255,0.25); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; font-size:0.86rem; color:#bbf7d0;">
+              <span>🌐 Interactive Web Tool: <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" style="color:#ffffff; font-weight:700; text-decoration:underline;">https://krishi-netra.streamlit.app</a></span>
+              <span>⚡ Cloud Hosted • Smartphone &amp; Laptop Optimized • Free &amp; Open Access</span>
+            </div>
+
           </div>
         </div>
       </section>
@@ -1236,9 +1216,9 @@
       <section class="section section-alt">
         <div class="container">
           <div class="section-header">
-            <div class="eyebrow">Simple Workflow · EN &amp; हिंदी</div>
+            <div class="eyebrow">Simple 3-Step Workflow</div>
             <h2 class="section-title">How it works in three steps</h2>
-            <p class="section-lead">Three steps, in English or Hindi.</p>
+            <p class="section-lead">Three simple steps to fast, reliable diagnosis.</p>
           </div>
 
           <div class="grid-3">
@@ -1602,10 +1582,7 @@
                 <button type="button" class="sim-tab" data-sim-scenario="healthy">3. Healthy Leaf</button>
               </div>
 
-              <div class="sim-tabs" role="group" aria-label="Result language toggle">
-                <button type="button" class="sim-tab active" data-sim-lang="en">English</button>
-                <button type="button" class="sim-tab" data-sim-lang="hi">हिन्दी</button>
-              </div>
+
             </div>
 
             <div class="simulator-body">
@@ -2562,7 +2539,7 @@
           <div class="cta-banner">
             <div style="max-width:650px;">
               <div class="eyebrow eyebrow-dark">Web Application Integration</div>
-              <h2>Open the Krishi Netra Disease Detection App</h2>
+              <h2>Open the Krishi Netra Disease Detection Tool</h2>
               <p style="margin-bottom:14px;">
                 Upload a leaf photo (JPG/PNG) or use your camera in English or Hindi to view top-3 class probabilities, Grad-CAM visual heatmaps, and static reference care advice.
               </p>
@@ -2571,7 +2548,7 @@
               </p>
             </div>
             <div style="display:flex;flex-direction:column;gap:12px;">
-              <a href="#launch-app" data-launch-app class="btn btn-light">Launch Krishi Netra App ↗</a>
+              <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" data-launch-app class="btn btn-light">Launch Krishi Netra Tool ↗</a>
               <a href="#how-it-works" data-route="how-it-works" data-anchor="simulator" class="btn btn-outline-light">Try Interactive UI Walkthrough</a>
             </div>
           </div>
@@ -2742,7 +2719,7 @@
         <div>
           <div class="footer-heading">Application Portal</div>
           <p style="font-size:0.88rem;margin:0 0 14px;">Ready to connect to the live Krishi Netra inference web app.</p>
-          <a href="#launch-app" data-launch-app class="btn btn-light btn-sm">Launch Detector ↗</a>
+          <a href="https://krishi-netra.streamlit.app" target="_blank" rel="noopener noreferrer" data-launch-app class="btn btn-light btn-sm">Launch Tool ↗</a>
         </div>
       </div>
 
@@ -2762,7 +2739,7 @@
     <div class="modal-dialog">
       <button class="modal-close" id="closeAppModalBtn" aria-label="Close dialog">&times;</button>
       <div class="eyebrow">Application Integration Ready</div>
-      <h3 id="appModalTitle" style="font-size:1.5rem;margin-bottom:10px;">Launch Krishi Netra Detector</h3>
+      <h3 id="appModalTitle" style="font-size:1.5rem;margin-bottom:10px;">Launch Krishi Netra Tool</h3>
       <p style="color:var(--ink-secondary);margin-bottom:16px;">
         This website is pre-wired to open your deployed Krishi Netra detection app. Set your live URL once in <code style="font-family:var(--font-mono);background:var(--green-100);padding:2px 6px;border-radius:5px;">KRISHI_NETRA_CONFIG.appUrl</code> inside this HTML file, or paste a live demo link below for this session:
       </p>
@@ -2771,7 +2748,7 @@
         <input type="url" id="sessionAppUrlInput" class="form-control" placeholder="https://your-krishi-netra-app.streamlit.app">
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;">
-        <button type="button" class="btn btn-primary" id="saveAndLaunchAppBtn">Open Live App ↗</button>
+        <button type="button" class="btn btn-primary" id="saveAndLaunchAppBtn">Launch Tool ↗</button>
         <button type="button" class="btn btn-outline-green" id="openSimulatorFromModalBtn">Try Built-In UI Simulator</button>
       </div>
       <p style="font-size:0.78rem;color:var(--ink-muted);margin:14px 0 0;">
@@ -2798,7 +2775,6 @@
       try { initArchitectureInspector(); } catch(e) {}
       try { initAppLaunchers(); } catch(e) {}
       try { initContactForm(); } catch(e) {}
-      try { initGlobalLanguageToggle(); } catch(e) {}
     });
 
     // Bulletproof fallback: also attach routing via event delegation on document
@@ -3014,17 +2990,15 @@
       };
 
       let currentScenario = "lesion";
-      let currentLang = "en";
       let threshold = 70;
 
       const scenarioBtns = root.querySelectorAll("[data-sim-scenario]");
-      const langBtns = root.querySelectorAll("[data-sim-lang]");
       const slider = document.getElementById("simThresholdSlider");
       const thresholdVal = document.getElementById("simThresholdValue");
 
       function render() {
         const scenario = SCENARIOS[currentScenario];
-        const copy = scenario[currentLang];
+        const copy = scenario.en || scenario;
         const topScore = copy.predictions[0].score;
         const isUncertain = topScore < threshold;
 
@@ -3042,14 +3016,10 @@
         const statusEl = document.getElementById("simStatusBanner");
         if (isUncertain) {
           statusEl.className = "abstention-banner";
-          statusEl.innerHTML = currentLang === "en"
-            ? `<strong>Result: "Not Sure" (Top score ${topScore}% &lt; ${threshold}% threshold)</strong><br>Krishi Netra refuses to guess confidently on ambiguous or cluttered photos. Please retake a single-leaf daylight photo or consult a KVK officer.`
-            : `<strong>परिणाम: "निश्चित नहीं (Not Sure)" (शीर्ष स्कोर ${topScore}% &lt; ${threshold}% सीमा)</strong><br>अस्पष्ट तस्वीर पर Krishi Netra गलत अनुमान लगाने के बजाय सावधानी बरतता है। कृपया एक पत्ती की साफ़ तस्वीर लें या KVK से मिलें।`;
+          statusEl.innerHTML = `<strong>Result: "Not Sure" (Top score ${topScore}% &lt; ${threshold}% threshold)</strong><br>Krishi Netra refuses to guess confidently on ambiguous or cluttered photos. Please retake a single-leaf daylight photo or consult a KVK officer.`;
         } else {
           statusEl.className = "confident-banner";
-          statusEl.innerHTML = currentLang === "en"
-            ? `<strong>Top Match: ${copy.predictions[0].label} (${topScore}% calibrated confidence)</strong><br>Exceeds your ${threshold}% confidence gate. Inspect the Grad-CAM overlay to verify leaf focus.`
-            : `<strong>शीर्ष पहचान: ${copy.predictions[0].label} (${topScore}% कैलिब्रेटेड विश्वास)</strong><br>यह आपकी ${threshold}% विश्वास सीमा से ऊपर है। पत्ती पर फोकस जांचने के लिए Grad-CAM देखें।`;
+          statusEl.innerHTML = `<strong>Top Match: ${copy.predictions[0].label} (${topScore}% calibrated confidence)</strong><br>Exceeds your ${threshold}% confidence gate. Inspect the Grad-CAM overlay to verify leaf focus.`;
         }
 
         document.getElementById("simPredictionsList").innerHTML = copy.predictions
@@ -3074,14 +3044,6 @@
         btn.addEventListener("click", () => {
           currentScenario = btn.getAttribute("data-sim-scenario");
           scenarioBtns.forEach((b) => b.classList.toggle("active", b === btn));
-          render();
-        });
-      });
-
-      langBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          currentLang = btn.getAttribute("data-sim-lang");
-          langBtns.forEach((b) => b.classList.toggle("active", b === btn));
           render();
         });
       });
@@ -3228,781 +3190,8 @@
 
     
 
-    /* ==========================================================================
-       8. COMPREHENSIVE FULL-WEBSITE BILINGUAL ENGINE (English <-> हिन्दी)
-       ========================================================================== */
-    const I18N_MASTER = {
-      en: {
-        // Navigation
-        nav_home: "Home",
-        nav_about: "About",
-        nav_how: "How It Works",
-        nav_features: "Features",
-        nav_tech: "Technology",
-        nav_perf: "Performance",
-        nav_datasets: "Datasets",
-        nav_contact: "Contact",
-        nav_launch: "Launch App ↗",
+        // Language translation stripped for clean English operation
 
-        // Hero Section
-        hero_eyebrow: "Student AgTech Innovation • Class 9 Project",
-        hero_title: "Spot crop disease early. Just photograph the leaf.",
-        hero_desc: "Krishi Netra (\"Vision for Agriculture\") combines a field-trained MobileNetV3 classifier with calibrated confidence, Grad-CAM visual heatmaps, and verified ICAR-KVK agricultural care advice in both English and Hindi. Fast, explainable, and built for real-world farming.",
-        hero_launch_btn: "Launch Krishi Netra ↗",
-        hero_stat1_title: "Laboratory Accuracy",
-        hero_stat1_desc: "Verified precision on PlantVillage baseline images across 38 crop and disease classes.",
-        hero_stat2_title: "Real-Time Edge Speed",
-        hero_stat2_desc: "Optimized MobileNetV3 runs smoothly on ordinary smartphones and laptops without expensive GPUs.",
-        hero_stat3_title: "Retrained Validation F1",
-        hero_stat3_desc: "Fine-tuned with real field imagery, background substitution, and calibrated out-of-distribution detection.",
-
-        // How it Works
-        how_eyebrow: "Step-by-Step Workflow",
-        how_title: "From one leaf photograph to an explained diagnosis",
-        step1_title: "1. Photograph one leaf",
-        step1_desc: "Use a phone camera in good daylight. Keep one leaf in focus against its natural background.",
-        step2_title: "2. The model analyses it",
-        step2_desc: "MobileNetV3 scores the image across 38 classes, scales temperature, and computes Grad-CAM heatmaps.",
-        step3_title: "3. Read the result",
-        step3_desc: "Check top-3 predictions, see where the model looked, or receive a calibrated \"Not Sure\" alert.",
-        how_cta_title: "Test Krishi Netra on a leaf photograph",
-        how_cta_desc: "Try the built-in walkthrough with real PlantVillage and PlantDoc examples below, or open the full live app to upload your own leaf image.",
-
-        // About Section
-        about_hero_eyebrow: "Project Vision & Purpose",
-        about_hero_title: "Advanced AI Vision for Real-World Farm Impact",
-        about_hero_desc: "Krishi Netra (\"Vision for Agriculture\") makes visual leaf disease screening understandable, bilingual, and transparent—bridging cutting-edge deep learning with real-world Indian agricultural fields.",
-        about_chal_eyebrow: "Empowering Indian Agriculture",
-        about_chal_title: "Why early recognition and honest AI matter",
-        about_chal_p1: "Foliar crop diseases directly impact farm yields and family livelihoods. Krishi Netra puts cutting-edge deep learning directly into the hands of farmers, extension workers, and students—offering instant, explainable, and zero-cost crop health diagnostics from a single smartphone photo.",
-        about_chal_p2: "Developed by student innovator Reyaansh Gupta, Krishi Netra bridges the gap between laboratory artificial intelligence and real-world agriculture. By pairing a MobileNetV3 vision backbone with field-trained robustness (90.3% F1 score), Grad-CAM visual attention heatmaps, and ICAR Krishi Vigyan Kendra guidance, Krishi Netra delivers reliable, actionable insights for Indian fields.",
-        about_chal_p3: "Rather than replacing local agronomists, Krishi Netra acts as an intelligent first-line screening assistant that guides farmers when to consult their nearest Krishi Vigyan Kendra (KVK).",
-        about_banner_title: "An empowering AgTech prototype — human expertise comes first",
-        about_banner_desc: "Krishi Netra provides early diagnostic indications and non-chemical care advice. For confirmed chemical spray recommendations and farm audits, always consult your local Krishi Vigyan Kendra (KVK) officer.",
-
-        // Features Section
-        features_hero_title: "Product features engineered for clarity and trust",
-        features_hero_desc: "Every capability in Krishi Netra is designed to make model predictions interpretable, prevent blind reliance on uncertain guesses, and bridge digital screening with local agricultural guidance.",
-        f_c1_title: "Confidence you can trust",
-        f_c1_desc: "Scores are calibrated, and ambiguous photos get a clear \"not sure\" instead of a confident wrong answer.",
-        f_c2_title: "Explanation heatmap",
-        f_c2_desc: "Grad-CAM shows which part of the leaf pushed the decision, proving the model examined real lesions.",
-        f_c3_title: "Reference advice",
-        f_c3_desc: "Static, non-chemical agronomic care advice for identified conditions, with verified symptom sources.",
-        f_c4_title: "Top three guesses with confidence",
-        f_c4_desc: "Always presents ranked probabilities so farmers and agronomists can review close alternative diagnoses.",
-        f_c5_title: "History and demo mode",
-        f_c5_desc: "Saves past predictions locally with thumbnails and offers preloaded sample leaves for offline trial.",
-        f_c6_title: "English & Hindi + KVK guidance",
-        f_c6_desc: "Available in English and Hindi, pointing users to their nearest Krishi Vigyan Kendra (KVK) before treating any crop.",
-        f_c7_title: "Sub-Second CPU Diagnosis",
-        f_c7_desc: "Engineered for lightweight operation on ordinary smartphones and low-power devices, delivering complete diagnoses in under 0.5s without cloud lag.",
-        f_c8_title: "Automated Disease Severity %",
-        f_c8_desc: "Computer vision contour analysis quantifies infected leaf surface area into Mild (<10%), Moderate (10–30%), and Severe (>30%) stages.",
-        f_c9_title: "Field-Augmented 90.3% F1 Model",
-        f_c9_desc: "Retrained on PlantVillage and PlantDoc field imagery with background replacement, temperature scaling, and centroid OOD detection.",
-
-        // Technology Section
-        tech_hero_title: "Lightweight vision architecture with built-in explainability",
-        tech_hero_desc: "An overview of how Krishi Netra processes an input image: from MobileNetV3 feature extraction to calibrated classification and Grad-CAM spatial heatmaps.",
-        tech_p1_title: "Single-Leaf Image Capture & Normalization",
-        tech_p1_desc: "Resizes input photographs to 224x224 pixels and applies ImageNet normalization for consistent inference across varying camera resolutions.",
-        tech_p2_title: "MobileNetV3 Multi-Class Classifier (38 Classes)",
-        tech_p2_desc: "Uses inverted residual blocks and lightweight squeeze-and-excitation attention to predict 38 crop disease classes efficiently on CPU.",
-        tech_p3_title: "Probability Calibration & \"Not Sure\" Abstention",
-        tech_p3_desc: "Scales softmax logits via temperature scaling and checks feature centroid distance to detect non-leaf or out-of-distribution photos.",
-        tech_p4_title: "Grad-CAM Spatial Attribution Overlay",
-        tech_p4_desc: "Extracts gradients from the final convolutional layer to generate a 2D attention heatmap showing where the model focused.",
-        tech_p5_title: "Decoupled Care Knowledge Base & KVK Referral",
-        tech_p5_desc: "Maps validated predictions to a static, verified disease knowledge base in English and Hindi, with links to local ICAR KVK centres.",
-
-        // Performance Section
-        perf_hero_title: "Results, lab versus field — both shown on purpose",
-        perf_hero_desc: "Krishi Netra Version 2 bridges the laboratory-to-field domain gap, achieving 90.3% validation F1 score on complex real-world field imagery.",
-        perf_card1_title: "PlantVillage Lab Precision",
-        perf_card1_desc: "High accuracy on held-out lab photos across 38 crop and disease classes in controlled environments.",
-        perf_card2_title: "Natural Lighting Invariance",
-        perf_card2_desc: "Maintains high resilience across outdoor farm environments, direct midday sunlight, and complex leaf orientations.",
-        perf_card3_title: "Version 2 Validation F1 Score",
-        perf_card3_desc: "Trained with real field photos, synthetic background substitution, and hard-negative mining (Fine-tune Epoch 3).",
-        shift_title: "Engineered for Real-World Field Excellence (90.3% F1)",
-        shift_desc: "Real farm environments have complex soil, natural sunlight, shadows, and overlapping foliage. Krishi Netra Version 2 was fine-tuned on real field imagery (PlantDoc) combined with synthetic background replacement and hard-negative mining, achieving high 90.3% validation F1 accuracy across diverse agricultural conditions.",
-        prog1_label: "PlantVillage (Controlled Lab Precision)",
-        prog2_label: "Natural Sunlight & Background Robustness",
-        prog3_label: "Version 2 Field-Augmented F1 Score",
-
-        // Datasets Section
-        datasets_hero_title: "Datasets, research highlights & completed milestones",
-        datasets_hero_desc: "Full attribution for the open agricultural datasets powering Krishi Netra, alongside clear documentation of completed Version 2 milestones.",
-        // Datasets View 7 Extra Cards
-        res_badge: "Research Highlights",
-        res_title: "Key empirical takeaways",
-        res_li1: "<strong>Version 2 Field Generalization:</strong> Outdoor fine-tuning elevates real-world field precision to <strong>90.3% F1 score</strong> across varied farm conditions.",
-        res_li2: "<strong>Grad-CAM Visual Explanations:</strong> Verifies that model attention is strictly focused on active disease lesions rather than background soil.",
-        res_li3: "<strong>Confidence Calibration:</strong> Softmax temperature scaling and abstention prevent overconfident mistakes on blurry or unknown samples.",
-
-        bp_badge: "Field Best Practices",
-        bp_title: "Optimal Field Diagnosis",
-        bp_li1: "<strong>Clear Single-Leaf Framing:</strong> High-resolution single-leaf photos captured in natural daylight yield highest diagnostic confidence.",
-        bp_li2: "<strong>Grad-CAM Visual Verification:</strong> Heatmaps highlight the exact lesion zones so farmers and agronomists can visually verify why a diagnosis was made.",
-        bp_li3: "<strong>Extensive Taxonomy:</strong> Supports 38 major Indian crop diseases with instant CPU inference under 0.5 seconds.",
-
-        pv_title: "PlantVillage Dataset",
-        pv_desc: "54,303 laboratory images across 38 classes, providing the fundamental morphological basis for leaf disease classification under CC BY-SA 3.0.",
-        pd_title: "PlantDoc Dataset",
-        pd_desc: "2,598 real-world agricultural field images captured under outdoor sunlight and soil conditions, licensed under CC BY 4.0.",
-        milestone_title: "Completed & Deployed in Version 2",
-        m1_text: "✅ Version 2 Field Retraining: Fine-tuned MobileNetV3 with field photos & synthetic background augmentation, achieving 90.3% validation F1 score.",
-        m2_text: "✅ Sub-Second Inference Optimization: Streamlined MobileNetV3 + Grad-CAM pipeline delivering full predictions in 0.3s on CPU.",
-        m3_text: "✅ Real-Time Bilingual Interface: Seamless instant toggle between English and Hindi throughout the entire app.",
-        m4_text: "✅ Automated Severity % Estimation: Computer vision contour analysis measuring leaf area percentage infected.",
-
-        // Meet the Founder
-        founder_badge: "Student Innovator Spotlight",
-        founder_title: "Meet the Founder & Developer",
-        founder_subtitle: "The student-driven vision, engineering journey, and social mission behind Krishi Netra.",
-        founder_name: "Reyaansh Gupta",
-        founder_role: "Class 9 Student Innovator",
-        founder_school: "Apeejay School, Pitampura, New Delhi",
-        founder_story_badge: "The Story Behind Krishi Netra",
-        founder_story_title: "Bridging Advanced AI & Real Indian Agriculture",
-        founder_story_p1: "Seeing how sudden crop diseases cause severe financial hardship for smallholder farmers across India, <strong>Reyaansh Gupta</strong>, a Class 9 student at <strong>Apeejay School Pitampura</strong>, set out to build an accessible, explainable AI disease detector that farmers could genuinely trust.",
-        founder_story_p2: "Rather than accepting black-box predictions that fail outdoors, Reyaansh retrained a lightweight MobileNetV3 backbone on real field imagery—achieving a <strong>90.3% validation F1 score</strong>—and integrated <strong>Grad-CAM visual attention heatmaps</strong> so farmers can see exactly which leaf spots guided the diagnosis. He also engineered automated <strong>disease severity percentage estimation</strong> and bilingual (English/Hindi) guidance directly linked to ICAR Krishi Vigyan Kendras.",
-        founder_goal: "🎯 Goal: Transparent, zero-cost crop diagnostics for every farmer",
-        founder_contact_btn: "Send Feedback to Reyaansh →",
-
-        // Contact Section
-        contact_hero_title: "Access the Krishi Netra detector or connect with us",
-        contact_hero_desc: "Launch the Krishi Netra leaf disease detection web application, find Krishi Vigyan Kendra (KVK) advisory guidance, or send exhibition and research feedback.",
-        c_banner_title: "Open the Krishi Netra Disease Detection App",
-        c_banner_desc: "Upload a leaf photo (JPG/PNG) or use your camera in English or Hindi to view top-3 class probabilities, Grad-CAM visual heatmaps, and static reference care advice.",
-        c_form_title: "Send a message or feedback",
-        c_form_desc: "Have questions about MobileNetV3 training, Grad-CAM heatmaps, or Version 2 field-augmentation experiments? Send a note below.",
-        c_lbl_name: "Your Name",
-        c_lbl_email: "Email Address",
-        c_lbl_role: "Your Role / Organization",
-        c_lbl_msg: "Message / Feedback",
-        c_btn_send: "Send Message →",
-        c_kvk_title: "Consult your nearest Krishi Vigyan Kendra (KVK)",
-        c_kvk_desc: "Krishi Netra is an educational prototype and does not provide professional agricultural advice. For certified spray schedules and chemical recommendations, contact your district KVK or local agriculture officer.",
-
-        // Modal Launcher
-        modal_eyebrow: "Ready for Live Diagnosis",
-        modal_title: "Open Krishi Netra AI Detector",
-        modal_desc: "Launch the live diagnosis tool on Port 8501 to upload your own leaf photos, inspect Grad-CAM heatmaps, and view agronomic advice in English or हिन्दी.",
-        modal_launch_btn: "🚀 Launch Live App (Port 8501)",
-        modal_sim_btn: "Try On-Page Simulator ↓",
-        modal_footer: "Agricultural Guidance: Always consult your local Krishi Vigyan Kendra (KVK) for certified treatment schedules.",
-
-        // Footer
-        footer_brand_desc: "A student-developed crop leaf disease detection platform built around calibrated confidence, Grad-CAM visual explainability, and bilingual accessibility (English & Hindi).",
-        footer_copy: "Class 9 Innovation & AgTech Project by Reyaansh Gupta (Apeejay School Pitampura). Released under open licenses."
-      },
-
-      hi: {
-        // Navigation
-        nav_home: "मुख्य पृष्ठ",
-        nav_about: "परिचय",
-        nav_how: "कार्यप्रणाली",
-        nav_features: "विशेषताएँ",
-        nav_tech: "तकनीक",
-        nav_perf: "प्रदर्शन",
-        nav_datasets: "डेटासेट",
-        nav_contact: "संपर्क",
-        nav_launch: "ऐप खोलें ↗",
-
-        // Hero Section
-        hero_eyebrow: "युवा कृषि-प्रौद्योगिकी नवाचार • कक्षा 9 परियोजना",
-        hero_title: "पत्ती की फोटो लें, फसल रोग तुरंत पहचानें।",
-        hero_desc: "कृषि नेत्र (\"Krishi Netra\") एक फील्ड-प्रशिक्षित MobileNetV3 क्लासिफायर को कैलिब्रेटेड कॉन्फिडेंस, Grad-CAM विजुअल हीटमैप और अंग्रेजी व हिंदी में प्रमाणित ICAR-KVK संदर्भ सलाह के साथ जोड़ता है। तीव्र, पारदर्शी और वास्तविक खेतों के लिए निर्मित।",
-        hero_launch_btn: "कृषि नेत्र शुरू करें ↗",
-        hero_stat1_title: "प्रयोगशाला सटीकता (Lab Accuracy)",
-        hero_stat1_desc: "38 फसल और रोग वर्गों पर नियंत्रित प्रयोगशाला परीक्षणों में 95.8% उच्च सत्यापन सटीकता।",
-        hero_stat2_title: "अति-तीव्र स्पीड (< 0.5s)",
-        hero_stat2_desc: "सामान्य स्मार्टफोन और लैपटॉप पर बिना महंगे GPU के तुरंत और सुचारू रूप से कार्य करता है।",
-        hero_stat3_title: "वर्जन 2 पुनः प्रशिक्षित F1 स्कोर",
-        hero_stat3_desc: "वास्तविक खेत के पत्तों (PlantDoc) और पृष्ठभूमि संवर्धन के साथ फाइन-ट्यून किया गया 90.3% F1 मॉडल।",
-
-        // How it Works
-        how_eyebrow: "चरणबद्ध कार्यप्रणाली",
-        how_title: "एक पत्ती की तस्वीर से स्पष्ट निदान तक की यात्रा",
-        step1_title: "1. एक पत्ती की फोटो लें",
-        step1_desc: "अच्छी धूप में फोन कैमरे का उपयोग करें। एक पत्ती को प्राकृतिक पृष्ठभूमि में स्पष्ट फोकस में रखें।",
-        step2_title: "2. AI मॉडल विश्लेषण करता है",
-        step2_desc: "MobileNetV3 मॉडल 38 वर्गों में स्कोर की गणना करता है और Grad-CAM ध्यान हीटमैप तैयार करता है।",
-        step3_title: "3. स्पष्ट परिणाम देखें",
-        step3_desc: "शीर्ष 3 भविष्यवाणियां देखें, जांचें कि AI ने पत्ती पर कहां देखा, या संदिग्ध होने पर चेतावनी प्राप्त करें।",
-        how_cta_title: "पत्ती की तस्वीर पर कृषि नेत्र का परीक्षण करें",
-        how_cta_desc: "नीचे दिए गए वास्तविक नमूनों के साथ बिल्ट-इन वॉकथ्रू आज़माएं, या अपनी पत्ती की फोटो अपलोड करने के लिए मुख्य ऐप खोलें।",
-
-        // About Section
-        about_hero_eyebrow: "परियोजना का उद्देश्य एवं दृष्टिकोण",
-        about_hero_title: "वास्तविक कृषि प्रभाव के लिए उन्नत AI विज़न",
-        about_hero_desc: "कृषि नेत्र (\"Krishi Netra\") फसल रोग स्क्रीनिंग को सुलभ, द्विभाषी और पारदर्शी बनाता है—प्रयोगशाला के डीप लर्निंग को सीधे भारतीय किसानों के खेतों तक पहुँचाता है।",
-        about_chal_eyebrow: "भारतीय कृषि का सशक्तिकरण",
-        about_chal_title: "समय पर रोग पहचान और पारदर्शी AI क्यों आवश्यक है",
-        about_chal_p1: "पत्तियों के रोग सीधे फसल की पैदावार और किसान परिवारों की आजीविका को प्रभावित करते हैं। कृषि नेत्र एक स्मार्टफोन फोटो से त्वरित, व्याख्यात्मक और निःशुल्क फसल स्वास्थ्य निदान प्रदान करके डीप लर्निंग को सीधे किसानों और छात्रों के हाथों में सौंपता है।",
-        about_chal_p2: "छात्र अन्वेषक रेयांश गुप्ता द्वारा विकसित, कृषि नेत्र प्रयोगशाला AI और वास्तविक कृषि के बीच की खाई को पाटता है। फील्ड-प्रशिक्षित मॉडल (90.3% F1 स्कोर), Grad-CAM विजुअल हीटमैप और ICAR कृषि विज्ञान केंद्र मार्गदर्शन के साथ, यह भारतीय खेतों के लिए सटीक परिणाम देता है।",
-        about_chal_p3: "कृषि विशेषज्ञों की जगह लेने के बजाय, कृषि नेत्र एक बुद्धिमान प्रथम-पंक्ति सहायक के रूप में कार्य करता है जो किसानों को बताता है कि कब नजदीकी KVK से सलाह लेनी चाहिए।",
-        about_banner_title: "एक सशक्त AgTech मॉडल — मानवीय विशेषज्ञता सर्वोपरि",
-        about_banner_desc: "कृषि नेत्र प्रारंभिक रोग पहचान और जैविक देखभाल सलाह देता है। प्रमाणित रासायनिक छिड़काव और कृषि ऑडिट के लिए हमेशा अपने स्थानीय कृषि विज्ञान केंद्र (KVK) से संपर्क करें।",
-
-        // Features Section
-        features_hero_title: "विश्वसनीयता और स्पष्टता के लिए निर्मित उत्पाद विशेषताएँ",
-        features_hero_desc: "कृषि नेत्र की हर क्षमता को मॉडल भविष्यवाणियों को समझने योग्य बनाने, अनिश्चित अनुमानों पर निर्भरता रोकने और डिजिटल स्क्रीनिंग को स्थानीय कृषि सलाह से जोड़ने के लिए डिज़ाइन किया गया है।",
-        f_c1_title: "भरोसेमंद कॉन्फिडेंस (कैलिब्रेटेड स्कोर)",
-        f_c1_desc: "स्कोर कैलिब्रेटेड हैं, और अस्पष्ट तस्वीरों पर गलत उत्तर के बजाय स्पष्ट \"पहचान संदिग्ध (Not Sure)\" मिलता है।",
-        f_c2_title: "व्याख्यात्मक हीटमैप (Grad-CAM)",
-        f_c2_desc: "Grad-CAM दिखाता है कि पत्ती के किस हिस्से ने निर्णय को प्रभावित किया, जिससे साबित होता है कि AI ने असली धब्बों को देखा।",
-        f_c3_title: "प्रमाणित संदर्भ सलाह (स्थिर ज्ञानकोष)",
-        f_c3_desc: "पहचाने गए रोगों के लिए गैर-रासायनिक कृषि सलाह और प्रामाणिक लक्षणों का सत्यापित विवरण।",
-        f_c4_title: "शीर्ष तीन संभावित निदान व प्रतिशत",
-        f_c4_desc: "हमेशा क्रमित संभावनाएँ प्रस्तुत करता है ताकि किसान और कृषि वैज्ञानिक वैकल्पिक निदान की समीक्षा कर सकें।",
-        f_c5_title: "इतिहास और ऑफलाइन डेमो मोड",
-        f_c5_desc: "थंबनेल के साथ पिछली भविष्यवाणियों को स्थानीय स्तर पर सहेजता है और परीक्षण के लिए पूर्व-लोड किए गए नमूने प्रदान करता है।",
-        f_c6_title: "द्विभाषी (अंग्रेजी व हिंदी) + KVK मार्गदर्शन",
-        f_c6_desc: "अंग्रेजी और हिंदी दोनों में उपलब्ध, किसी भी फसल का उपचार करने से पहले नजदीकी कृषि विज्ञान केंद्र (KVK) को रेफर करता है।",
-        f_c7_title: "सब-सेकंड CPU डायग्नोसिस (< 0.5s)",
-        f_c7_desc: "सामान्य स्मार्टफोन और साधारण कंप्यूटरों पर बिना क्लाउड लैग के 0.5 सेकंड से कम समय में पूरा विश्लेषण प्रदान करता है।",
-        f_c8_title: "स्वचालित रोग तीव्रता (Severity %) प्रयोगशाला",
-        f_c8_desc: "कंप्यूटर विज़न कंटूर विश्लेषण संक्रमित पत्ती के क्षेत्रफल को हल्के (<10%), मध्यम (10-30%) और गंभीर (>30%) चरणों में मापता है।",
-        f_c9_title: "90.3% F1 फील्ड-प्रशिक्षित AI मॉडल",
-        f_c9_desc: "PlantVillage और PlantDoc फील्ड छवियों पर पृष्ठभूमि प्रतिस्थापन, तापमान स्केलिंग और सेंट्रोइड OOD पहचान के साथ पुनः प्रशिक्षित।",
-
-        // Technology Section
-        tech_hero_title: "अंतर्निहित व्याख्यात्मकता के साथ लाइटवेट विज़न आर्किटेक्चर",
-        tech_hero_desc: "कृषि नेत्र इनपुट छवि को कैसे संसाधित करता है: MobileNetV3 फीचर निष्कर्षण से लेकर कैलिब्रेटेड वर्गीकरण और Grad-CAM हीटमैप तक का विवरण।",
-        tech_p1_title: "एकल-पत्ती छवि अधिग्रहण व सामान्यीकरण",
-        tech_p1_desc: "विभिन्न कैमरा रिज़ॉल्यूशन में सुसंगत अनुमान के लिए तस्वीरों को 224x224 पिक्सेल में रीसाइज़ और सामान्यीकृत करता है।",
-        tech_p2_title: "MobileNetV3 मल्टी-क्लास क्लासिफायर (38 वर्ग)",
-        tech_p2_desc: "CPU पर 38 फसल रोग वर्गों की कुशलतापूर्वक भविष्यवाणी करने के लिए इन्वर्टेड रेसिड्यूअल ब्लॉक्स का उपयोग करता है।",
-        tech_p3_title: "प्रायिकता कैलिब्रेशन व \"Not Sure\" सुरक्षा गेट",
-        tech_p3_desc: "गैर-पत्ती या अपरिचित तस्वीरों की पहचान करने के लिए तापमान स्केलिंग और फीचर सेंट्रोइड दूरी की जांच करता है।",
-        tech_p4_title: "Grad-CAM स्थानिक एट्रिब्यूशन ओवरले",
-        tech_p4_desc: "अंतिम कनवल्शनल लेयर से ग्रेडिएंट निकालकर 2D ध्यान हीटमैप बनाता है जो दिखाता है कि मॉडल ने कहाँ देखा।",
-        tech_p5_title: "स्वतंत्र देखभाल ज्ञानकोष व KVK रेफरल",
-        tech_p5_desc: "सत्यापित भविष्यवाणियों को अंग्रेजी और हिंदी में स्थिर ज्ञानकोष से जोड़ता है, जिसमें ICAR KVK के संदर्भ शामिल हैं।",
-
-        // Performance Section
-        perf_hero_title: "मॉडल परिणाम: प्रयोगशाला बनाम खेत (फील्ड)",
-        perf_hero_desc: "कृषि नेत्र वर्जन 2 ने प्रयोगशाला से खेत के अंतर को पाटा है, वास्तविक जटिल फील्ड छवियों पर 90.3% वैलिडेशन F1 स्कोर प्राप्त किया है।",
-        perf_card1_title: "PlantVillage प्रयोगशाला सटीकता",
-        perf_card1_desc: "नियंत्रित वातावरण में 38 फसल और रोग वर्गों पर प्रयोगशाला परीक्षणों में 95.8% उच्च परिशुद्धता।",
-        perf_card2_title: "प्राकृतिक धूप व छाया में स्थिरता",
-        perf_card2_desc: "खेतों के बाहरी वातावरण, तेज दोपहर की धूप और पत्तियों की विभिन्न दिशाओं में उच्च स्थिरता बनाए रखता है।",
-        perf_card3_title: "वर्जन 2 फील्ड वैलिडेशन F1 स्कोर",
-        perf_card3_desc: "वास्तविक खेत की तस्वीरों, कृत्रिम पृष्ठभूमि प्रतिस्थापन और हार्ड-नेगेटिव माइनिंग के साथ प्रशिक्षित (90.3% F1)।",
-        shift_title: "वास्तविक फील्ड उत्कृष्टता के लिए निर्मित (90.3% F1)",
-        shift_desc: "असली खेतों में मिट्टी, तेज धूप, छाया और उलझी हुई पत्तियां होती हैं। कृषि नेत्र वर्जन 2 को पृष्ठभूमि संवर्धन के साथ PlantDoc फील्ड छवियों पर फाइन-ट्यून किया गया, जिससे वास्तविक कृषि परिस्थितियों में 90.3% F1 स्कोर हासिल हुआ।",
-        prog1_label: "PlantVillage (नियंत्रित प्रयोगशाला आधार)",
-        prog2_label: "प्राकृतिक धूप व पृष्ठभूमि सुदृढ़ता",
-        prog3_label: "वर्जन 2 फील्ड-संवर्धित F1 स्कोर",
-
-        // Datasets Section
-        datasets_hero_title: "डेटासेट, अनुसंधान बिंदु और पूर्ण उपलब्धियां",
-        datasets_hero_desc: "कृषि नेत्र को सशक्त बनाने वाले खुले कृषि डेटासेट का पूर्ण श्रेय और वर्जन 2 की पूर्ण उपलब्धियों का विवरण।",
-        // Datasets View 7 Extra Cards
-        res_badge: "अनुसंधान बिंदु",
-        res_title: "प्रमुख व्यावहारिक निष्कर्ष",
-        res_li1: "<strong>वर्जन 2 फील्ड सामान्यीकरण:</strong> बाहरी परिस्थितियों के फाइन-ट्यूनिंग ने विभिन्न कृषि दशाओं में वास्तविक फील्ड सटीकता को <strong>90.3% F1 स्कोर</strong> तक पहुंचाया।",
-        res_li2: "<strong>Grad-CAM दृश्य स्पष्टीकरण:</strong> यह सत्यापित करता है कि मॉडल का ध्यान पृष्ठभूमि की मिट्टी के बजाय केवल पत्ती के सक्रिय लक्षणों पर केंद्रित है।",
-        res_li3: "<strong>विश्वसनीयता अंशांकन:</strong> सॉफ्टमैक्स तापमान स्केलिंग अस्पष्ट या अज्ञात तस्वीरों पर अति-आत्मविश्वास से भरे गलत अनुमानों को रोकती है।",
-
-        bp_badge: "उत्कृष्ट कृषि पद्धतियाँ",
-        bp_title: "खेत में सटीक निदान हेतु निर्देश",
-        bp_li1: "<strong>स्पष्ट एकल पत्ती फोटो:</strong> प्राकृतिक दिन के उजाले में ली गई स्पष्ट पत्ती की फोटो उच्चतम निदान सटीकता देती है।",
-        bp_li2: "<strong>Grad-CAM दृश्य सत्यापन:</strong> हीटमैप रोगग्रस्त हिस्सों को स्पष्ट रूप से दर्शाते हैं जिससे किसान और कृषि विशेषज्ञ निदान की तुरंत पुष्टि कर सकें।",
-        bp_li3: "<strong>विस्तृत वर्गीकरण:</strong> 38 प्रमुख भारतीय फसल रोगों का 0.5 सेकंड से भी कम समय में त्वरित CPU परीक्षण।",
-
-        pv_title: "PlantVillage डेटासेट",
-        pv_desc: "38 वर्गों में 54,303 प्रयोगशाला छवियां, जो CC BY-SA 3.0 के तहत पत्ती रोग वर्गीकरण का मूलभूत रूपात्मक आधार प्रदान करती हैं।",
-        pd_title: "PlantDoc डेटासेट",
-        pd_desc: "प्राकृतिक धूप और खेत की परिस्थितियों में खींची गई 2,598 वास्तविक कृषि तस्वीरें, CC BY 4.0 के तहत लाइसेंस प्राप्त।",
-        milestone_title: "वर्जन 2 में पूर्ण व लाइव उपलब्धियां",
-        m1_text: "✅ वर्जन 2 फील्ड रिट्रेनिंग: फील्ड तस्वीरों व पृष्ठभूमि संवर्धन के साथ MobileNetV3 को फाइन-ट्यून किया गया, 90.3% F1 स्कोर प्राप्त।",
-        m2_text: "✅ सब-सेकंड इन्फेरेंस अनुकूलन: CPU पर केवल 0.3 सेकंड में पूर्ण MobileNetV3 + Grad-CAM भविष्यवाणी।",
-        m3_text: "✅ वास्तविक समय द्विभाषी इंटरफेस: पूरे प्लेटफॉर्म में अंग्रेजी और हिंदी के बीच तत्काल सहज स्विच।",
-        m4_text: "✅ स्वचालित रोग तीव्रता (Severity %) विश्लेषण: संक्रमित पत्ती क्षेत्रफल प्रतिशत मापने वाला कंप्यूटर विज़न कंटूर मॉडल।",
-
-        // Meet the Founder
-        founder_badge: "युवा नवाचार एवं शोध (Student Spotlight)",
-        founder_title: "संस्थापक और डेवलपर से मिलें",
-        founder_subtitle: "कृषि नेत्र के पीछे छात्र का दृष्टिकोण, तकनीकी यात्रा और सामाजिक मिशन।",
-        founder_name: "रेयांश गुप्ता",
-        founder_role: "कक्षा 9 के छात्र एवं अन्वेषक",
-        founder_school: "एपीजे स्कूल, पीतमपुरा, नई दिल्ली",
-        founder_story_badge: "कृषि नेत्र की प्रेरक कहानी",
-        founder_story_title: "उन्नत AI और भारतीय कृषि का सशक्त संगम",
-        founder_story_p1: "भारत भर के छोटे किसानों को अचानक होने वाले फसल रोगों से भारी आर्थिक नुकसान होते देख, <strong>एपीजे स्कूल पीतमपुरा</strong> के कक्षा 9 के छात्र <strong>रेयांश गुप्ता</strong> ने एक ऐसा सुलभ व पारदर्शी AI रोग संसूचक बनाने का संकल्प लिया जिस पर किसान पूरा भरोसा कर सकें।",
-        founder_story_p2: "खेतों में विफल होने वाले अज्ञात ब्लैक-बॉक्स मॉडलों के बजाय, रेयांश ने वास्तविक फील्ड छवियों पर MobileNetV3 मॉडल को पुनः प्रशिक्षित किया—<strong>90.3% वैलिडेशन F1 स्कोर</strong> प्राप्त किया—और <strong>Grad-CAM विजुअल हीटमैप</strong> जोड़े ताकि किसान देख सकें कि AI ने पत्ती के किन धब्बों को देखकर निर्णय लिया। इसके साथ ही उन्होंने स्वचालित <strong>रोग तीव्रता प्रतिशत विश्लेषण</strong> और द्विभाषी मार्गदर्शन तैयार किया जो सीधे ICAR कृषि विज्ञान केंद्रों से जुड़ा है।",
-        founder_goal: "🎯 लक्ष्य: हर किसान के लिए पारदर्शी और निःशुल्क फसल स्वास्थ्य निदान",
-        founder_contact_btn: "रेयांश को संदेश भेजें →",
-
-        // Contact Section
-        contact_hero_title: "कृषि नेत्र डिटेक्टर का उपयोग करें या हमसे संपर्क करें",
-        contact_hero_desc: "कृषि नेत्र रोग पहचान ऐप लॉन्च करें, कृषि विज्ञान केंद्र (KVK) मार्गदर्शन प्राप्त करें, या प्रदर्शनी व शोध प्रतिक्रिया भेजें।",
-        c_banner_title: "कृषि नेत्र रोग पहचान ऐप खोलें",
-        c_banner_desc: "एकल पत्ती की फोटो अपलोड करें या अपने कैमरे का उपयोग करें और अंग्रेजी या हिंदी में शीर्ष 3 संभावनाएं, Grad-CAM हीटमैप और प्रमाणित सलाह देखें।",
-        c_form_title: "संदेश या प्रतिक्रिया भेजें",
-        c_form_desc: "MobileNetV3 प्रशिक्षण, Grad-CAM हीटमैप या वर्जन 2 फील्ड संवर्धन के बारे में प्रश्न हैं? नीचे संदेश भेजें।",
-        c_lbl_name: "आपका नाम",
-        c_lbl_email: "ईमेल पता",
-        c_lbl_role: "आपकी भूमिका / संस्थान",
-        c_lbl_msg: "संदेश / प्रतिक्रिया",
-        c_btn_send: "संदेश भेजें →",
-        c_kvk_title: "नजदीकी कृषि विज्ञान केंद्र (KVK) से परामर्श लें",
-        c_kvk_desc: "कृषि नेत्र एक शैक्षिक प्रोटोटाइप है और पेशेवर सलाह का विकल्प नहीं है। रासायनिक खुराक और स्प्रे शेड्यूल के लिए हमेशा अपने जिले के KVK से संपर्क करें।",
-
-        // Modal Launcher
-        modal_eyebrow: "लाइव डायग्नोसिस के लिए तैयार",
-        modal_title: "कृषि नेत्र AI डिटेक्टर खोलें",
-        modal_desc: "अपनी पत्तियों की फोटो अपलोड करने, Grad-CAM हीटमैप देखने और अंग्रेजी या हिंदी में कृषि सलाह प्राप्त करने के लिए पोर्ट 8501 पर ऐप लॉन्च करें।",
-        modal_launch_btn: "🚀 लाइव ऐप खोलें (Port 8501)",
-        modal_sim_btn: "वेबसाइट सिम्युलेटर आज़माएं ↓",
-        modal_footer: "कृषि सलाह: प्रमाणित उपचार कार्यक्रम के लिए हमेशा अपने स्थानीय कृषि विज्ञान केंद्र (KVK) से परामर्श लें।",
-
-        // Footer
-        footer_brand_desc: "कैलिब्रेटेड कॉन्फिडेंस, Grad-CAM विजुअल व्याख्यात्मकता और द्विभाषी पहुंच (अंग्रेजी व हिंदी) के इर्द-गिर्द निर्मित एक छात्र-विकसित फसल रोग पहचान मंच।",
-        footer_copy: "रेयांश गुप्ता (एपीजे स्कूल पीतमपुरा) द्वारा कक्षा 9 नवाचार और AgTech परियोजना। खुले लाइसेंस के तहत जारी।"
-      }
-    };
-
-    window.__currentLang = localStorage.getItem("krishi_netra_lang") || "en";
-
-    window.toggleGlobalLanguage = function() {
-      const targetLang = window.__currentLang === "en" ? "hi" : "en";
-      window.applySiteLanguage(targetLang);
-    };
-
-    window.applySiteLanguage = function(lang) {
-      window.__currentLang = lang;
-      localStorage.setItem("krishi_netra_lang", lang);
-      document.documentElement.setAttribute("lang", lang);
-
-      const optEn = document.getElementById("langOptEn");
-      const optHi = document.getElementById("langOptHi");
-      const toggleBtn = document.getElementById("globalLangToggleBtn");
-
-      if (optEn && optHi) {
-        if (lang === "hi") {
-          optEn.className = "lang-opt lang-inactive";
-          optHi.className = "lang-opt lang-active";
-          if (toggleBtn) toggleBtn.title = "Switch Language to English / अंग्रेजी में बदलें";
-        } else {
-          optEn.className = "lang-opt lang-active";
-          optHi.className = "lang-opt lang-inactive";
-          if (toggleBtn) toggleBtn.title = "Switch Language to Hindi / हिंदी में बदलें";
-        }
-      }
-
-      const d = I18N_MASTER[lang] || I18N_MASTER.en;
-
-      // 1. Navigation Links
-      
-      // Nav Demo pill
-      const navDemoLink = document.getElementById("navLinkDemo");
-      if (navDemoLink) navDemoLink.textContent = d.nav_demo;
-
-      // Re-render demo lab in new language
-const navMap = {
-        home: d.nav_home,
-        about: d.nav_about,
-        "how-it-works": d.nav_how,
-        features: d.nav_features,
-        technology: d.nav_tech,
-        performance: d.nav_perf,
-        datasets: d.nav_datasets,
-        contact: d.nav_contact
-      };
-      document.querySelectorAll("#primaryNavLinks a[data-route]").forEach(a => {
-        const r = a.getAttribute("data-route");
-        if (navMap[r]) a.textContent = navMap[r];
-      });
-      document.querySelectorAll("a[data-launch-app]").forEach(a => {
-        a.textContent = d.nav_launch;
-      });
-
-      // 2. Hero Section
-      const hEyebrow = document.querySelector("#view-home .hero-eyebrow");
-      if (hEyebrow) hEyebrow.textContent = d.hero_eyebrow;
-
-      const hTitle = document.querySelector("#view-home .hero-copy h1");
-      if (hTitle) hTitle.textContent = d.hero_title;
-
-      const hDesc = document.querySelector("#view-home .hero-copy p");
-      if (hDesc) hDesc.textContent = d.hero_desc;
-
-      const hLaunch = document.querySelector("#view-home .hero-actions a.btn-primary");
-      if (hLaunch) hLaunch.textContent = d.hero_launch_btn;
-
-      const hDemo = document.querySelector("#view-home .hero-actions a.btn-secondary");
-      if (hDemo) hDemo.textContent = d.hero_demo_btn;
-
-      const heroCards = document.querySelectorAll("#view-home .grid-3 .card");
-      if (heroCards.length >= 3) {
-        const h0 = heroCards[0].querySelector("h3");
-        const p0 = heroCards[0].querySelector("p");
-        if (h0) h0.textContent = d.hero_stat1_title;
-        if (p0) p0.textContent = d.hero_stat1_desc;
-
-        const h1 = heroCards[1].querySelector("h3");
-        const p1 = heroCards[1].querySelector("p");
-        if (h1) h1.textContent = d.hero_stat2_title;
-        if (p1) p1.textContent = d.hero_stat2_desc;
-
-        const h2 = heroCards[2].querySelector("h3");
-        const p2 = heroCards[2].querySelector("p");
-        if (h2) h2.textContent = d.hero_stat3_title;
-        if (p2) p2.textContent = d.hero_stat3_desc;
-      }
-
-      // 3. How It Works
-      const howEye = document.querySelector("#view-how-it-works .page-hero .eyebrow");
-      if (howEye) howEye.textContent = d.how_eyebrow;
-
-      const howTitle = document.querySelector("#view-how-it-works .section-title");
-      if (howTitle) howTitle.textContent = d.how_title;
-
-      const steps = document.querySelectorAll("#view-how-it-works .grid-3 .card");
-      if (steps.length >= 3) {
-        const s1_h = steps[0].querySelector("h3");
-        const s1_p = steps[0].querySelector("p");
-        if (s1_h) s1_h.textContent = d.step1_title;
-        if (s1_p) s1_p.textContent = d.step1_desc;
-
-        const s2_h = steps[1].querySelector("h3");
-        const s2_p = steps[1].querySelector("p");
-        if (s2_h) s2_h.textContent = d.step2_title;
-        if (s2_p) s2_p.textContent = d.step2_desc;
-
-        const s3_h = steps[2].querySelector("h3");
-        const s3_p = steps[2].querySelector("p");
-        if (s3_h) s3_h.textContent = d.step3_title;
-        if (s3_p) s3_p.textContent = d.step3_desc;
-      }
-
-      const howCtaH2 = document.querySelector("#view-how-it-works .cta-banner h2");
-      if (howCtaH2) howCtaH2.textContent = d.how_cta_title;
-      const howCtaP = document.querySelector("#view-how-it-works .cta-banner p");
-      if (howCtaP) howCtaP.textContent = d.how_cta_desc;
-
-      // 4. About Section
-      const abEye = document.querySelector("#view-about .page-hero .eyebrow");
-      if (abEye) abEye.textContent = d.about_hero_eyebrow;
-
-      const abH1 = document.querySelector("#view-about .page-hero h1");
-      if (abH1) abH1.textContent = d.about_hero_title;
-
-      const abDesc = document.querySelector("#view-about .page-hero p");
-      if (abDesc) abDesc.textContent = d.about_hero_desc;
-
-      const abChalEye = document.querySelector("#view-about .eyebrow:not(.eyebrow-dark)");
-      if (abChalEye) abChalEye.textContent = d.about_chal_eyebrow;
-
-      const abChalTitle = document.querySelector("#view-about .section-title");
-      if (abChalTitle) abChalTitle.textContent = d.about_chal_title;
-
-      const abPs = document.querySelectorAll("#view-about .grid-2 > div:first-child > p");
-      if (abPs.length >= 3) {
-        abPs[0].textContent = d.about_chal_p1;
-        abPs[1].textContent = d.about_chal_p2;
-        abPs[2].textContent = d.about_chal_p3;
-      }
-
-      const abBannerH2 = document.querySelector("#view-about .cta-banner h2");
-      if (abBannerH2) abBannerH2.textContent = d.about_banner_title;
-      const abBannerP = document.querySelector("#view-about .cta-banner p");
-      if (abBannerP) abBannerP.textContent = d.about_banner_desc;
-
-      // 5. Features Section
-      const fH1 = document.querySelector("#view-features .page-hero h1");
-      if (fH1) fH1.textContent = d.features_hero_title;
-
-      const fDesc = document.querySelector("#view-features .page-hero p");
-      if (fDesc) fDesc.textContent = d.features_hero_desc;
-
-      const fCards = document.querySelectorAll("#view-features .grid-3 .card");
-      const fKeys = [
-        [d.f_c1_title, d.f_c1_desc],
-        [d.f_c2_title, d.f_c2_desc],
-        [d.f_c3_title, d.f_c3_desc],
-        [d.f_c4_title, d.f_c4_desc],
-        [d.f_c5_title, d.f_c5_desc],
-        [d.f_c6_title, d.f_c6_desc],
-        [d.f_c7_title, d.f_c7_desc],
-        [d.f_c8_title, d.f_c8_desc],
-        [d.f_c9_title, d.f_c9_desc]
-      ];
-      fCards.forEach((c, idx) => {
-        if (fKeys[idx]) {
-          const h = c.querySelector("h3");
-          const p = c.querySelector("p");
-          if (h) h.textContent = fKeys[idx][0];
-          if (p) p.textContent = fKeys[idx][1];
-        }
-      });
-
-      // 6. Technology Section
-      const techH1 = document.querySelector("#view-technology .page-hero h1");
-      if (techH1) techH1.textContent = d.tech_hero_title;
-      const techDesc = document.querySelector("#view-technology .page-hero p");
-      if (techDesc) techDesc.textContent = d.tech_hero_desc;
-
-      const techCards = document.querySelectorAll("#view-technology .grid-3 .card, #view-technology .pipeline-step");
-      const tKeys = [
-        [d.tech_p1_title, d.tech_p1_desc],
-        [d.tech_p2_title, d.tech_p2_desc],
-        [d.tech_p3_title, d.tech_p3_desc],
-        [d.tech_p4_title, d.tech_p4_desc],
-        [d.tech_p5_title, d.tech_p5_desc]
-      ];
-      techCards.forEach((c, idx) => {
-        if (tKeys[idx]) {
-          const h = c.querySelector("h3");
-          const p = c.querySelector("p");
-          if (h) h.textContent = tKeys[idx][0];
-          if (p) p.textContent = tKeys[idx][1];
-        }
-      });
-
-      // 7. Performance Section
-      const perfH1 = document.querySelector("#view-performance .page-hero h1");
-      if (perfH1) perfH1.textContent = d.perf_hero_title;
-      const perfDesc = document.querySelector("#view-performance .page-hero p");
-      if (perfDesc) perfDesc.textContent = d.perf_hero_desc;
-
-      const perfCards = document.querySelectorAll("#view-performance .grid-3 .card");
-      if (perfCards.length >= 3) {
-        const h0 = perfCards[0].querySelector("h3");
-        const p0 = perfCards[0].querySelector("p");
-        if (h0) h0.textContent = d.perf_card1_title;
-        if (p0) p0.textContent = d.perf_card1_desc;
-
-        const h1 = perfCards[1].querySelector("h3");
-        const p1 = perfCards[1].querySelector("p");
-        if (h1) h1.textContent = d.perf_card2_title;
-        if (p1) p1.textContent = d.perf_card2_desc;
-
-        const h2 = perfCards[2].querySelector("h3");
-        const p2 = perfCards[2].querySelector("p");
-        if (h2) h2.textContent = d.perf_card3_title;
-        if (p2) p2.textContent = d.perf_card3_desc;
-      }
-
-      const shiftH3 = document.querySelector("#view-performance h3[data-i18n='shift_title']");
-      if (shiftH3) shiftH3.textContent = d.shift_title;
-      const shiftP = document.querySelector("#view-performance p[data-i18n='shift_desc']");
-      if (shiftP) shiftP.textContent = d.shift_desc;
-
-      const progTracks = document.querySelectorAll("#view-performance .progress-item-head span:first-child");
-      if (progTracks.length >= 3) {
-        progTracks[0].textContent = d.prog1_label;
-        progTracks[1].textContent = d.prog2_label;
-        progTracks[2].textContent = d.prog3_label;
-      }
-
-      // 8. Datasets Section
-      const dsH1 = document.querySelector("#view-datasets .page-hero h1");
-      if (dsH1) dsH1.textContent = d.datasets_hero_title;
-      const dsDesc = document.querySelector("#view-datasets .page-hero p");
-      if (dsDesc) dsDesc.textContent = d.datasets_hero_desc;
-
-      const dsCards = document.querySelectorAll("#view-datasets .grid-2 .card");
-      if (dsCards.length >= 2) {
-        const h0 = dsCards[0].querySelector("h3");
-        const p0 = dsCards[0].querySelector("p");
-        if (h0) h0.textContent = d.pv_title;
-        if (p0) p0.textContent = d.pv_desc;
-
-        const h1 = dsCards[1].querySelector("h3");
-        const p1 = dsCards[1].querySelector("p");
-        if (h1) h1.textContent = d.pd_title;
-        if (p1) p1.textContent = d.pd_desc;
-      }
-
-      const mH3 = document.querySelector("#view-datasets h3[style*='var(--green-800)']");
-      if (mH3) mH3.textContent = d.milestone_title;
-
-      const mItems = document.querySelectorAll("#view-datasets ul[style*='margin:0 0 16px 0'] li");
-      if (mItems.length >= 4) {
-        mItems[0].innerHTML = d.m1_text;
-        mItems[1].innerHTML = d.m2_text;
-        mItems[2].innerHTML = d.m3_text;
-        mItems[3].innerHTML = d.m4_text;
-      }
-
-      // Datasets Section Grid-3 Cards (Research Highlights & Field Best Practices)
-      const dsGrid3 = document.querySelectorAll("#view-datasets .grid-3 .card");
-      if (dsGrid3.length >= 2) {
-        const c0_badge = dsGrid3[0].querySelector(".badge");
-        const c0_title = dsGrid3[0].querySelector("h3");
-        const c0_lis = dsGrid3[0].querySelectorAll("li");
-        if (c0_badge) c0_badge.textContent = d.res_badge;
-        if (c0_title) c0_title.textContent = d.res_title;
-        if (c0_lis.length >= 3) {
-          c0_lis[0].innerHTML = d.res_li1;
-          c0_lis[1].innerHTML = d.res_li2;
-          c0_lis[2].innerHTML = d.res_li3;
-        }
-
-        const c1_badge = dsGrid3[1].querySelector(".badge");
-        const c1_title = dsGrid3[1].querySelector("h3");
-        const c1_lis = dsGrid3[1].querySelectorAll("li");
-        if (c1_badge) c1_badge.textContent = d.bp_badge;
-        if (c1_title) c1_title.textContent = d.bp_title;
-        if (c1_lis.length >= 3) {
-          c1_lis[0].innerHTML = d.bp_li1;
-          c1_lis[1].innerHTML = d.bp_li2;
-          c1_lis[2].innerHTML = d.bp_li3;
-        }
-      }
-
-
-      // 9. Meet the Founder
-      const fBadge = document.querySelector("#founder .badge-green");
-      if (fBadge) fBadge.textContent = d.founder_badge;
-
-      const fTitle = document.querySelector("#founder .section-title");
-      if (fTitle) fTitle.textContent = d.founder_title;
-
-      const fSubtitle = document.querySelector("#founder p");
-      if (fSubtitle) fSubtitle.textContent = d.founder_subtitle;
-
-      const fName = document.querySelector("#founder h3");
-      if (fName) fName.textContent = d.founder_name;
-
-      const fRole = document.querySelector("#founder p[style*='font-weight:600']");
-      if (fRole) fRole.textContent = d.founder_role;
-
-      const fSchool = document.querySelector("#founder p[style*='var(--ink-muted)']");
-      if (fSchool) fSchool.textContent = d.founder_school;
-
-      const fStoryBadge = document.querySelector("#founder .badge-sky");
-      if (fStoryBadge) fStoryBadge.textContent = d.founder_story_badge;
-
-      const fStoryTitle = document.querySelector("#founder h4");
-      if (fStoryTitle) fStoryTitle.textContent = d.founder_story_title;
-
-      const fStoryPs = document.querySelectorAll("#founder div[style*='display:grid'] > div:nth-child(2) > p");
-      if (fStoryPs.length >= 2) {
-        fStoryPs[0].innerHTML = d.founder_story_p1;
-        fStoryPs[1].innerHTML = d.founder_story_p2;
-      }
-
-      const fGoal = document.querySelector("#founder div[style*='border-top'] span");
-      if (fGoal) fGoal.textContent = d.founder_goal;
-
-      const fBtn = document.querySelector("#founder div[style*='border-top'] a");
-      if (fBtn) fBtn.textContent = d.founder_contact_btn;
-
-      // 10. Contact Section
-      const cH1 = document.querySelector("#view-contact .page-hero h1");
-      if (cH1) cH1.textContent = d.contact_hero_title;
-      const cDesc = document.querySelector("#view-contact .page-hero p");
-      if (cDesc) cDesc.textContent = d.contact_hero_desc;
-
-      const cBannerH2 = document.querySelector("#view-contact .cta-banner h2");
-      if (cBannerH2) cBannerH2.textContent = d.c_banner_title;
-      const cBannerP = document.querySelector("#view-contact .cta-banner p");
-      if (cBannerP) cBannerP.textContent = d.c_banner_desc;
-
-      const cFormH2 = document.querySelector("#view-contact #knContactForm")?.closest(".card")?.querySelector("h2");
-      if (cFormH2) cFormH2.textContent = d.c_form_title;
-
-      const cFormLabels = document.querySelectorAll("#view-contact .form-label");
-      if (cFormLabels.length >= 4) {
-        cFormLabels[0].textContent = d.c_lbl_name;
-        cFormLabels[1].textContent = d.c_lbl_email;
-        cFormLabels[2].textContent = d.c_lbl_role;
-        cFormLabels[3].textContent = d.c_lbl_msg;
-      }
-
-      const cBtn = document.querySelector("#view-contact button[type='submit']");
-      if (cBtn) cBtn.textContent = d.c_btn_send;
-
-      const cKvkH3 = document.querySelector("#view-contact .card h3");
-      if (cKvkH3) cKvkH3.textContent = d.c_kvk_title;
-      const cKvkP = document.querySelector("#view-contact .card p");
-      if (cKvkP) cKvkP.textContent = d.c_kvk_desc;
-
-      // 11. Modal Launcher
-      const mEye = document.querySelector("#appLauncherModal .eyebrow");
-      if (mEye) mEye.textContent = d.modal_eyebrow;
-
-      const mTitle = document.querySelector("#appLauncherModal #appModalTitle");
-      if (mTitle) mTitle.textContent = d.modal_title;
-
-      const mDesc = document.querySelector("#appLauncherModal p[style*='color:var(--ink-secondary)']");
-      if (mDesc) mDesc.textContent = d.modal_desc;
-
-      const mLaunch = document.querySelector("#appLauncherModal #saveAndLaunchAppBtn");
-      if (mLaunch) mLaunch.textContent = d.modal_launch_btn;
-
-      const mSim = document.querySelector("#appLauncherModal #openSimulatorFromModalBtn");
-      if (mSim) mSim.textContent = d.modal_sim_btn;
-
-      const mFoot = document.querySelector("#appLauncherModal p[style*='color:var(--ink-muted)']");
-      if (mFoot) mFoot.textContent = d.modal_footer;
-
-      // 12. Footer
-      const footDesc = document.querySelector(".site-footer p");
-      if (footDesc) footDesc.textContent = d.footer_brand_desc;
-
-      const footCopy = document.querySelector(".footer-bottom div:first-child");
-      if (footCopy) footCopy.textContent = d.footer_copy;
-
-      // 13. Synchronize with Interactive Simulator language tabs
-      const simLangBtn = document.querySelector(`[data-sim-lang="${lang}"]`);
-      if (simLangBtn && !simLangBtn.classList.contains("active")) {
-        simLangBtn.click();
-      }
-
-      // 14. Synchronize all Launch App links with language parameter (?lang=hi / ?lang=en)
-      document.querySelectorAll("a[data-launch-app], .hero-actions a.btn-primary, #saveAndLaunchAppBtn").forEach(btn => {
-        let base = btn.getAttribute("href") || "https://krishi-netra.streamlit.app";
-        const urlParts = base.split("?");
-        btn.setAttribute("href", `${urlParts[0]}?lang=${lang}`);
-      });
-    };
-
-    
-    function toggleGlobalLanguage() {
-      selectLanguage(window.__currentLang === "hi" ? "en" : "hi");
-    }
-
-function initGlobalLanguageToggle() {
-      // Apply initial saved language on page load
-      window.applySiteLanguage(window.__currentLang);
-      // Sync dropdown label
-      const initLabel = document.getElementById("langCurrentLabel");
-      if (initLabel) initLabel.textContent = window.__currentLang === "hi" ? "🌐 हिंदी" : "🌐 English";
-      document.querySelectorAll(".lang-option").forEach(opt => {
-        opt.classList.toggle("lang-option-active", opt.getAttribute("data-lang-choice") === window.__currentLang);
-      });
-    }
-
-  
-    function selectLanguage(lang) {
-      window.__currentLang = lang;
-      try { localStorage.setItem("kn_lang", lang); } catch(e) {}
-      window.applySiteLanguage(lang);
-      // Update dropdown UI
-      const dd = document.getElementById("langDropdown");
-      if (dd) dd.classList.remove("open");
-      document.querySelectorAll(".lang-option").forEach(opt => {
-        const isActive = opt.getAttribute("data-lang-choice") === lang;
-        opt.classList.toggle("lang-option-active", isActive);
-      });
-      const label = document.getElementById("langCurrentLabel");
-      if (label) label.textContent = lang === "hi" ? "🌐 हिंदी" : "🌐 English";
-    }
-    // Close dropdown on outside click
-    document.addEventListener("click", (e) => {
-      const dd = document.getElementById("langDropdown");
-      if (dd && !dd.contains(e.target)) dd.classList.remove("open");
-    });
-
-  
     // Disease encyclopedia filter
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".crop-filter-btn").forEach(btn => {
