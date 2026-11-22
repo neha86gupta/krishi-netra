@@ -2790,14 +2790,26 @@
     };
 
     document.addEventListener("DOMContentLoaded", () => {
-      initSingleFileRouter();
-      initMobileNavigation();
-      initHeroHeatmapToggle();
-      initInteractiveSimulator();
-      initArchitectureInspector();
-      initAppLaunchers();
-      initContactForm();
-      initGlobalLanguageToggle();
+      // Router MUST run first and is guarded so nothing else can break it
+      try { initSingleFileRouter(); } catch(e) { console.error("Router init failed:", e); }
+      try { initMobileNavigation(); } catch(e) {}
+      try { initHeroHeatmapToggle(); } catch(e) {}
+      try { initInteractiveSimulator(); } catch(e) {}
+      try { initArchitectureInspector(); } catch(e) {}
+      try { initAppLaunchers(); } catch(e) {}
+      try { initContactForm(); } catch(e) {}
+      try { initGlobalLanguageToggle(); } catch(e) {}
+    });
+
+    // Bulletproof fallback: also attach routing via event delegation on document
+    // so clicks work even if DOMContentLoaded already fired or any init failed
+    document.addEventListener("click", function(e) {
+      var el = e.target.closest("[data-route]");
+      if (!el) return;
+      e.preventDefault();
+      var route = el.getAttribute("data-route");
+      var anchor = el.getAttribute("data-anchor") || null;
+      if (typeof switchRoute === "function") switchRoute(route, anchor);
     });
 
     /* ==========================================================================
@@ -2858,6 +2870,7 @@
     }
 
     function initSingleFileRouter() {
+      // Individual listener attachment (kept for compatibility)
       document.querySelectorAll("[data-route]").forEach((trigger) => {
         trigger.addEventListener("click", (e) => {
           e.preventDefault();
