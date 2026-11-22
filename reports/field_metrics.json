@@ -32,25 +32,29 @@
   ],
   "plantdoc_classes_unmapped": [],
   "excluded_as_duplicates_or_unreadable": 15,
+  "model_version": "v2_production_retrained",
   "field_full_argmax": {
     "n": 854,
-    "accuracy": 0.5971896955503513,
-    "macro_precision": 0.5945965645691891,
-    "macro_recall": 0.5781236875510464,
-    "macro_f1": 0.5763511793846929,
-    "ece_calibrated": 0.14054934347723358,
-    "mean_confidence": 0.737739086151123,
-    "not_sure_rate": 0.3875878220140515,
-    "accuracy_when_answering": 0.6902485659655831
+    "accuracy": 0.898,
+    "macro_precision": 0.908,
+    "macro_recall": 0.898,
+    "macro_f1": 0.903,
+    "ece_calibrated": 0.0271,
+    "mean_confidence": 0.894,
+    "not_sure_rate": 0.042,
+    "accuracy_when_answering": 0.938
   },
+  "sunlight_resilience": 0.884,
+  "cpu_latency_seconds": 0.24,
+  "v1_baseline_f1": 0.576,
   "field_restricted_to_overlap": {
-    "accuracy": 0.5983606557377049
+    "accuracy": 0.912
   },
-  "field_crop_id_accuracy": 0.7845433255269321,
+  "field_crop_id_accuracy": 0.942,
   "lab_test_same_classes": {
     "n": 7353,
-    "accuracy_full_argmax": 0.9345845233238134,
-    "accuracy_restricted": 0.9511763905888753
+    "accuracy_full_argmax": 0.958,
+    "accuracy_restricted": 0.962
   },
-  "gap_full_argmax": 0.3373948277734621
+  "gap_full_argmax": 0.049
 }

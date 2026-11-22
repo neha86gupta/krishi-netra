@@ -23,8 +23,14 @@ STATE = "diag_state"
 def render() -> None:
     hero(t("app_name"), t("tagline"))
     st.markdown(
-        f'<div class="steps"><div class="step"><b>1</b>{esc(t("s1"))}</div><div class="step"><b>2</b>{esc(t("s2"))}</div>'
-        f'<div class="step"><b>3</b>{esc(t("s3"))}</div></div>',
+        f'<div class="steps-ribbon">'
+        f'<div class="step-ribbon-title">📋 {esc(t("guide_workflow"))}:</div>'
+        f'<div class="step-item"><span class="step-num">1</span><span>{esc(t("step_1_guide"))}</span></div>'
+        f'<span class="step-arrow">➔</span>'
+        f'<div class="step-item"><span class="step-num">2</span><span>{esc(t("step_2_guide"))}</span></div>'
+        f'<span class="step-arrow">➔</span>'
+        f'<div class="step-item"><span class="step-num">3</span><span>{esc(t("step_3_guide"))}</span></div>'
+        f'</div>',
         unsafe_allow_html=True,
     )
     predictor, err = get_predictor()
@@ -169,27 +175,85 @@ def _results(state: dict) -> None:
 
 
 def _result_card(diag: Diagnosis) -> None:
-    category = ""
-    if not diag.is_uncertain:
-        category = badge("healthy", t("healthy")) if diag.healthy else badge("diseased", t("attention"))
+    info = get_info(kb(), diag.cls, lang())
     status_badge = badge(diag.status, t(f"st_{diag.status}"))
+    
+    # 1. Top-Level Health Verdict Banner
     if diag.is_uncertain:
-        head, sub = (
-            esc(t("not_sure_head")),
-            f'{esc(t("best_guess"))}: {esc(pretty(diag.crop))} · {esc(pretty(diag.condition))}',
+        v_box = (
+            f'<div class="verdict-box uncertain">'
+            f'<span class="verdict-icon">❓</span>'
+            f'<div>'
+            f'<div class="verdict-title uncertain">{esc(t("verdict_unsure_title"))}</div>'
+            f'<div class="verdict-desc uncertain">{esc(t("verdict_unsure_desc"))}</div>'
+            f'</div></div>'
+        )
+    elif diag.healthy:
+        v_box = (
+            f'<div class="verdict-box healthy">'
+            f'<span class="verdict-icon">🌿</span>'
+            f'<div>'
+            f'<div class="verdict-title healthy">{esc(t("verdict_healthy_title"))}</div>'
+            f'<div class="verdict-desc healthy">{esc(t("verdict_healthy_desc"))}</div>'
+            f'</div></div>'
         )
     else:
-        head, sub = esc(pretty(diag.condition)), f'🌱 {esc(t("crop"))}: {esc(pretty(diag.crop))}'
+        cond_name = pretty(diag.condition)
+        crop_name = pretty(diag.crop)
+        v_box = (
+            f'<div class="verdict-box diseased">'
+            f'<span class="verdict-icon">⚠️</span>'
+            f'<div>'
+            f'<div class="verdict-title diseased">{esc(t("verdict_diseased_title"))}</div>'
+            f'<div class="verdict-desc diseased">{esc(t("verdict_diseased_desc", condition=cond_name, crop=crop_name))}</div>'
+            f'</div></div>'
+        )
+    st.markdown(v_box, unsafe_allow_html=True)
+
+    # 2. Plain-Language Layman Explanation
+    if diag.healthy:
+        meaning_text = (
+            "पौधे की पत्ती का रंग और ऊतक पूरी तरह स्वस्थ है। इस पर फफूंद, झुलसा या किसी जीवाणु जनित रोग के कोई लक्षण नहीं हैं।"
+            if lang() == "hi"
+            else "The leaf exhibits healthy cellular structure and uniform chlorophyll pigmentation with no evidence of fungal blight, viral mottling, or bacterial lesions."
+        )
+        action_items = [t("safe_action_healthy_1"), t("safe_action_healthy_2"), t("safe_action_healthy_3")]
+    elif diag.is_uncertain:
+        meaning_text = (
+            "AI मॉडल पूरे विश्वास के साथ स्थिति तय नहीं कर सका (संभावित कारण: कम रोशनी, पृष्ठभूमि में हाथ या मिट्टी, या धुंधला फोकस)।"
+            if lang() == "hi"
+            else "The AI model could not reach a confident diagnosis (possible causes: uneven lighting, cluttered background, or soft camera focus)."
+        )
+        action_items = [t("safe_action_unsure_1"), t("safe_action_unsure_2"), t("safe_action_unsure_3")]
+    else:
+        meaning_text = info.description or (
+            f"{pretty(diag.crop)} में {pretty(diag.condition)} के लक्षण पाए गए हैं। यह पत्ती के प्रकाश संश्लेषण और फसल के स्वास्थ्य को प्रभावित कर सकता है।"
+            if lang() == "hi"
+            else f"Identified symptoms of {pretty(diag.condition)} on {pretty(diag.crop)}. This condition can impede photosynthesis and foliage health."
+        )
+        action_items = [t("safe_action_diseased_1"), t("safe_action_diseased_2"), t("safe_action_diseased_3"), t("safe_action_diseased_4")]
+
+    action_html = "".join(f'<li style="margin-bottom:0.25rem;">{esc(act)}</li>' for act in action_items)
     interp = t("interp_" + {"uncertain": "low"}.get(diag.status, diag.status))
     rows = "".join(
         f'<div class="row"><span>{esc(pretty(r["crop"]))} · {esc(pretty(r["condition"]))}</span><b>{r["prob"]:.0%}</b></div>{bar(r["prob"])}'
         for r in diag.topk[:3]
     )
+
     card(
-        f'{category} {status_badge}<div class="big">{head}</div><div class="sub">{sub}</div>'
-        f'<div class="row"><b>{esc(t("confidence"))}</b><b>{diag.confidence:.0%}</b></div>{bar(diag.confidence)}'
-        f'<div class="small">{esc(interp)}</div><div class="small" style="margin-top:.3rem">{esc(t("interp_note"))}</div>'
-        f'<div class="small" style="margin-top:.8rem"><b>{esc(t("top3"))}</b></div>{rows}',
+        f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem; flex-wrap:wrap; gap:6px;">'
+        f'  <span style="font-weight:700; color:var(--forest); font-size:1.15rem;">🌱 {esc(pretty(diag.crop))} · {esc(pretty(diag.condition))}</span>'
+        f'  {status_badge}'
+        f'</div>'
+        f'<div class="row"><b>{esc(t("confidence_level"))}</b><b>{diag.confidence:.0%}</b></div>{bar(diag.confidence)}'
+        f'<div class="small" style="margin-bottom:0.75rem;">{esc(interp)}</div>'
+        f'<hr style="border:0; border-top:1px solid var(--line); margin:0.75rem 0;" />'
+        f'<div style="font-weight:700; color:var(--forest); font-size:0.95rem; margin-bottom:0.3rem;">📖 {esc(t("what_it_means"))}</div>'
+        f'<div style="font-size:0.88rem; color:var(--ink); line-height:1.5; margin-bottom:0.75rem;">{esc(meaning_text)}</div>'
+        f'<div style="font-weight:700; color:var(--forest); font-size:0.95rem; margin-bottom:0.3rem;">💡 {esc(t("immediate_steps"))}</div>'
+        f'<ul style="font-size:0.86rem; color:var(--ink); line-height:1.45; margin:0 0 0.75rem 1.15rem; padding:0;">{action_html}</ul>'
+        f'<hr style="border:0; border-top:1px solid var(--line); margin:0.75rem 0;" />'
+        f'<div class="small" style="margin-bottom:0.4rem;"><b>{esc(t("top3"))}</b></div>{rows}',
         "accent",
     )
 
@@ -202,6 +266,36 @@ def _cam_tab(diag: Diagnosis, img) -> None:
     cols = st.columns(len(items))
     for col, (key, im) in zip(cols, items):
         col.image(im, caption=t(key), use_container_width=True)
-    st.caption(t("cam_explain"))
+    
+    st.markdown(
+        f"""
+        <div class="card" style="border-left: 5px solid var(--emerald); background: #ffffff; padding: 1.15rem 1.35rem; margin-top: 1rem; border-radius: 14px; box-shadow: 0 2px 8px rgba(20,83,45,0.06);">
+          <div style="font-weight: 700; font-size: 1.05rem; color: var(--forest); margin-bottom: 0.45rem;">
+            {esc(t("cam_guide_title"))}
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.55; color: var(--ink); margin-bottom: 0.75rem;">
+            {esc(t("cam_guide_intro"))}
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; font-size: 0.88rem; line-height: 1.5; margin-bottom: 0.85rem;">
+            <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 10px; padding: 0.75rem 0.9rem;">
+              <b style="color: #b91c1c;">{esc(t("cam_red_title"))}</b>
+              <p style="margin: 0.3rem 0 0 0; color: #7f1d1d; font-size: 0.85rem;">{esc(t("cam_red_desc"))}</p>
+            </div>
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 0.75rem 0.9rem;">
+              <b style="color: #15803d;">{esc(t("cam_blue_title"))}</b>
+              <p style="margin: 0.3rem 0 0 0; color: #14532d; font-size: 0.85rem;">{esc(t("cam_blue_desc"))}</p>
+            </div>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 0.75rem 0.95rem; font-size: 0.88rem; line-height: 1.55;">
+            <b style="color: var(--forest);">{esc(t("cam_verify_title"))}</b>
+            <ul style="margin: 0.35rem 0 0 1.2rem; padding: 0;">
+              <li style="margin-bottom: 0.35rem; color: #166534;">{esc(t("cam_verify_good"))}</li>
+              <li style="color: #991b1b;">{esc(t("cam_verify_bad"))}</li>
+            </ul>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
     if len(items) < 3:
         st.caption(t("cam_no_heatmap"))
