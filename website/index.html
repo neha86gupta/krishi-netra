@@ -2786,7 +2786,7 @@
        ========================================================================== */
     const KRISHI_NETRA_CONFIG = {
       projectName: "Krishi Netra",
-      appUrl: "http://localhost:8501" // Streamlit app started by run_demo.py. Override per visit with ?app=https://...
+      appUrl: "https://krishi-netra.streamlit.app" // Streamlit app started by run_demo.py. Override per visit with ?app=https://...
     };
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -3948,7 +3948,7 @@ const navMap = {
 
       // 14. Synchronize all Launch App links with language parameter (?lang=hi / ?lang=en)
       document.querySelectorAll("a[data-launch-app], .hero-actions a.btn-primary, #saveAndLaunchAppBtn").forEach(btn => {
-        let base = btn.getAttribute("href") || "http://localhost:8501";
+        let base = btn.getAttribute("href") || "https://krishi-netra.streamlit.app";
         const urlParts = base.split("?");
         btn.setAttribute("href", `${urlParts[0]}?lang=${lang}`);
       });
