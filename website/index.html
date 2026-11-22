@@ -849,8 +849,7 @@
     .crop-name { font-weight: 700; font-size: 0.84rem; color: var(--ink-primary); }
     .crop-count { font-size: 0.72rem; color: var(--green-700); font-weight: 600; margin-top: 2px; }
 
-    /* ---- COMPARISON TABLE ---- */
-    .table-responsive { width: 100%; overflow-x: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); margin: 18px 0; background: #fff; border: 1px solid var(--border-light); }
+    
     .data-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
     .data-table th { background: var(--green-900); color: #fff; padding: 13px 16px; font-weight: 600; font-size: 0.86rem; letter-spacing: 0.02em; }
     .data-table td { padding: 11px 16px; border-bottom: 1px solid var(--border-light); color: var(--ink-secondary); vertical-align: middle; }
@@ -858,11 +857,7 @@
     .data-table tr:hover td { background: var(--green-50); }
     .data-table td.hl { font-weight: 700; color: var(--green-800); background: rgba(46,125,50,0.05); }
 
-    /* ---- IMPACT METRICS ---- */
-    .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin: 24px 0; }
-    .metric-box { background: linear-gradient(135deg, var(--surface-card) 0%, var(--green-50) 100%); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 20px; text-align: center; box-shadow: var(--shadow-sm); }
-    .metric-val { font-size: 2rem; font-weight: 800; color: var(--green-700); font-family: var(--font-sans); line-height: 1.1; margin-bottom: 5px; }
-    .metric-lbl { font-size: 0.86rem; font-weight: 600; color: var(--ink-secondary); }
+    
 
     /* ---- MATH CARDS ---- */
     .math-card { background: #0f1f12; color: #e2f1e4; border: 1px solid rgba(74,222,128,0.2); border-radius: var(--radius-md); padding: 16px 20px; margin: 12px 0; font-family: var(--font-mono); font-size: 0.88rem; }
@@ -1178,6 +1173,25 @@
         </div>
       </section>
 
+      <section class="section-sm">
+        <div class="container">
+          <div class="cta-banner">
+            <div>
+              <div class="eyebrow eyebrow-dark">Ready for Testing &amp; Demonstration</div>
+              <h2>Test Krishi Netra on a leaf photograph</h2>
+              <p>
+                Open the Krishi Netra detection application to upload a leaf image, inspect top-3 class probabilities, view Grad-CAM overlays, and read static reference guidance in English or Hindi.
+              </p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:12px;">
+              <a href="#launch-app" data-launch-app class="btn btn-light">Launch Krishi Netra App ↗</a>
+              <a href="#datasets" data-route="datasets" class="btn btn-outline-light">Datasets &amp; Credits</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <!-- Lab vs Field Highlights -->
       <section class="section">
         <div class="container">
@@ -1301,86 +1315,7 @@
       <!-- CTA Banner -->
       
       <!-- Supported Crops Taxonomy Grid -->
-      <section class="section section-alt">
-        <div class="container">
-          <div class="eyebrow">Comprehensive Agricultural Coverage</div>
-          <h2 style="margin-bottom:6px;">Supported Crops &amp; 38 Disease Classes</h2>
-          <p style="color:var(--ink-secondary);max-width:720px;margin-bottom:18px;">
-            Krishi Netra V2 identifies foliar fungal, bacterial, and viral pathogens across 14 major crop types grown in Indian farmlands — from tomato and potato to grape and orange.
-          </p>
-          <div class="crop-grid">
-            <div class="crop-chip"><span class="crop-icon">&#x1F345;</span><span class="crop-name">Tomato</span><span class="crop-count">10 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F954;</span><span class="crop-name">Potato</span><span class="crop-count">3 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F33D;</span><span class="crop-name">Corn/Maize</span><span class="crop-count">4 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F34E;</span><span class="crop-name">Apple</span><span class="crop-count">4 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F347;</span><span class="crop-name">Grape</span><span class="crop-count">4 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1FAD1;</span><span class="crop-name">Bell Pepper</span><span class="crop-count">2 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F353;</span><span class="crop-name">Strawberry</span><span class="crop-count">2 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F351;</span><span class="crop-name">Peach</span><span class="crop-count">2 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F352;</span><span class="crop-name">Cherry</span><span class="crop-count">2 Diseases</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F34A;</span><span class="crop-name">Orange</span><span class="crop-count">1 Disease</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F383;</span><span class="crop-name">Squash</span><span class="crop-count">1 Disease</span></div>
-            <div class="crop-chip"><span class="crop-icon">&#x1F331;</span><span class="crop-name">Soybean</span><span class="crop-count">Healthy</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Technology Comparison Table + Impact Metrics -->
-      <section class="section">
-        <div class="container">
-          <div class="eyebrow">Why Krishi Netra V2</div>
-          <h2 style="margin-bottom:6px;">Edge AI vs. Traditional Crop Diagnosis</h2>
-          <p style="color:var(--ink-secondary);max-width:720px;margin-bottom:18px;">
-            A head-to-head comparison showing why a local lightweight model beats both manual scouting and generic cloud APIs for Indian field conditions.
-          </p>
-          <div class="table-responsive">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Metric</th>
-                  <th>Manual Scouting</th>
-                  <th>Generic Cloud API</th>
-                  <th>Krishi Netra V2</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td><strong>Diagnosis Time</strong></td><td>2–5 Days</td><td>3–8 Seconds</td><td class="hl">&#x26A1; &lt;0.3 Seconds (CPU Edge)</td></tr>
-                <tr><td><strong>Outdoor Sunlight Accuracy</strong></td><td>Subjective Visual</td><td>Fails on Field Backgrounds</td><td class="hl">&#x2705; 88.4% Sunlight Robustness</td></tr>
-                <tr><td><strong>Visual Explanation</strong></td><td>Magnifying Glass</td><td>None (Black Box)</td><td class="hl">&#x1F525; Real-Time Grad-CAM Heatmap</td></tr>
-                <tr><td><strong>Safety Abstention</strong></td><td>Human Hesitation</td><td>Overconfident Wrong Guesses</td><td class="hl">&#x1F6E1;&#xFE0F; Calibrated "Not Sure" Gate</td></tr>
-                <tr><td><strong>Severity % Estimation</strong></td><td>Rough Guess</td><td>Not Available</td><td class="hl">&#x1F4CA; Automated Contour Analysis</td></tr>
-                <tr><td><strong>Bilingual Hindi Advisory</strong></td><td>Paper Pamphlets</td><td>English Only</td><td class="hl">&#x1F1EE;&#x1F1F3; Full EN + Hindi ICAR KVK</td></tr>
-                <tr><td><strong>Cost &amp; Privacy</strong></td><td>High Travel Fees</td><td>Per-Call API Costs</td><td class="hl">&#x1F49A; 100% Free &amp; Offline-Capable</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Impact Numbers -->
-          <div class="metric-grid" style="margin-top:32px;">
-            <div class="metric-box"><div class="metric-val">140M+</div><div class="metric-lbl">Indian Smallholder Farm Families</div></div>
-            <div class="metric-box"><div class="metric-val">20–40%</div><div class="metric-lbl">Annual Crop Yield Loss Avoidable Early</div></div>
-            <div class="metric-box"><div class="metric-val">731+</div><div class="metric-lbl">ICAR-KVK Kendras Linked</div></div>
-            <div class="metric-box"><div class="metric-val">90.3%</div><div class="metric-lbl">Validation F1 Score (V2 Field-Retrained)</div></div>
-          </div>
-        </div>
-      </section>
-<section class="section-sm">
-        <div class="container">
-          <div class="cta-banner">
-            <div>
-              <div class="eyebrow eyebrow-dark">Ready for Testing &amp; Demonstration</div>
-              <h2>Test Krishi Netra on a leaf photograph</h2>
-              <p>
-                Open the Krishi Netra detection application to upload a leaf image, inspect top-3 class probabilities, view Grad-CAM overlays, and read static reference guidance in English or Hindi.
-              </p>
-            </div>
-            <div style="display:flex;flex-wrap:wrap;gap:12px;">
-              <a href="#launch-app" data-launch-app class="btn btn-light">Launch Krishi Netra App ↗</a>
-              <a href="#datasets" data-route="datasets" class="btn btn-outline-light">Datasets &amp; Credits</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
 
     <!-- ======================================================================
@@ -1496,7 +1431,7 @@
             <article class="card">
               <span class="badge badge-green">Pillar 4: Extension Centricity</span>
               <h3 style="margin:8px 0 6px;">ICAR-KVK Linked Bilingual Advice</h3>
-              <p style="font-size:0.9rem;color:var(--ink-secondary);margin:0;">AI predictions are translated directly into actionable Hindi and English agronomic guidance certified by ICAR standards, with linkages to 731+ regional Krishi Vigyan Kendras.</p>
+              <p style="font-size:0.9rem;color:var(--ink-secondary);margin:0;">AI predictions are translated directly into actionable Hindi and English agronomic guidance certified by ICAR standards, with direct referral to local ICAR Krishi Vigyan Kendras (KVK).</p>
             </article>
           </div>
         </div>
@@ -1991,158 +1926,89 @@
       <section class="page-hero">
         <div class="container">
           <div class="breadcrumb"><a href="#home" data-route="home">Home</a> <span>/</span> <span>Model Performance</span></div>
-          <div class="eyebrow eyebrow-dark">Evaluation Dashboard</div>
-          <h1>Results, lab versus field</h1>
+          <div class="eyebrow eyebrow-dark">Transparent Verification</div>
+          <h1>Model Performance &amp; Benchmarks</h1>
           <p>
-            Rigorous empirical evaluation demonstrating 95% held-out lab accuracy and 90.3% real-world field validation F1 under natural farm conditions.
+            Honest, verified accuracy metrics comparing controlled laboratory baseline testing with real-world outdoor farm conditions.
           </p>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
+          <!-- 3 Clear Metric Cards -->
           <div class="grid-3">
-            <article class="card">
-              <span class="badge badge-green">Held-Out Lab Benchmark</span>
-              <div class="stat-value">95%</div>
-              <h3>PlantVillage Lab Photos</h3>
-              <p>Accuracy on held-out lab photos (PlantVillage) across 38 crop and disease classes.</p>
+            <article class="card" style="border-top: 4px solid var(--green-600); text-align: center; padding: 28px 20px;">
+              <span class="badge badge-green" style="margin-bottom:12px;">Laboratory Benchmark</span>
+              <div class="stat-value" style="font-size: 2.8rem; font-weight: 700; color: var(--green-800); margin: 8px 0;">95.8%</div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Lab Photo Accuracy</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-secondary); margin: 0;">Tested on held-out PlantVillage leaves across all 38 crop disease classes in controlled lighting.</p>
             </article>
 
-            <article class="card">
-              <span class="badge badge-green">Outdoor Robustness</span>
-              <div class="stat-value" style="color:var(--green-700);">88.4%</div>
-              <h3 data-i18n="perf_card2_title">Natural Lighting Invariance</h3>
-              <p data-i18n="perf_card2_desc">Maintains high resilience across outdoor farm environments, direct midday sunlight, and complex leaf orientations.</p>
+            <article class="card" style="border-top: 4px solid #047857; text-align: center; padding: 28px 20px;">
+              <span class="badge badge-green" style="margin-bottom:12px;">Outdoor Lighting</span>
+              <div class="stat-value" style="font-size: 2.8rem; font-weight: 700; color: #047857; margin: 8px 0;">88.4%</div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Sunlight Invariance</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-secondary); margin: 0;">Maintains reliable focus under harsh natural sunlight, shadows, and varying leaf angles in open fields.</p>
             </article>
 
-            <article class="card">
-              <span class="badge badge-green">Completed · Version 2 Breakthrough</span>
-              <div class="stat-value" style="color:var(--green-700);">90.3%</div>
-              <h3>Version 2 Validation F1 Score</h3>
-              <p>Trained with real field photos, synthetic background substitution, and hard-negative mining (Fine-tune Epoch 3).</p>
+            <article class="card" style="border-top: 4px solid #059669; text-align: center; padding: 28px 20px;">
+              <span class="badge badge-green" style="margin-bottom:12px;">Field Retrained Engine</span>
+              <div class="stat-value" style="font-size: 2.8rem; font-weight: 700; color: #059669; margin: 8px 0;">90.3%</div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Version 2 Validation F1</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-secondary); margin: 0;">Empirically validated on real farm photos (PlantDoc) with synthetic background mixing and calibration.</p>
             </article>
           </div>
 
-          <div class="grid-2" style="margin-top:36px;align-items:stretch;">
-            <!-- Pure SVG Zero-Dependency Bar Chart (Works 100% Offline) -->
-            <div class="card">
-              <span class="badge badge-green">Visual Benchmark Chart</span>
-              <h3 style="margin-bottom:16px;">Lab vs. Field Accuracy Comparison</h3>
-              <svg viewBox="0 0 460 270" width="100%" height="260" role="img" aria-label="Bar chart showing 95% accuracy on PlantVillage lab photos, 88.4% outdoor sunlight resilience, and 90.3% validation F1 score for Version 2">
-                <!-- Grid lines -->
-                <line x1="60" y1="30" x2="430" y2="30" stroke="rgba(27,94,32,0.12)" stroke-dasharray="4 4"/>
-                <line x1="60" y1="75" x2="430" y2="75" stroke="rgba(27,94,32,0.12)" stroke-dasharray="4 4"/>
-                <line x1="60" y1="120" x2="430" y2="120" stroke="rgba(27,94,32,0.12)" stroke-dasharray="4 4"/>
-                <line x1="60" y1="165" x2="430" y2="165" stroke="rgba(27,94,32,0.12)" stroke-dasharray="4 4"/>
-                <line x1="60" y1="210" x2="430" y2="210" stroke="rgba(27,94,32,0.35)" stroke-width="1.5"/>
-
-                <!-- Y-Axis Labels -->
-                <text x="48" y="34" text-anchor="end" font-size="11" fill="#5e7862" font-family="JetBrains Mono, monospace">100%</text>
-                <text x="48" y="79" text-anchor="end" font-size="11" fill="#5e7862" font-family="JetBrains Mono, monospace">75%</text>
-                <text x="48" y="124" text-anchor="end" font-size="11" fill="#5e7862" font-family="JetBrains Mono, monospace">50%</text>
-                <text x="48" y="169" text-anchor="end" font-size="11" fill="#5e7862" font-family="JetBrains Mono, monospace">25%</text>
-                <text x="48" y="214" text-anchor="end" font-size="11" fill="#5e7862" font-family="JetBrains Mono, monospace">0%</text>
-
-                <!-- Bar 1: 95% (height = 0.95 * 180 = 171, y = 210 - 171 = 39) -->
-                <rect x="92" y="39" width="76" height="171" rx="8" fill="#1b5e20"/>
-                <text x="130" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#1b5e20" font-family="Space Grotesk, sans-serif">95%</text>
-                <text x="130" y="230" text-anchor="middle" font-size="11" font-weight="600" fill="#122b16">PlantVillage</text>
-                <text x="130" y="245" text-anchor="middle" font-size="10" fill="#5e7862">(Held-Out Lab)</text>
-
-                <!-- Bar 2: Outdoor Sunlight Invariance (88.4%, height = 0.884 * 180 = 159, y = 210 - 159 = 51) -->
-                <rect x="212" y="51" width="76" height="159" rx="8" fill="#047857"/>
-                <text x="250" y="41" text-anchor="middle" font-size="13" font-weight="700" fill="#047857" font-family="Space Grotesk, sans-serif">88.4%</text>
-                <text x="250" y="230" text-anchor="middle" font-size="11" font-weight="600" fill="#122b16">Outdoor Sunlight</text>
-                <text x="250" y="245" text-anchor="middle" font-size="10" fill="#047857;font-weight:600;">(Field Generalization)</text>
-
-                <!-- Bar 3: Version 2 (90.3% F1 score) -->
-                <rect x="332" y="48" width="76" height="162" rx="8" fill="#059669"/>
-                <text x="370" y="38" text-anchor="middle" font-size="13" font-weight="700" fill="#047857" font-family="Space Grotesk, sans-serif">90.3%</text>
-                <text x="370" y="230" text-anchor="middle" font-size="11" font-weight="600" fill="#122b16">Version 2</text>
-                <text x="370" y="245" text-anchor="middle" font-size="10" fill="#059669" font-weight="700">(Retrained &amp; Deployed)</text>
-              </svg>
-            </div>
-
-            <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;">
-              <div>
-                <span class="badge badge-green">Field Training Breakthrough</span>
-                <h3 style="margin-bottom:16px;" data-i18n="shift_title">Engineered for Real-World Field Excellence (90.3% F1)</h3>
-                <p style="margin-bottom:20px;" data-i18n="shift_desc">
-                  Real farm environments have complex soil, natural sunlight, shadows, and overlapping foliage. Krishi Netra Version 2 was fine-tuned on real field imagery (PlantDoc) combined with synthetic background replacement and hard-negative mining, achieving high 90.3% validation F1 accuracy across diverse agricultural conditions.
-                </p>
-
-                <div class="progress-compare">
-                  <div>
-                    <div class="progress-item-head">
-                      <span>PlantVillage (Held-Out Lab)</span>
-                      <span style="font-family:var(--font-mono);color:var(--green-700);">95%</span>
-                    </div>
-                    <div class="progress-track">
-                      <div class="progress-fill" style="width:95%;background:var(--green-700);"></div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div class="progress-item-head">
-                      <span data-i18n="prog2_label">Natural Sunlight &amp; Background Robustness</span>
-                      <span style="font-family:var(--font-mono);color:var(--green-700);font-weight:700;">88.4%</span>
-                    </div>
-                    <div class="progress-track">
-                      <div class="progress-fill" style="width:88.4%;background:var(--green-600);"></div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div class="progress-item-head">
-                      <span>Version 2 (Field + Augmentation)</span>
-                      <span style="font-family:var(--font-mono);color:var(--green-700);font-weight:700;">90.3% F1 Score</span>
-                    </div>
-                    <div class="progress-track">
-                      <div class="progress-fill" style="width:90.3%;background:linear-gradient(90deg, #10b981, #047857);"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div style="margin-top:22px;padding:14px;border-radius:10px;background:var(--green-50);border:1px solid var(--border-light);font-size:0.88rem;color:var(--ink-secondary);">
-                <strong>How Krishi Netra mitigates this today:</strong> Grad-CAM heatmaps show whether the model looked at the leaf or background, and calibrated confidence triggers <strong>"Not Sure"</strong> instead of masking low field certainty.
+          <!-- Clean Comparison Table -->
+          <div style="margin-top: 36px;">
+            <div class="card" style="padding: 24px;">
+              <h3 style="margin-bottom: 14px; font-size: 1.25rem;">Benchmark Summary at a Glance</h3>
+              <div class="table-wrap">
+                <table class="data-table" style="width: 100%;">
+                  <thead>
+                    <tr>
+                      <th>Metric</th>
+                      <th>Controlled Lab</th>
+                      <th>Real Farm Field</th>
+                      <th>How Krishi Netra Solves It</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Accuracy</strong></td>
+                      <td><strong>95.8%</strong> (PlantVillage)</td>
+                      <td><strong>90.3% F1</strong> (Field Retrained)</td>
+                      <td>Retrained on field images + background augmentation</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sunlight / Glare</strong></td>
+                      <td>Uniform studio light</td>
+                      <td><strong>88.4%</strong> resilience</td>
+                      <td>Photometric normalization &amp; contrast balancing</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Ambiguous Photos</strong></td>
+                      <td>Always returns class</td>
+                      <td>Honest <strong>"Not Sure"</strong></td>
+                      <td>Temperature-scaled uncertainty thresholding</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Explainability</strong></td>
+                      <td>Black-box label only</td>
+                      <td><strong>Grad-CAM Heatmap</strong></td>
+                      <td>Visual heatmap proves model focused on lesion, not soil</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Inference Time</strong></td>
+                      <td>0.12s (Server)</td>
+                      <td><strong>&lt;0.3s (CPU)</strong></td>
+                      <td>MobileNetV3-Large lightweight depthwise architecture</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="container">
-          <div class="table-wrap">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Model Version</th>
-                  <th>Training Data &amp; Strategy</th>
-                  <th>Lab Accuracy (PlantVillage)</th>
-                  <th>Field Accuracy (PlantDoc)</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Controlled Lab Baseline</strong></td>
-                  <td>MobileNetV3 trained on PlantVillage studio leaves (38 classes)</td>
-                  <td><strong>95.8%</strong> (held-out lab photos)</td>
-                  <td>Controlled Baseline</td>
-                  <td><span class="badge badge-green" style="margin:0;">Initial Baseline</span></td>
-                </tr>
-                <tr style="background:var(--green-50);">
-                  <td><strong>Version 2 (Active Engine)</strong></td>
-                  <td>Fine-tuned MobileNetV3 on PlantVillage + PlantDoc field images with background mixing &amp; temperature scaling</td>
-                  <td><strong>95.8%</strong> (held-out lab)</td>
-                  <td><strong>90.3% F1</strong> (validation field set)</td>
-                  <td><span class="badge badge-green" style="margin:0;">Deployed &amp; Live</span></td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </section>
@@ -2795,7 +2661,7 @@
             <div class="card" style="border-top:4px solid var(--green-600);">
               <span class="badge badge-amber">Physical Lab Testing</span>
               <h3>ICAR KVK Network</h3>
-              <p style="font-size:1.1rem;font-weight:700;color:var(--green-800);margin:8px 0;">731+ District Centres</p>
+              <p style="font-size:1.1rem;font-weight:700;color:var(--green-800);margin:8px 0;">Regional ICAR-KVK Network</p>
               <p style="font-size:0.87rem;color:var(--ink-secondary);margin:0;">Bring difficult unconfirmed specimens to your local district KVK for free microscopic laboratory diagnosis and soil testing.</p>
             </div>
           </div>
@@ -3262,8 +3128,6 @@
           return `${window.location.protocol}//${window.location.hostname}:8501`;
         }
         return defaultUrl;
-      } catch (e) {}
-        return saved || defaultUrl;
       }
 
       const active = getActiveUrl();
@@ -3283,14 +3147,12 @@
 
       document.querySelectorAll("[data-launch-app]").forEach((trigger) => {
         trigger.addEventListener("click", (e) => {
+          e.preventDefault();
           const currentUrl = getActiveUrl();
           if (!currentUrl.includes("example.com")) {
-            trigger.setAttribute("href", currentUrl);
-            trigger.setAttribute("target", "_blank");
-            trigger.setAttribute("rel", "noopener noreferrer");
+            window.open(currentUrl, "_blank", "noopener,noreferrer");
             return;
           }
-          e.preventDefault();
           modal.classList.add("is-open");
           urlInput.focus();
         });
@@ -4094,9 +3956,7 @@ const navMap = {
 
     
     function toggleGlobalLanguage() {
-      if (window.toggleGlobalLanguage) {
-        window.toggleGlobalLanguage();
-      }
+      selectLanguage(window.__currentLang === "hi" ? "en" : "hi");
     }
 
 function initGlobalLanguageToggle() {
