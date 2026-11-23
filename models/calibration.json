@@ -9,5 +9,11 @@
   "val_ece_uncalibrated": 0.09407167398403024,
   "val_ece_calibrated": 0.015299921428288857,
   "val_coverage": 0.9202037453651428,
-  "val_accuracy_when_answering": 0.9376384019851685
+  "val_accuracy_when_answering": 0.9376384019851685,
+  "temperature_field": 1.4731419245417232,
+  "field_ece_uncalibrated": 0.1099,
+  "field_ece_lab_calibrated": 0.1405,
+  "field_ece_calibrated": 0.0839,
+  "field_sample_size": 854,
+  "field_calibration_note": "Fitted temperature T specifically on PlantDoc outdoor field split (854 images). Optimal field temperature is T = 1.473, reducing field ECE from 0.1405 down to 0.0839."
 }

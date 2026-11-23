@@ -1,0 +1,389 @@
+{
+  "total_classes": 38,
+  "field_validated_count": 27,
+  "lab_only_count": 11,
+  "field_validated_percentage": 71.1,
+  "honest_limitation_statement": "Out of 38 total crop disease classes, 27 have undergone full outdoor validation on real-world field photography (PlantDoc, 854 images, 90.3% F1). The remaining 11 classes are currently validated exclusively on held-out laboratory photography (PlantVillage, 95.8% accuracy). These 11 classes are explicitly labelled with a 'Lab-Validated Only' badge in the user interface to ensure scientific transparency and prevent false confidence in outdoor settings.",
+  "classes": [
+    {
+      "class": "Apple___Apple_scab",
+      "crop": "Apple",
+      "condition": "Apple scab",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 1.0,
+      "lab_f1": 0.981,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Apple___Black_rot",
+      "crop": "Apple",
+      "condition": "Black rot",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 1.0,
+      "lab_f1": 0.976,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Apple___Cedar_apple_rust",
+      "crop": "Apple",
+      "condition": "Cedar apple rust",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 1.0,
+      "lab_f1": 0.956,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Apple___healthy",
+      "crop": "Apple",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.938,
+      "lab_f1": 0.965,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Blueberry___healthy",
+      "crop": "Blueberry",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 1.0,
+      "lab_f1": 0.965,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Cherry_(including_sour)___Powdery_mildew",
+      "crop": "Cherry (including sour)",
+      "condition": "Powdery mildew",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.967,
+      "lab_f1": 0.983,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Cherry_(including_sour)___healthy",
+      "crop": "Cherry (including sour)",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.988,
+      "lab_f1": 0.968,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "crop": "Corn (maize)",
+      "condition": "Cercospora leaf spot Gray leaf spot",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.892,
+      "lab_f1": 0.858,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Corn_(maize)___Common_rust_",
+      "crop": "Corn (maize)",
+      "condition": "Common rust ",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.996,
+      "lab_f1": 0.99,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Corn_(maize)___Northern_Leaf_Blight",
+      "crop": "Corn (maize)",
+      "condition": "Northern Leaf Blight",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.888,
+      "lab_f1": 0.9,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Corn_(maize)___healthy",
+      "crop": "Corn (maize)",
+      "condition": "healthy",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.983,
+      "lab_f1": 0.991,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Grape___Black_rot",
+      "crop": "Grape",
+      "condition": "Black rot",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.987,
+      "lab_f1": 0.977,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Grape___Esca_(Black_Measles)",
+      "crop": "Grape",
+      "condition": "Esca (Black Measles)",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.971,
+      "lab_f1": 0.98,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "crop": "Grape",
+      "condition": "Leaf blight (Isariopsis Leaf Spot)",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.981,
+      "lab_f1": 0.991,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Grape___healthy",
+      "crop": "Grape",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.976,
+      "lab_f1": 0.971,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "crop": "Orange",
+      "condition": "Haunglongbing (Citrus greening)",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.997,
+      "lab_f1": 0.999,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Peach___Bacterial_spot",
+      "crop": "Peach",
+      "condition": "Bacterial spot",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.973,
+      "lab_f1": 0.984,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Peach___healthy",
+      "crop": "Peach",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 1.0,
+      "lab_f1": 0.934,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Pepper,_bell___Bacterial_spot",
+      "crop": "Pepper, bell",
+      "condition": "Bacterial spot",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.94,
+      "lab_f1": 0.959,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Pepper,_bell___healthy",
+      "crop": "Pepper, bell",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.997,
+      "lab_f1": 0.931,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Potato___Early_blight",
+      "crop": "Potato",
+      "condition": "Early blight",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.985,
+      "lab_f1": 0.975,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Potato___Late_blight",
+      "crop": "Potato",
+      "condition": "Late blight",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.94,
+      "lab_f1": 0.954,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Potato___healthy",
+      "crop": "Potato",
+      "condition": "healthy",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.967,
+      "lab_f1": 0.63,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Raspberry___healthy",
+      "crop": "Raspberry",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.973,
+      "lab_f1": 0.98,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Soybean___healthy",
+      "crop": "Soybean",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.929,
+      "lab_f1": 0.962,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Squash___Powdery_mildew",
+      "crop": "Squash",
+      "condition": "Powdery mildew",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.995,
+      "lab_f1": 0.996,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Strawberry___Leaf_scorch",
+      "crop": "Strawberry",
+      "condition": "Leaf scorch",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.995,
+      "lab_f1": 0.998,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Strawberry___healthy",
+      "crop": "Strawberry",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 1.0,
+      "lab_f1": 0.968,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Bacterial_spot",
+      "crop": "Tomato",
+      "condition": "Bacterial spot",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.795,
+      "lab_f1": 0.859,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Early_blight",
+      "crop": "Tomato",
+      "condition": "Early blight",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.845,
+      "lab_f1": 0.845,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Late_blight",
+      "crop": "Tomato",
+      "condition": "Late blight",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.9,
+      "lab_f1": 0.885,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Leaf_Mold",
+      "crop": "Tomato",
+      "condition": "Leaf Mold",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.921,
+      "lab_f1": 0.921,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Septoria_leaf_spot",
+      "crop": "Tomato",
+      "condition": "Septoria leaf spot",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.929,
+      "lab_f1": 0.88,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "crop": "Tomato",
+      "condition": "Spider mites Two-spotted spider mite",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.949,
+      "lab_f1": 0.863,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Tomato___Target_Spot",
+      "crop": "Tomato",
+      "condition": "Target Spot",
+      "validation_tier": "Lab-Validated Only",
+      "benchmark_dataset": "PlantVillage Only",
+      "lab_accuracy": 0.882,
+      "lab_f1": 0.853,
+      "field_status": "Limitation: Awaiting Farm Image Collection"
+    },
+    {
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "crop": "Tomato",
+      "condition": "Tomato Yellow Leaf Curl Virus",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.906,
+      "lab_f1": 0.95,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___Tomato_mosaic_virus",
+      "crop": "Tomato",
+      "condition": "Tomato mosaic virus",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.973,
+      "lab_f1": 0.857,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    },
+    {
+      "class": "Tomato___healthy",
+      "crop": "Tomato",
+      "condition": "healthy",
+      "validation_tier": "Field-Tested & Lab-Validated",
+      "benchmark_dataset": "PlantVillage + PlantDoc",
+      "lab_accuracy": 0.946,
+      "lab_f1": 0.958,
+      "field_status": "Validated on Real Outdoor Photos (PlantDoc)"
+    }
+  ]
+}

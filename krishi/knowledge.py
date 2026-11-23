@@ -8,12 +8,48 @@ from dataclasses import dataclass, field
 from krishi.config import CLASS_INFO_PATH, KB_PATH, load_json, log, split_class
 
 
+FIELD_VALIDATED_CLASSES = {
+    "Apple___Apple_scab",
+    "Apple___Cedar_apple_rust",
+    "Apple___healthy",
+    "Blueberry___healthy",
+    "Cherry_(including_sour)___healthy",
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "Corn_(maize)___Common_rust_",
+    "Corn_(maize)___Northern_Leaf_Blight",
+    "Grape___Black_rot",
+    "Grape___healthy",
+    "Peach___healthy",
+    "Pepper,_bell___Bacterial_spot",
+    "Pepper,_bell___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Raspberry___healthy",
+    "Soybean___healthy",
+    "Squash___Powdery_mildew",
+    "Strawberry___healthy",
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato___Tomato_mosaic_virus",
+    "Tomato___healthy",
+    "Rice___Bacterial_leaf_blight",
+    "Rice___Brown_spot",
+    "Rice___Leaf_blast",
+    "Rice___healthy",
+}
+
+
 @dataclass
 class DiseaseInfo:
     cls: str
     crop: str
     condition: str
     in_kb: bool = False
+    validation_level: str = "field_tested"  # "field_tested" | "lab_only"
     causal_agent: str = ""
     cause_group: str = ""
     description: str = ""
@@ -54,6 +90,7 @@ def get_info(kb: dict, cls: str, lang: str = "en") -> DiseaseInfo:
     group = groups.get(key or "unknown", groups.get("unknown", {}))
     return DiseaseInfo(
         cls=cls, crop=crop, condition=cond, in_kb=entry is not None,
+        validation_level="field_tested" if cls in FIELD_VALIDATED_CLASSES else "lab_only",
         causal_agent=(entry or {}).get("causal_agent", "") or "",
         cause_group=(key or "") if entry else "",
         description=_loc(entry, "description", lang),

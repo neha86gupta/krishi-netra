@@ -1,0 +1,39 @@
+class,crop,condition,validation_tier,benchmark_dataset,lab_accuracy,lab_f1,field_status
+Apple___Apple_scab,Apple,Apple scab,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,1.0,0.981,Validated on Real Outdoor Photos (PlantDoc)
+Apple___Black_rot,Apple,Black rot,Lab-Validated Only,PlantVillage Only,1.0,0.976,Limitation: Awaiting Farm Image Collection
+Apple___Cedar_apple_rust,Apple,Cedar apple rust,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,1.0,0.956,Validated on Real Outdoor Photos (PlantDoc)
+Apple___healthy,Apple,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.938,0.965,Validated on Real Outdoor Photos (PlantDoc)
+Blueberry___healthy,Blueberry,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,1.0,0.965,Validated on Real Outdoor Photos (PlantDoc)
+Cherry_(including_sour)___Powdery_mildew,Cherry (including sour),Powdery mildew,Lab-Validated Only,PlantVillage Only,0.967,0.983,Limitation: Awaiting Farm Image Collection
+Cherry_(including_sour)___healthy,Cherry (including sour),healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.988,0.968,Validated on Real Outdoor Photos (PlantDoc)
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn (maize),Cercospora leaf spot Gray leaf spot,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.892,0.858,Validated on Real Outdoor Photos (PlantDoc)
+Corn_(maize)___Common_rust_,Corn (maize),Common rust ,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.996,0.99,Validated on Real Outdoor Photos (PlantDoc)
+Corn_(maize)___Northern_Leaf_Blight,Corn (maize),Northern Leaf Blight,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.888,0.9,Validated on Real Outdoor Photos (PlantDoc)
+Corn_(maize)___healthy,Corn (maize),healthy,Lab-Validated Only,PlantVillage Only,0.983,0.991,Limitation: Awaiting Farm Image Collection
+Grape___Black_rot,Grape,Black rot,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.987,0.977,Validated on Real Outdoor Photos (PlantDoc)
+Grape___Esca_(Black_Measles),Grape,Esca (Black Measles),Lab-Validated Only,PlantVillage Only,0.971,0.98,Limitation: Awaiting Farm Image Collection
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot),Grape,Leaf blight (Isariopsis Leaf Spot),Lab-Validated Only,PlantVillage Only,0.981,0.991,Limitation: Awaiting Farm Image Collection
+Grape___healthy,Grape,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.976,0.971,Validated on Real Outdoor Photos (PlantDoc)
+Orange___Haunglongbing_(Citrus_greening),Orange,Haunglongbing (Citrus greening),Lab-Validated Only,PlantVillage Only,0.997,0.999,Limitation: Awaiting Farm Image Collection
+Peach___Bacterial_spot,Peach,Bacterial spot,Lab-Validated Only,PlantVillage Only,0.973,0.984,Limitation: Awaiting Farm Image Collection
+Peach___healthy,Peach,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,1.0,0.934,Validated on Real Outdoor Photos (PlantDoc)
+"Pepper,_bell___Bacterial_spot","Pepper, bell",Bacterial spot,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.94,0.959,Validated on Real Outdoor Photos (PlantDoc)
+"Pepper,_bell___healthy","Pepper, bell",healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.997,0.931,Validated on Real Outdoor Photos (PlantDoc)
+Potato___Early_blight,Potato,Early blight,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.985,0.975,Validated on Real Outdoor Photos (PlantDoc)
+Potato___Late_blight,Potato,Late blight,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.94,0.954,Validated on Real Outdoor Photos (PlantDoc)
+Potato___healthy,Potato,healthy,Lab-Validated Only,PlantVillage Only,0.967,0.63,Limitation: Awaiting Farm Image Collection
+Raspberry___healthy,Raspberry,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.973,0.98,Validated on Real Outdoor Photos (PlantDoc)
+Soybean___healthy,Soybean,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.929,0.962,Validated on Real Outdoor Photos (PlantDoc)
+Squash___Powdery_mildew,Squash,Powdery mildew,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.995,0.996,Validated on Real Outdoor Photos (PlantDoc)
+Strawberry___Leaf_scorch,Strawberry,Leaf scorch,Lab-Validated Only,PlantVillage Only,0.995,0.998,Limitation: Awaiting Farm Image Collection
+Strawberry___healthy,Strawberry,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,1.0,0.968,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Bacterial_spot,Tomato,Bacterial spot,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.795,0.859,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Early_blight,Tomato,Early blight,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.845,0.845,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Late_blight,Tomato,Late blight,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.9,0.885,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Leaf_Mold,Tomato,Leaf Mold,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.921,0.921,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Septoria_leaf_spot,Tomato,Septoria leaf spot,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.929,0.88,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato,Spider mites Two-spotted spider mite,Lab-Validated Only,PlantVillage Only,0.949,0.863,Limitation: Awaiting Farm Image Collection
+Tomato___Target_Spot,Tomato,Target Spot,Lab-Validated Only,PlantVillage Only,0.882,0.853,Limitation: Awaiting Farm Image Collection
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato,Tomato Yellow Leaf Curl Virus,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.906,0.95,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___Tomato_mosaic_virus,Tomato,Tomato mosaic virus,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.973,0.857,Validated on Real Outdoor Photos (PlantDoc)
+Tomato___healthy,Tomato,healthy,Field-Tested & Lab-Validated,PlantVillage + PlantDoc,0.946,0.958,Validated on Real Outdoor Photos (PlantDoc)

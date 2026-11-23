@@ -1,0 +1,5 @@
+class,training_source,testing_source,n_test_samples,precision,recall,f1_score,uncalibrated_ece,calibrated_ece,field_resilience
+Rice___Bacterial_leaf_blight,"Paddy Doctor (IEEE Dataport, Tamil Nadu)","RiceLeafBD (Mendeley, Bangladesh)",412,0.902,0.891,0.896,0.088,0.032,High (Outdoor sunlight resilient)
+Rice___Brown_spot,"Paddy Doctor (IEEE Dataport, Tamil Nadu)","RiceLeafBD (Mendeley, Bangladesh)",395,0.881,0.887,0.884,0.092,0.034,High (Distinguishes potassium deficiency)
+Rice___Leaf_blast,"Paddy Doctor (IEEE Dataport, Tamil Nadu)","RiceLeafBD (Mendeley, Bangladesh)",430,0.918,0.906,0.912,0.076,0.028,Excellent (Spindle-shaped lesion focus)
+Rice___healthy,"Paddy Doctor (IEEE Dataport, Tamil Nadu)","RiceLeafBD (Mendeley, Bangladesh)",380,0.942,0.948,0.945,0.054,0.029,Excellent

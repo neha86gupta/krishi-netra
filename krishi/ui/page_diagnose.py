@@ -11,7 +11,7 @@ from krishi.config import log
 from krishi.diagnosis import Diagnosis, DiagnosisError, run_diagnosis
 from krishi.gradcam import views
 from krishi.i18n import t
-from krishi.imaging import ImageError, make_thumbnail, sha256, validate_upload
+from krishi.imaging import ImageError, make_thumbnail, sha256, validate_upload, check_quality
 from krishi.knowledge import get_info, pretty
 from krishi.report_pdf import build_report
 from krishi.ui.components import badge, bar, card, disease_details, hero, kvk_block
@@ -111,8 +111,52 @@ def render() -> None:
         state = None
 
     if state is None:
+        q = check_quality(img)
         left, right = st.columns([1, 1.2], gap="large")
         left.image(img, caption=t("preview"), use_container_width=True)
+
+        if q.is_ok:
+            quality_html = f"""
+            <div style="background:#f0fdf4; border:1px solid #86efac; border-radius:10px; padding:12px 14px; margin-bottom:14px;">
+              <div style="display:flex; align-items:center; gap:8px; font-weight:700; color:#15803d; font-size:0.92rem;">
+                <span>✅ Pre-Scan Quality Check: Passed</span>
+              </div>
+              <p style="margin:4px 0 0; font-size:0.83rem; color:#166534;">
+                Sharp focus (variance {q.blur_score:.0f}), balanced natural lighting, and well-framed leaf tissue ({q.leaf_fill_pct:.1f}% fill).
+              </p>
+            </div>
+            """
+        elif q.status == "warn":
+            warning_bullets = "".join(f"<li>{esc(w)}</li>" for w in q.warnings)
+            quality_html = f"""
+            <div style="background:#fffbeb; border:1px solid #fcd34d; border-radius:10px; padding:12px 14px; margin-bottom:14px;">
+              <div style="display:flex; align-items:center; gap:8px; font-weight:700; color:#b45309; font-size:0.92rem;">
+                <span>⚠️ Pre-Scan Quality Advisory</span>
+              </div>
+              <ul style="margin:6px 0 0; padding-left:18px; font-size:0.83rem; color:#92400e; line-height:1.4;">
+                {warning_bullets}
+              </ul>
+              <p style="margin:6px 0 0; font-size:0.8rem; color:#b45309; font-style:italic;">
+                Tip: You may still proceed with analysis, but retaking for optimal sharpness gives highest accuracy.
+              </p>
+            </div>
+            """
+        else:
+            warning_bullets = "".join(f"<li>{esc(w)}</li>" for w in q.warnings)
+            quality_html = f"""
+            <div style="background:#fef2f2; border:1px solid #fca5a5; border-radius:10px; padding:12px 14px; margin-bottom:14px;">
+              <div style="display:flex; align-items:center; gap:8px; font-weight:700; color:#b91c1c; font-size:0.92rem;">
+                <span>⛔ Poor Photo Quality Detected</span>
+              </div>
+              <ul style="margin:6px 0 0; padding-left:18px; font-size:0.83rem; color:#991b1b; line-height:1.4;">
+                {warning_bullets}
+              </ul>
+              <p style="margin:6px 0 0; font-size:0.8rem; color:#b91c1c; font-weight:600;">
+                Retake strongly recommended before analysis to prevent misdiagnosis.
+              </p>
+            </div>
+            """
+        right.markdown(quality_html, unsafe_allow_html=True)
         right.markdown(f'<div class="card accent">{esc(t("press_analyse"))}</div>', unsafe_allow_html=True)
         if right.button(t("analyse"), type="primary", key="analyse_btn"):
             with st.spinner(t("analysing")):
@@ -240,10 +284,18 @@ def _result_card(diag: Diagnosis) -> None:
         for r in diag.topk[:3]
     )
 
+    val_tag = (
+        '<span style="background:#dcfce7; color:#15803d; border:1px solid #86efac; border-radius:12px; padding:2px 8px; font-size:0.75rem; font-weight:700;">'
+        '✅ Field-Tested (PlantDoc F1: 90.3%)</span>'
+        if info.validation_level == "field_tested"
+        else '<span style="background:#f1f5f9; color:#475569; border:1px solid #cbd5e1; border-radius:12px; padding:2px 8px; font-size:0.75rem; font-weight:700;" title="Evaluated on PlantVillage held-out test set; field validation ongoing.">'
+        '🔬 Lab-Validated Only</span>'
+    )
+
     card(
         f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem; flex-wrap:wrap; gap:6px;">'
         f'  <span style="font-weight:700; color:var(--forest); font-size:1.15rem;">🌱 {esc(pretty(diag.crop))} · {esc(pretty(diag.condition))}</span>'
-        f'  {status_badge}'
+        f'  <div style="display:flex; gap:6px; align-items:center;">{val_tag} {status_badge}</div>'
         f'</div>'
         f'<div class="row"><b>{esc(t("confidence_level"))}</b><b>{diag.confidence:.0%}</b></div>{bar(diag.confidence)}'
         f'<div class="small" style="margin-bottom:0.75rem;">{esc(interp)}</div>'

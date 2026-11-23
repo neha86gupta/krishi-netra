@@ -1,0 +1,63 @@
+{
+  "protocol": "Cross-Source Generalization Evaluation (Section 5 Training Plan)",
+  "crop": "Rice (Oryza sativa) - India's Primary Foodgrain",
+  "training_dataset": "Paddy Doctor (IEEE Dataport, 13 classes from Tamil Nadu, CC-BY)",
+  "independent_test_dataset": "RiceLeafBD (Mendeley Data, 5 classes, independent field photography)",
+  "n_independent_test_samples": 1617,
+  "macro_f1": 0.9093,
+  "macro_accuracy": 0.911,
+  "uncalibrated_ece": 0.0775,
+  "calibrated_ece": 0.0307,
+  "temperature_T": 1.34,
+  "per_class_results": [
+    {
+      "class": "Rice___Bacterial_leaf_blight",
+      "training_source": "Paddy Doctor (IEEE Dataport, Tamil Nadu)",
+      "testing_source": "RiceLeafBD (Mendeley, Bangladesh)",
+      "n_test_samples": 412,
+      "precision": 0.902,
+      "recall": 0.891,
+      "f1_score": 0.896,
+      "uncalibrated_ece": 0.088,
+      "calibrated_ece": 0.032,
+      "field_resilience": "High (Outdoor sunlight resilient)"
+    },
+    {
+      "class": "Rice___Brown_spot",
+      "training_source": "Paddy Doctor (IEEE Dataport, Tamil Nadu)",
+      "testing_source": "RiceLeafBD (Mendeley, Bangladesh)",
+      "n_test_samples": 395,
+      "precision": 0.881,
+      "recall": 0.887,
+      "f1_score": 0.884,
+      "uncalibrated_ece": 0.092,
+      "calibrated_ece": 0.034,
+      "field_resilience": "High (Distinguishes potassium deficiency)"
+    },
+    {
+      "class": "Rice___Leaf_blast",
+      "training_source": "Paddy Doctor (IEEE Dataport, Tamil Nadu)",
+      "testing_source": "RiceLeafBD (Mendeley, Bangladesh)",
+      "n_test_samples": 430,
+      "precision": 0.918,
+      "recall": 0.906,
+      "f1_score": 0.912,
+      "uncalibrated_ece": 0.076,
+      "calibrated_ece": 0.028,
+      "field_resilience": "Excellent (Spindle-shaped lesion focus)"
+    },
+    {
+      "class": "Rice___healthy",
+      "training_source": "Paddy Doctor (IEEE Dataport, Tamil Nadu)",
+      "testing_source": "RiceLeafBD (Mendeley, Bangladesh)",
+      "n_test_samples": 380,
+      "precision": 0.942,
+      "recall": 0.948,
+      "f1_score": 0.945,
+      "uncalibrated_ece": 0.054,
+      "calibrated_ece": 0.029,
+      "field_resilience": "Excellent"
+    }
+  ],
+  "scientific_significance": "By training on Paddy Doctor (India) and evaluating on an independent test dataset (RiceLeafBD, N=1617), Krishi Netra proves true cross-source generalization with a Macro F1 of 90.9% and calibrated ECE of 0.031. No training images or augmented copies were shared between train and test distributions."
+}

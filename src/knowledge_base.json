@@ -876,6 +876,98 @@
           "url": "https://iivr.icar.gov.in"
         }
       ]
+    },
+    "Rice___Bacterial_leaf_blight": {
+      "crop": "Rice",
+      "condition": "Bacterial leaf blight",
+      "causal_agent": "Xanthomonas oryzae pv. oryzae",
+      "cause_group": "bacterial",
+      "description_en": "Bacterial leaf blight (BLB) is a destructive vascular bacterial disease of rice prevalent across South Asia. It causes yellowing, wilting of seedlings (kresek), and linear lesions with wavy margins turning straw-colored.",
+      "description_hi": "जीवाणु झुलसा (बैक्टीरियल लीफ ब्लाइट) धान की एक विनाशकारी बीमारी है। पत्तियों के किनारे पीले होकर लहरदार आकार में सूखने लगते हैं और पत्तियां पुआल के रंग की हो जाती हैं।",
+      "symptoms_en": "Water-soaked stripes starting from leaf tips and margins, expanding into yellow to straw-colored lesions with wavy borders. Bacterial ooze drops may be seen in early mornings.",
+      "symptoms_hi": "पत्ती के सिरे और किनारों से पानी से भीगे धब्बे शुरू होते हैं, जो बाद में पीले-सफ़ेद घावों में बदल जाते हैं। सुबह के समय पत्तियों पर बैक्टीरिया की बूंदें देखी जा सकती हैं।",
+      "environment_en": "Favored by temperatures of 25–34°C, high relative humidity (>70%), heavy rainstorms, and excessive nitrogen fertilization.",
+      "environment_hi": "25–34 डिग्री सेल्सियस तापमान, 70% से अधिक आर्द्रता, तेज बारिश और नाइट्रोजन उर्वरकों का अत्यधिक उपयोग इस रोग को बढ़ावा देता है।",
+      "prevention_en": "Plant resistant cultivars (e.g. Swarna Sub1, Improved Samba Mahsuri). Avoid excess nitrogen; apply potassium. Drain flooded fields temporarily during early infection.",
+      "prevention_hi": "रोग प्रतिरोधी किस्में लगाएं (जैसे सांबा मंसूरी, स्वर्ण सब-1)। अत्यधिक यूरिया से बचें और पोटाश का संतुलित प्रयोग करें। खेत का पानी कुछ समय के लिए निकाल दें।",
+      "sources": [
+        {
+          "title": "ICAR-National Rice Research Institute (NRRI) Advisory",
+          "url": "https://icar-nrri.gov.in/"
+        },
+        {
+          "title": "TNAU Agritech Portal: Rice Bacterial Blight",
+          "url": "https://agritech.tnau.ac.in/"
+        }
+      ]
+    },
+    "Rice___Brown_spot": {
+      "crop": "Rice",
+      "condition": "Brown spot",
+      "causal_agent": "Bipolaris oryzae (Cochliobolus miyabeanus)",
+      "cause_group": "fungal",
+      "description_en": "Brown spot is a major fungal disease historically associated with nutrient-deficient, poorly drained soils. It produces small, circular to oval dark brown spots across leaves and glumes.",
+      "description_hi": "भूरा धब्बा (ब्राउन स्पॉट) धान का एक प्रमुख फफूंद जनित रोग है, जो आमतौर पर पोषक तत्वों की कमी और असंतुलित मिट्टी में होता है। पत्तियों पर गोल या अंडाकार भूरे धब्बे बनते हैं।",
+      "symptoms_en": "Small cylindrical to oval spots with brown margins and greyish centers resembling sesame seeds. Severe infection causes seedling blight and grain discoloration.",
+      "symptoms_hi": "पत्तियों पर तिल के आकार के गोल-अंडाकार भूरे धब्बे जिनका केंद्र धूसर होता है। गंभीर संक्रमण में पूरी पत्ती सूख जाती है और दानों पर काले धब्बे पड़ते हैं।",
+      "environment_en": "High humidity (86–100%), temperature around 16–36°C, poor soil fertility (potassium/zinc deficiency), and water stress.",
+      "environment_hi": "86–100% आर्द्रता, 16–36 डिग्री तापमान, मिट्टी में पोटाश व जिंक की कमी तथा सूखे की स्थिति में यह रोग तेजी से फैलता है।",
+      "prevention_en": "Treat seeds with Carbendazim (2g/kg seed). Ensure balanced NPK application with micronutrients (Zinc sulphate). Maintain regular water management.",
+      "prevention_hi": "कार्बेंडाजिम (2 ग्राम प्रति किलो) से बीज उपचार करें। संतुलित खाद (NPK + जिंक सल्फेट) का प्रयोग करें और खेत में उचित नमी बनाए रखें।",
+      "sources": [
+        {
+          "title": "ICAR-NRRI Cuttack Rice Pathology Compendium",
+          "url": "https://icar-nrri.gov.in/"
+        },
+        {
+          "title": "IRRI Rice Knowledge Bank: Brown Spot",
+          "url": "http://www.knowledgebank.irri.org/"
+        }
+      ]
+    },
+    "Rice___Leaf_blast": {
+      "crop": "Rice",
+      "condition": "Leaf blast",
+      "causal_agent": "Magnaporthe oryzae (Pyricularia oryzae)",
+      "cause_group": "fungal",
+      "description_en": "Rice blast is one of the most destructive plant diseases globally. It affects seedlings, leaves (leaf blast), nodes (node blast), and panicles (neck blast), causing complete crop failure under epidemic conditions.",
+      "description_hi": "धान का झुलसा रोग (लीफ ब्लास्ट) दुनिया भर में धान की सबसे खतरनाक बीमारियों में से एक है। यह पत्तियों, गांठों और बालियों (गर्दन तोड़) पर आक्रमण कर पूरी फसल नष्ट कर सकता है।",
+      "symptoms_en": "Spindle-shaped, diamond or eye-shaped lesions with pointed ends, gray or whitish centers, and brown to reddish-brown borders. Lesions enlarge and coalesce, drying entire leaves.",
+      "symptoms_hi": "पत्तियों पर आंख या नाव के आकार के धब्बे जिनके किनारे भूरे और बीच का भाग राख के रंग का होता है। धब्बे आपस में मिलकर पूरी पत्ती को सुखा देते हैं।",
+      "environment_en": "Cool night temperatures (18–24°C), relative humidity >90%, prolonged leaf wetness (dew), and heavy nitrogen use.",
+      "environment_hi": "रात का ठंडा तापमान (18–24°C), 90% से अधिक आर्द्रता, ओस का जमाव और अत्यधिक यूरिया का उपयोग ब्लास्ट के अनुकूल है।",
+      "prevention_en": "Use resistant varieties. Avoid late planting and excessive nitrogen. Spray Tricyclazole 75 WP (0.6g/L) or Isoprothiolane 40 EC at early symptom onset.",
+      "prevention_hi": "रोगरोधी बीज लगाएं। समय पर बुआई करें और अत्यधिक नाइट्रोजन से बचें। रोग के शुरुआती लक्षण दिखते ही ट्राईसाइक्लाजोल 75 WP (0.6 ग्राम/लीटर) का छिड़काव करें।",
+      "sources": [
+        {
+          "title": "ICAR-NRRI Cuttack: Integrated Management of Rice Blast",
+          "url": "https://icar-nrri.gov.in/"
+        },
+        {
+          "title": "Directorate of Rice Research (IIRR) Hyderabad Advisory",
+          "url": "https://www.icar-iirr.org/"
+        }
+      ]
+    },
+    "Rice___healthy": {
+      "crop": "Rice",
+      "condition": "healthy",
+      "causal_agent": "None",
+      "cause_group": "healthy",
+      "description_en": "Vigorous, erect rice leaves displaying vibrant green coloration, absence of fungal spotting, viral streaking, or bacterial marginal necrosis.",
+      "description_hi": "स्वस्थ और हरी धान की पत्तियां, जिन पर किसी भी प्रकार के फफूंद जनित धब्बे, कीट आक्रमण या जीवाणु संक्रमण के लक्षण नहीं हैं।",
+      "symptoms_en": "Uniform green leaf blades without chlorosis, spots, or leaf-tip drying.",
+      "symptoms_hi": "एकसमान हरी पत्तियां, बिना किसी पीलेपन या धब्बों के।",
+      "environment_en": "Optimal irrigation, recommended fertilizer scheduling, and clean weed-free bunds.",
+      "environment_hi": "संतुलित सिंचाई, उचित खाद प्रबंधन और खरपतवार मुक्त खेत।",
+      "prevention_en": "Continue routine irrigation scheduling, periodic scouting, and split nitrogen application according to leaf color chart (LCC).",
+      "prevention_hi": "पत्ती रंग चार्ट (LCC) के अनुसार यूरिया दें और नियमित निगरानी जारी रखें।",
+      "sources": [
+        {
+          "title": "ICAR-NRRI Best Agronomic Practices",
+          "url": "https://icar-nrri.gov.in/"
+        }
+      ]
     }
   }
 }
