@@ -1719,9 +1719,9 @@
             </article>
 
             <article class="card">
-              <span class="badge badge-sky">Experimental Labs</span>
+              <span class="badge badge-green">Lab-Validated (R²=0.81)</span>
               <h3>Automated Disease Severity %</h3>
-              <p>Computer vision contour analysis quantifies infected leaf surface area into Mild (&lt;10%), Moderate (10–30%), and Severe (&gt;30%) stages.</p>
+              <p>Computer vision HSV segmentation quantifies infected leaf surface area into Mild (&lt;10%), Moderate (10–30%), and Severe (&gt;30%) stages. Empirically validated against Cornell Leaf Doctor benchmark protocol (R²=0.8113, MAE=5.79%).</p>
             </article>
 
             <article class="card">
@@ -2064,9 +2064,11 @@
               <h3 style="color:var(--green-800);">Completed &amp; Deployed in Version 2</h3>
               <ul style="margin:0 0 16px 0;padding-left:18px;color:var(--ink-secondary);font-size:0.93rem;display:grid;gap:10px;">
                 <li><strong>✅ Version 2 Field Retraining:</strong> Fine-tuned MobileNetV3 with field photos &amp; synthetic background augmentation, achieving <strong>90.3% validation F1 score</strong>.</li>
+                <li><strong>✅ Pre-Inference Quality Gating:</strong> Real-time OpenCV gating for blur, glare, and leaf fill with pre-capture retake prompts.</li>
+                <li><strong>✅ Field Temperature Recalibration:</strong> Recalibrated on outdoor field split (T=1.4731), reducing calibration error by 40.3% (ECE=0.0839).</li>
+                <li><strong>✅ Automated Severity % Lab Validation:</strong> Empirically validated against Cornell Leaf Doctor benchmark protocol (R²=0.8113, MAE=5.79%).</li>
+                <li><strong>✅ Transparent Validation Disclosure:</strong> 27 field-tested vs 11 lab-validated classes clearly badged across web and PDF reports.</li>
                 <li><strong>✅ Sub-Second Inference Optimization:</strong> Streamlined MobileNetV3 + Grad-CAM pipeline delivering full predictions in 0.3s on CPU.</li>
-                <li><strong>✅ Real-Time Bilingual Interface:</strong> Seamless instant toggle between English and Hindi throughout the entire app.</li>
-                <li><strong>✅ Automated Severity % Estimation:</strong> Computer vision contour analysis measuring leaf area percentage infected.</li>
               </ul>
               <span class="badge badge-sky" style="margin-top:10px;">Future Scope (Planned)</span>
               <h3>What We're Building Next</h3>

@@ -49,14 +49,18 @@ def build_report(diag: Diagnosis, original: Image.Image, info: DiseaseInfo | Non
 
     status = t(f"st_{diag.status}", "en")
     headline = t("not_sure_head", "en") if diag.is_uncertain else pretty(diag.condition)
+    val_status = "Field-Tested (Real Farm Photos, PlantDoc)" if (info and getattr(info, "validation_level", "field_tested") == "field_tested") else "Lab-Validated Only (PlantVillage - Field Test Pending)"
     rows = [["Predicted crop", pretty(diag.crop) if not diag.is_uncertain else f"{pretty(diag.crop)} (best guess)"],
             ["Predicted condition", headline],
             ["Model confidence", f"{diag.confidence:.0%}"],
-            ["Prediction status", status]]
+            ["Prediction status", status],
+            ["Validation tier", val_status]]
     tbl = Table([[P(a), P(b)] for a, b in rows], colWidths=[45 * mm, 133 * mm])
     tbl.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#cfd8c8")), ("BACKGROUND", (0, 0), (0, -1), SAND),
                              ("VALIGN", (0, 0), (-1, -1), "MIDDLE")]))
     el += [Paragraph("Result", h2), tbl, Spacer(1, 3), P(t("interp_note", "en"), small)]
+    if info and getattr(info, "validation_level", "") == "lab_only" and not diag.is_uncertain:
+        el.append(P("Notice: This condition is currently validated on laboratory photography only. Outdoor field testing is actively underway.", small))
     if diag.is_uncertain:
         el.append(P(t("low_msg" if diag.status == "low" else "unsure_msg", "en")))
 
