@@ -10,24 +10,39 @@ from html import escape as esc  # noqa: E402
 
 from krishi import config as C  # noqa: E402
 from krishi.i18n import t  # noqa: E402
-from krishi.ui import page_diagnose, page_history, page_info, page_insights, page_labs, page_perf, theme  # noqa: E402
+from krishi.ui import (
+    page_about,
+    page_contact,
+    page_diagnose,
+    page_history,
+    page_how,
+    page_info,
+    page_insights,
+    page_labs,
+    page_perf,
+    theme,
+)  # noqa: E402
 
-# Available navigation pages (Demo & testing page removed per requirement)
+# Available navigation pages: Unified web application with website content integrated
 PAGES = {
     "diagnose": page_diagnose,
-    "info": page_info,
+    "how": page_how,
+    "about": page_about,
     "perf": page_perf,
-    "history": page_history,
-    "insights": page_insights,
+    "info": page_info,
     "labs": page_labs,
+    "history": page_history,
+    "contact": page_contact,
 }
 ICONS = {
-    "diagnose": "🔍",
-    "info": "📚",
+    "diagnose": "🩺",
+    "how": "🔍",
+    "about": "📖",
     "perf": "📊",
-    "history": "🕘",
-    "insights": "🌱",
-    "labs": "🧪",
+    "info": "🌾",
+    "labs": "🔬",
+    "history": "📜",
+    "contact": "📞",
 }
 
 theme.inject()
@@ -47,7 +62,16 @@ current_lang = st.session_state.get("lang", "en")
 default_idx = 1 if current_lang == "hi" else 0
 
 with st.sidebar:
-    st.markdown('<div class="brand">🌿 Krishi Netra</div>', unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div class="brand">
+            <span class="brand-icon">🌿</span>
+            <span>Krishi Netra</span>
+            <span class="brand-badge">V2.1</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
     
     # Clearly show both English and Hindi options side by side
     selected_lang_str = st.radio(
