@@ -127,34 +127,57 @@ h1, h2, h3, h4 {
   letter-spacing: 0.04em;
 }
 
-/* Hero Section matching website page-hero */
+/* Hero Section matching modern SaaS & Apple Agri-tech styling */
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--green-950) 0%, var(--green-800) 100%);
-  padding: 1.8rem 2.2rem;
-  border-radius: 20px;
-  margin-bottom: 1.4rem;
-  border: 1px solid rgba(102, 187, 106, 0.2);
-  box-shadow: 0 10px 30px rgba(9, 33, 13, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='450' height='160' viewBox='0 0 450 160'%3E%3Cg fill='none' stroke='%2366bb6a' stroke-opacity='.18' stroke-width='1.5'%3E%3Cpath d='M20 80 C140 80 220 20 440 26'/%3E%3Cpath d='M80 80 L130 40 M120 78 L170 45 M160 70 L215 48 M110 82 L150 120 M150 76 L200 110 M200 60 L260 84'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right center;
+  background: radial-gradient(130% 140% at 85% 15%, rgba(52, 211, 153, 0.26) 0%, rgba(20, 83, 45, 0.94) 45%, #06220c 100%);
+  padding: 2.1rem 2.4rem;
+  border-radius: 22px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(134, 239, 172, 0.24);
+  box-shadow: 0 14px 38px rgba(6, 34, 12, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  color: #a7f3d0 !important;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px #34d399;
+  display: inline-block;
 }
 .hero-title {
   font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif;
-  font-size: 2.15rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #ffffff !important;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  margin: 0;
 }
 .hero-sub {
   font-size: 1.05rem;
   color: #d1fae5 !important;
-  margin-top: 0.5rem;
-  max-width: 52rem;
+  margin-top: 0.55rem;
+  max-width: 54rem;
   line-height: 1.55;
+  font-weight: 400;
 }
 
 /* Cards matching website .card */

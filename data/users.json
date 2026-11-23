@@ -1,0 +1,38 @@
+{
+  "judge@krishinetra.ai": {
+    "name": "Competition Judge",
+    "email": "judge@krishinetra.ai",
+    "pw_hash": "b358ce5a8cc11336eb8ecb6b80098abd7911cdd48713715224343b9de2fbb0a5",
+    "role": "Exhibition / Technical Judge",
+    "role_badge": "Judge / Evaluator",
+    "location": "New Delhi",
+    "icon": "👨‍⚖️"
+  },
+  "farmer@krishinetra.ai": {
+    "name": "Ramesh Patel",
+    "email": "farmer@krishinetra.ai",
+    "pw_hash": "f6e60034ceca4289b3b710471df0f26213b0b257058a8d91fc50975166bee14b",
+    "role": "Farmer / Progressive Grower",
+    "role_badge": "Farmer / कृषक",
+    "location": "Karnal, Haryana",
+    "icon": "🌾"
+  },
+  "kvk@krishinetra.ai": {
+    "name": "Dr. Ananya Sharma",
+    "email": "kvk@krishinetra.ai",
+    "pw_hash": "e912a77e90ab9ef669e49e95a89e575251c4adfa8e4529e2d8a6c302895af2c9",
+    "role": "KVK Agronomist / Plant Pathologist",
+    "role_badge": "KVK Officer / कृषि वैज्ञानिक",
+    "location": "ICAR-IARI, New Delhi",
+    "icon": "🔬"
+  },
+  "test@agri.org": {
+    "name": "Test User",
+    "email": "test@agri.org",
+    "pw_hash": "189ceae2226d56a5571f06caae31c02ffdb102be595c63f7b0d027de2b172b64",
+    "role": "Farmer / Progressive Grower",
+    "role_badge": "Farmer / Progressive Grower",
+    "location": "Punjab",
+    "icon": "👨‍🌾"
+  }
+}

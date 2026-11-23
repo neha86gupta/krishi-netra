@@ -8,9 +8,16 @@ import streamlit as st
 from krishi.i18n import t
 
 
-def hero(title: str, sub: str = "") -> None:
-    st.markdown(f'<div class="hero"><div class="hero-title">🌿 {esc(title)}</div><div class="hero-sub">{esc(sub)}</div></div>',
-                unsafe_allow_html=True)
+def hero(title: str, sub: str = "", tag: str = "Krishi Netra · AI Crop Diagnostics") -> None:
+    sub_html = f'<div class="hero-sub">{esc(sub)}</div>' if sub else ""
+    st.markdown(
+        f'<div class="hero">'
+        f'<div class="hero-eyebrow"><span class="hero-dot"></span> {esc(tag)}</div>'
+        f'<div class="hero-title">{esc(title)}</div>'
+        f'{sub_html}'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
 
 
 def card(html: str, kind: str = "") -> None:

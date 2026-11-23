@@ -19,6 +19,7 @@ S: dict[str, tuple[str, str]] = {
     "nav_history": ("History", "इतिहास"),
     "nav_insights": ("Crop health", "फसल स्वास्थ्य"),
     "nav_contact": ("Contact & KVK", "संपर्क एवं केवीके"),
+    "nav_auth": ("Account / Login", "खाता / लॉगिन"),
     "photo_tips_title": ("Photo tips", "फोटो के सुझाव"),
     "photo_tips": ("One leaf · in focus · good daylight · fill the frame",
                    "एक पत्ती · साफ़ फोकस · अच्छी धूप · फ्रेम में बड़ी"),
