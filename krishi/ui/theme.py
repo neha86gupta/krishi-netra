@@ -1,6 +1,7 @@
-"""Global CSS Theme: Synchronized with the Krishi Netra Website Design System.
+"""Global CSS Theme: Replicating the Krishi Netra Website Design System.
 Fonts: Space Grotesk (display), Inter (UI), JetBrains Mono, Noto Sans Devanagari.
-Palette: Deep Forest (#09210d, #0f3314, #1b5e20), Emerald (#2e7d32, #43a047), Mint Warm White (#f6faf5).
+Top Navbar: Exact dark forest sticky navbar matching user's image with squircle leaf icon and pill tabs.
+Page Background: Warm mint-white #f6faf5 with subtle agricultural dot pattern.
 """
 import streamlit as st
 
@@ -40,24 +41,30 @@ CSS = """<style>
   --line: rgba(27, 94, 32, 0.14);
 }
 
-html, body, .stApp, [data-testid="stSidebar"] {
-  font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--ink-primary);
-  background: var(--surface-page);
+/* Hide Streamlit default sidebar and collapse controls per user request */
+[data-testid="stSidebar"],
+[data-testid="collapsedControl"] {
+  display: none !important;
 }
 
-.stApp {
-  background: var(--surface-page);
+/* Page Background matching website: soft mint-white with subtle dot grid */
+html, body, .stApp {
+  background-color: #f6faf5 !important;
+  background-image: radial-gradient(rgba(27, 94, 32, 0.08) 1.2px, transparent 1.2px) !important;
+  background-size: 24px 24px !important;
+  font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  color: var(--ink-primary) !important;
 }
 
 [data-testid="stHeader"] {
-  background: transparent;
+  display: none !important;
 }
 
 .block-container {
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-  max-width: 1220px;
+  padding-top: 0 !important;
+  padding-bottom: 3.5rem !important;
+  max-width: 1260px !important;
+  margin: 0 auto !important;
 }
 
 h1, h2, h3, h4 {
@@ -67,67 +74,153 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-/* Sidebar styling to match website deep green */
-[data-testid="stSidebar"] {
-  background: linear-gradient(180deg, var(--green-950) 0%, var(--green-900) 100%);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+/* ==========================================================================
+   TOP STICKY NAVBAR - EXACT REPLICATION OF USER IMAGE
+   ========================================================================== */
+.site-top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: rgba(12, 41, 17, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(200, 230, 201, 0.18);
+  padding: 0.65rem 1.4rem;
+  margin: 0 -1.5rem 1.5rem -1.5rem;
+  box-shadow: 0 4px 22px rgba(9, 33, 13, 0.24);
 }
 
-[data-testid="stSidebar"] * {
-  color: #e8f5e9 !important;
-}
-
-[data-testid="stSidebar"] [data-baseweb="select"] * {
-  color: #14361a !important;
-}
-
-[data-testid="stSidebar"] .stRadio label {
-  padding: 0.45rem 0.75rem;
-  border-radius: 12px;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 2px;
-}
-
-[data-testid="stSidebar"] .stRadio label:hover {
-  background: rgba(255, 255, 255, 0.10);
-  transform: translateX(4px);
-}
-
-/* Website-matching Brand Header */
-.brand {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 0.2rem 0 1rem 0;
-  color: #ffffff !important;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  letter-spacing: -0.01em;
-}
-.brand-icon {
+.site-brand-wrap {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  user-select: none;
+}
+.site-brand-icon {
   width: 38px;
   height: 38px;
-  background: linear-gradient(135deg, var(--green-500) 0%, var(--green-700) 100%);
-  border-radius: 10px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 4px 12px rgba(67, 160, 71, 0.35);
 }
-.brand-badge {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: rgba(67, 160, 71, 0.25);
-  border: 1px solid rgba(102, 187, 106, 0.4);
-  color: #a5d6a7 !important;
-  font-size: 0.72rem;
+.site-brand-name {
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  font-size: 1.28rem;
+  color: #ffffff;
+  letter-spacing: -0.015em;
+}
+.site-brand-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(200, 230, 201, 0.16);
+  color: #c8e6c9;
+  padding: 2px 7px;
+  border-radius: 6px;
 }
 
-/* Hero Section matching modern SaaS & Apple Agri-tech styling */
+/* Horizontal Radio Nav styling matching user's image */
+.top-nav-radio-wrap div[data-testid="stRadio"] {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.top-nav-radio-wrap div[role="radiogroup"] {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  flex-wrap: wrap !important;
+  background: transparent !important;
+  border: none !important;
+}
+.top-nav-radio-wrap div[role="radiogroup"] label {
+  background: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 8px 13px !important;
+  border-radius: 9px !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+}
+.top-nav-radio-wrap div[role="radiogroup"] label:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+.top-nav-radio-wrap div[role="radiogroup"] label > div:first-child {
+  display: none !important;
+}
+.top-nav-radio-wrap div[role="radiogroup"] label p {
+  font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif !important;
+  font-size: 0.90rem !important;
+  font-weight: 500 !important;
+  color: rgba(241, 248, 233, 0.86) !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+/* Active Pill Highlight matching image */
+.top-nav-radio-wrap div[role="radiogroup"] label:has(input:checked),
+.top-nav-radio-wrap div[role="radiogroup"] label[data-checked="true"] {
+  background: rgba(200, 230, 201, 0.22) !important;
+}
+.top-nav-radio-wrap div[role="radiogroup"] label:has(input:checked) p,
+.top-nav-radio-wrap div[role="radiogroup"] label[data-checked="true"] p {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Utility buttons in top navbar */
+.top-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(200, 230, 201, 0.25);
+  border-radius: 9px;
+  color: #ffffff;
+  padding: 6px 12px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+.top-action-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: #ffffff;
+}
+
+/* ==========================================================================
+   CARDS & COMPONENTS
+   ========================================================================== */
+.card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.45rem 1.65rem;
+  margin-bottom: 1.15rem;
+  box-shadow: 0 4px 18px rgba(15, 51, 20, 0.05);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(20, 54, 26, 0.10);
+  border-color: rgba(46, 125, 50, 0.35);
+}
+.card.accent {
+  border-left: 5px solid var(--green-600);
+}
+.card.warn {
+  border-left: 5px solid var(--earth);
+  background: #fffdf7;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   overflow: hidden;
@@ -180,30 +273,7 @@ h1, h2, h3, h4 {
   font-weight: 400;
 }
 
-/* Cards matching website .card */
-.card {
-  background: var(--surface-card);
-  border: 1px solid var(--border-light);
-  border-radius: 16px;
-  padding: 1.35rem 1.55rem;
-  margin-bottom: 1.1rem;
-  box-shadow: 0 2px 10px rgba(15, 51, 20, 0.05);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(20, 54, 26, 0.10);
-  border-color: rgba(46, 125, 50, 0.35);
-}
-.card.accent {
-  border-left: 5px solid var(--green-600);
-}
-.card.warn {
-  border-left: 5px solid var(--earth);
-  background: #fffdf7;
-}
-
-/* Badges matching website styling */
+/* Badges */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -240,54 +310,7 @@ h1, h2, h3, h4 {
   border-color: #86efac;
 }
 
-/* Status verdict boxes */
-.verdict-box {
-  border-radius: 16px;
-  padding: 1.25rem 1.45rem;
-  margin-bottom: 1.1rem;
-  box-shadow: 0 4px 16px rgba(20, 83, 45, 0.06);
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-.verdict-box.healthy { background: #f0fdf4; border: 2px solid #22c55e; }
-.verdict-box.diseased { background: #fef2f2; border: 2px solid #ef4444; }
-.verdict-box.uncertain { background: #fffbeb; border: 2px solid #f59e0b; }
-.verdict-icon { font-size: 2.3rem; line-height: 1; flex-shrink: 0; }
-.verdict-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 700; line-height: 1.2; }
-.verdict-title.healthy { color: #15803d; }
-.verdict-title.diseased { color: #b91c1c; }
-.verdict-title.uncertain { color: #b45309; }
-.verdict-desc { font-size: 0.94rem; line-height: 1.5; margin-top: 0.3rem; }
-.verdict-desc.healthy { color: #166534; }
-.verdict-desc.diseased { color: #991b1b; }
-.verdict-desc.uncertain { color: #92400e; }
-
-.big {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--green-900);
-  margin: 0.4rem 0 0.1rem 0;
-  line-height: 1.2;
-}
-
-.tile {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: 16px;
-  padding: 1.1rem 1.25rem;
-  box-shadow: 0 2px 8px rgba(15, 51, 20, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.tile:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(20, 54, 26, 0.08);
-}
-.tile .k { font-size: 0.85rem; color: var(--ink-muted); font-weight: 500; }
-.tile .v { font-family: 'Space Grotesk', sans-serif; font-size: 1.85rem; font-weight: 700; color: var(--green-900); line-height: 1.2; }
-
-/* Interactive buttons matching website */
+/* Buttons */
 .stButton>button, .stDownloadButton>button {
   background: linear-gradient(135deg, var(--green-600) 0%, var(--green-700) 100%);
   color: #ffffff !important;
@@ -321,27 +344,58 @@ h1, h2, h3, h4 {
   background: var(--green-50);
 }
 
-.stTabs [aria-selected="true"] {
-  color: var(--green-800) !important;
-  font-weight: 700;
-  font-family: 'Space Grotesk', sans-serif;
-  border-bottom: 3px solid var(--green-600) !important;
+.tile {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(15, 51, 20, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(20, 54, 26, 0.08);
+}
+.tile .k { font-size: 0.85rem; color: var(--ink-muted); font-weight: 500; }
+.tile .v { font-family: 'Space Grotesk', sans-serif; font-size: 1.85rem; font-weight: 700; color: var(--green-900); line-height: 1.2; }
+
+.verdict-box {
+  border-radius: 16px;
+  padding: 1.25rem 1.45rem;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 4px 16px rgba(20, 83, 45, 0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.verdict-box.healthy { background: #f0fdf4; border: 2px solid #22c55e; }
+.verdict-box.diseased { background: #fef2f2; border: 2px solid #ef4444; }
+.verdict-box.uncertain { background: #fffbeb; border: 2px solid #f59e0b; }
+.verdict-icon { font-size: 2.3rem; line-height: 1; flex-shrink: 0; }
+.verdict-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 700; line-height: 1.2; }
+.verdict-title.healthy { color: #15803d; }
+.verdict-title.diseased { color: #b91c1c; }
+.verdict-title.uncertain { color: #b45309; }
+.verdict-desc { font-size: 0.94rem; line-height: 1.5; margin-top: 0.3rem; }
+.verdict-desc.healthy { color: #166534; }
+.verdict-desc.diseased { color: #991b1b; }
+.verdict-desc.uncertain { color: #92400e; }
 
 .footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
   border-top: 1px solid var(--line);
   color: var(--ink-muted);
   font-size: 0.85rem;
   line-height: 1.5;
+  text-align: center;
 }
 
-@media (max-width: 640px) {
-  .hero { padding: 1.3rem 1.2rem; }
-  .hero-title { font-size: 1.55rem; }
-  .big { font-size: 1.45rem; }
-  .block-container { padding-left: 0.9rem; padding-right: 0.9rem; }
+@media (max-width: 900px) {
+  .site-top-bar { padding: 0.5rem 0.8rem; }
+  .site-brand-name { font-size: 1.1rem; }
+  .hero { padding: 1.4rem 1.2rem; }
+  .hero-title { font-size: 1.6rem; }
 }
 </style>"""
 
