@@ -12,11 +12,11 @@ from krishi.ui.services import lang
 def render() -> None:
     is_hi = lang() == "hi"
 
-    title = "प्रयोगशाला एवं आगामी नवाचार" if is_hi else "Krishi Netra Labs & R&D Roadmap"
+    title = "भविष्य की योजनाएँ एवं आगामी नवाचार" if is_hi else "Future Plans & R&D Roadmap"
     subtitle = (
-        "भविष्य की उन्नत तकनीकें और आगामी चरण (नवाचार अवलोकन)"
+        "आगामी चरण, उन्नत तकनीकें एवं भविष्य का विस्तार (संस्करण 2.5 और 3.0 योजनाएँ)"
         if is_hi
-        else "What we are engineering next to empower smallholder Indian agriculture"
+        else "What we are engineering next to empower smallholder Indian agriculture (V2.5 & V3.0)"
     )
     hero(title, subtitle)
 

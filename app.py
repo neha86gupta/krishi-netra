@@ -45,17 +45,17 @@ PAGES = {
     "auth":     page_auth,
 }
 
-NAV_KEYS = ["diagnose", "about", "how", "labs", "history", "perf", "info", "contact"]
+NAV_KEYS = ["diagnose", "about", "how", "history", "perf", "info", "labs", "contact"]
 
 NAV_LABELS = {
     "en": {
         "diagnose": "🏠  Home",
         "about":    "📖  About",
         "how":      "⚙️  How It Works",
-        "labs":     "✨  Features",
         "history":  "🔬  Technology",
         "perf":     "📊  Performance",
         "info":     "🗄️  Datasets",
+        "labs":     "🚀  Future Plans",
         "contact":  "📬  Contact",
         "auth":     "👤  Account",
     },
@@ -63,10 +63,10 @@ NAV_LABELS = {
         "diagnose": "🏠  गृह (जाँच)",
         "about":    "📖  परिचय",
         "how":      "⚙️  कार्यप्रणाली",
-        "labs":     "✨  सुविधाएँ",
         "history":  "🔬  तकनीक",
         "perf":     "📊  प्रदर्शन",
         "info":     "🗄️  डेटासेट",
+        "labs":     "🚀  भविष्य की योजनाएँ",
         "contact":  "📬  संपर्क",
         "auth":     "👤  खाता",
     },

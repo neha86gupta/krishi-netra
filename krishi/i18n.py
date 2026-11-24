@@ -15,7 +15,7 @@ S: dict[str, tuple[str, str]] = {
     "nav_about": ("About Krishi Netra", "परियोजना परिचय"),
     "nav_perf": ("Model performance", "मॉडल प्रदर्शन"),
     "nav_info": ("Disease information", "रोग जानकारी"),
-    "nav_labs": ("Labs (experimental)", "प्रयोगशाला (प्रायोगिक)"),
+    "nav_labs": ("Future Plans", "भविष्य की योजनाएँ"),
     "nav_history": ("History", "इतिहास"),
     "nav_insights": ("Crop health", "फसल स्वास्थ्य"),
     "nav_contact": ("Contact & KVK", "संपर्क एवं केवीके"),
