@@ -220,6 +220,171 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
+   WORKFLOW STEPS HORIZONTAL GRID (3 Equal Columns)
+   ========================================================================== */
+.workflow-steps-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.35rem;
+}
+.workflow-step-card {
+  background: #F8FAF9;
+  border: 1px solid #D8E2DC;
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(15, 51, 20, 0.04);
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  min-height: 130px;
+}
+.workflow-step-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(20, 54, 26, 0.09);
+  border-color: #86efac;
+  background: #ffffff;
+}
+.workflow-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+.workflow-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1B4332;
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(27, 67, 50, 0.35);
+  flex-shrink: 0;
+}
+.workflow-step-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+.workflow-step-title {
+  font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.workflow-step-desc {
+  font-size: 0.83rem;
+  line-height: 1.48;
+  color: #496350;
+  margin: 0;
+}
+.workflow-step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.70;
+  padding: 0 2px;
+}
+
+@media (max-width: 820px) {
+  .workflow-steps-wrap {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .workflow-step-arrow {
+    transform: rotate(90deg);
+    padding: 4px 0;
+  }
+}
+
+/* ==========================================================================
+   CONSOLIDATED UNIFIED UPLOAD & CAMERA BOX
+   ========================================================================== */
+.unified-upload-container {
+  background: #ffffff;
+  border: 1px solid #D8E2DC;
+  border-radius: 16px;
+  padding: 1.25rem 1.45rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 18px rgba(15, 51, 20, 0.05);
+}
+.unified-upload-container div[data-testid="stRadio"] {
+  margin: 0 0 1rem 0 !important;
+  padding: 0 !important;
+}
+.unified-upload-container div[role="radiogroup"] {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 6px !important;
+  background: #f0f5f1 !important;
+  border: 1px solid rgba(27, 94, 32, 0.12) !important;
+  border-radius: 12px !important;
+  padding: 4px !important;
+  width: 100% !important;
+}
+.unified-upload-container div[role="radiogroup"] label {
+  flex: 1 !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 8px 14px !important;
+  border-radius: 9px !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  background: transparent !important;
+  border: none !important;
+}
+.unified-upload-container div[role="radiogroup"] label:hover {
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+.unified-upload-container div[role="radiogroup"] label:has(input:checked) {
+  background: #1B4332 !important;
+  box-shadow: 0 2px 8px rgba(27, 67, 50, 0.28) !important;
+}
+.unified-upload-container div[role="radiogroup"] label p {
+  font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif !important;
+  font-size: 0.90rem !important;
+  font-weight: 600 !important;
+  color: #2d4a34 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+.unified-upload-container div[role="radiogroup"] label:has(input:checked) p {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.unified-upload-container div[role="radiogroup"] label > div:first-child {
+  display: none !important;
+}
+.unified-upload-container label[data-testid="stWidgetLabel"] {
+  display: none !important;
+}
+
+/* Dropzone inside unified container */
+.unified-upload-container [data-testid="stFileUploaderDropzone"] {
+  background: #fbfdfb !important;
+  border: 2px dashed rgba(27, 94, 32, 0.32) !important;
+  border-radius: 14px !important;
+  padding: 1.6rem 1.2rem !important;
+  transition: all 0.2s ease !important;
+}
+.unified-upload-container [data-testid="stFileUploaderDropzone"]:hover {
+  border-color: #2e7d32 !important;
+  background: #f2faf3 !important;
+}
+
+/* ==========================================================================
    CARDS & COMPONENTS (Main Content Area)
    ========================================================================== */
 .card {

@@ -21,18 +21,61 @@ STATE = "diag_state"
 
 
 def render() -> None:
+    is_hi = lang() == "hi"
     hero(t("app_name"), t("tagline"))
-    st.markdown(
-        f'<div class="steps-ribbon">'
-        f'<div class="step-ribbon-title">📋 {esc(t("guide_workflow"))}:</div>'
-        f'<div class="step-item"><span class="step-num">1</span><span>{esc(t("step_1_guide"))}</span></div>'
-        f'<span class="step-arrow">➔</span>'
-        f'<div class="step-item"><span class="step-num">2</span><span>{esc(t("step_2_guide"))}</span></div>'
-        f'<span class="step-arrow">➔</span>'
-        f'<div class="step-item"><span class="step-num">3</span><span>{esc(t("step_3_guide"))}</span></div>'
-        f'</div>',
-        unsafe_allow_html=True,
-    )
+
+    # 1. 3-Step Horizontal Workflow Ribbon matching user design specifications
+    s1_title = esc(t("step_1_title"))
+    s1_desc = esc(t("step_1_desc"))
+    s2_title = esc(t("step_2_title"))
+    s2_desc = esc(t("step_2_desc"))
+    s3_title = esc(t("step_3_title"))
+    s3_desc = esc(t("step_3_desc"))
+
+    steps_html = f"""
+    <div class="workflow-steps-wrap">
+      <div class="workflow-step-card">
+        <div class="workflow-step-header">
+          <span class="workflow-step-num">1</span>
+          <span class="workflow-step-icon">📷</span>
+        </div>
+        <div class="workflow-step-title">{s1_title}</div>
+        <div class="workflow-step-desc">{s1_desc}</div>
+      </div>
+
+      <div class="workflow-step-arrow">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </div>
+
+      <div class="workflow-step-card">
+        <div class="workflow-step-header">
+          <span class="workflow-step-num">2</span>
+          <span class="workflow-step-icon">☁️</span>
+        </div>
+        <div class="workflow-step-title">{s2_title}</div>
+        <div class="workflow-step-desc">{s2_desc}</div>
+      </div>
+
+      <div class="workflow-step-arrow">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </div>
+
+      <div class="workflow-step-card">
+        <div class="workflow-step-header">
+          <span class="workflow-step-num">3</span>
+          <span class="workflow-step-icon">✨</span>
+        </div>
+        <div class="workflow-step-title">{s3_title}</div>
+        <div class="workflow-step-desc">{s3_desc}</div>
+      </div>
+    </div>
+    """
+    st.markdown(steps_html, unsafe_allow_html=True)
+
     predictor, err = get_predictor()
     if predictor is None:
         st.error(t("model_missing"))
@@ -40,8 +83,7 @@ def render() -> None:
         st.code(err or "unknown error")
         return
 
-    # Photography Best Practices Guide (Moved to Diagnose tab)
-    is_hi = lang() == "hi"
+    # Photography Best Practices Guide (Card matching the steps styling)
     tips_title = "📸 फोटो लेने के महत्वपूर्ण सुझाव (Photo Tips for Best Accuracy)" if is_hi else "📸 Photography Best Practices for AI Leaf Diagnosis"
     dos_title = "✅ सही तरीका (Do's)" if is_hi else "✅ Recommended (Do's)"
     donts_title = "❌ इनसे बचें (Don'ts)" if is_hi else "❌ What to Avoid (Don'ts)"
@@ -82,19 +124,38 @@ def render() -> None:
     """
     st.markdown(photo_guide_html, unsafe_allow_html=True)
 
+    # 2. Consolidated Unified Upload / Camera Box
+    st.markdown('<div class="unified-upload-container">', unsafe_allow_html=True)
+    st.markdown(
+        f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem; flex-wrap:wrap; gap:8px;">'
+        f'  <span style="font-weight:700; font-size:1.02rem; color:#1B4332;">🌿 {"पत्ती तस्वीर इनपुट (Upload or Camera)" if is_hi else "Leaf Photo Input (Upload or Camera)"}</span>'
+        f'  <span style="font-size:0.80rem; color:#5e7862; background:#f0fdf4; padding:3px 8px; border-radius:6px; border:1px solid #bbf7d0;">JPG, PNG (Max {C.MAX_UPLOAD_MB} MB)</span>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
     mode = st.radio(
         "input",
         ["upload", "camera"],
         horizontal=True,
         label_visibility="collapsed",
         key="input_mode",
-        format_func=lambda m, _L=lang(): t("mode_upload" if m == "upload" else "mode_camera", _L),
+        format_func=lambda m: t("upload_tab_file") if m == "upload" else t("upload_tab_cam"),
     )
-    f = (
-        st.file_uploader(t("upload_label", mb=C.MAX_UPLOAD_MB), type=list(C.ALLOWED_EXT))
-        if mode == "upload"
-        else st.camera_input(t("camera_label"))
-    )
+    if mode == "upload":
+        f = st.file_uploader(
+            t("upload_label", mb=C.MAX_UPLOAD_MB),
+            type=list(C.ALLOWED_EXT),
+            label_visibility="collapsed",
+            key="file_uploader_diag",
+        )
+    else:
+        f = st.camera_input(
+            t("camera_label"),
+            label_visibility="collapsed",
+            key="camera_input_diag",
+        )
+    st.markdown("</div>", unsafe_allow_html=True)
     if f is None:
         st.session_state.pop(STATE, None)
         return
