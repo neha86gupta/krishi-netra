@@ -24,7 +24,9 @@ def render() -> None:
     is_hi = lang() == "hi"
     hero(t("app_name"), t("tagline"))
 
-    # 1. 3-Step Horizontal Workflow Ribbon matching user design specifications
+    # 1. 3-Step Horizontal Workflow Ribbon wrapped in a box matching user design specifications
+    workflow_heading = esc(t("guide_workflow"))
+    badge_label = "3-Step Diagnosis" if not is_hi else "3-चरणीय जाँच"
     s1_title = esc(t("step_1_title"))
     s1_desc = esc(t("step_1_desc"))
     s2_title = esc(t("step_2_title"))
@@ -33,44 +35,50 @@ def render() -> None:
     s3_desc = esc(t("step_3_desc"))
 
     steps_html = f"""
-    <div class="workflow-steps-wrap">
-      <div class="workflow-step-card">
-        <div class="workflow-step-header">
-          <span class="workflow-step-num">1</span>
-          <span class="workflow-step-icon">📷</span>
+    <div class="workflow-box">
+      <div class="workflow-box-header">
+        <span class="workflow-box-title">📋 {workflow_heading}</span>
+        <span class="chip" style="background:#dcfce7; color:#15803d; font-size:0.75rem; font-weight:700; margin:0;">{badge_label}</span>
+      </div>
+      <div class="workflow-steps-wrap">
+        <div class="workflow-step-card">
+          <div class="workflow-step-header">
+            <span class="workflow-step-num">1</span>
+            <span class="workflow-step-icon">📷</span>
+          </div>
+          <div class="workflow-step-title">{s1_title}</div>
+          <div class="workflow-step-desc">{s1_desc}</div>
         </div>
-        <div class="workflow-step-title">{s1_title}</div>
-        <div class="workflow-step-desc">{s1_desc}</div>
-      </div>
 
-      <div class="workflow-step-arrow">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-        </svg>
-      </div>
-
-      <div class="workflow-step-card">
-        <div class="workflow-step-header">
-          <span class="workflow-step-num">2</span>
-          <span class="workflow-step-icon">☁️</span>
+        <div class="workflow-step-arrow">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+          </svg>
         </div>
-        <div class="workflow-step-title">{s2_title}</div>
-        <div class="workflow-step-desc">{s2_desc}</div>
-      </div>
 
-      <div class="workflow-step-arrow">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-        </svg>
-      </div>
-
-      <div class="workflow-step-card">
-        <div class="workflow-step-header">
-          <span class="workflow-step-num">3</span>
-          <span class="workflow-step-icon">✨</span>
+        <div class="workflow-step-card">
+          <div class="workflow-step-header">
+            <span class="workflow-step-num">2</span>
+            <span class="workflow-step-icon">☁️</span>
+          </div>
+          <div class="workflow-step-title">{s2_title}</div>
+          <div class="workflow-step-desc">{s2_desc}</div>
         </div>
-        <div class="workflow-step-title">{s3_title}</div>
-        <div class="workflow-step-desc">{s3_desc}</div>
+
+        <div class="workflow-step-arrow">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="workflow-step-header">
+            <span class="workflow-step-num">3</span>
+            <span class="workflow-step-icon">✨</span>
+          </div>
+          <div class="workflow-step-title">{s3_title}</div>
+          <div class="workflow-step-desc">{s3_desc}</div>
+        </div>
       </div>
     </div>
     """

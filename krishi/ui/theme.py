@@ -220,25 +220,53 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   WORKFLOW STEPS HORIZONTAL GRID (3 Equal Columns)
+   WORKFLOW STEPS BOX CONTAINER (Wrapped in a unified box)
    ========================================================================== */
+.workflow-box {
+  background: #ffffff;
+  border: 1px solid #D8E2DC;
+  border-left: 5px solid #1B4332;
+  border-radius: 16px;
+  padding: 1.15rem 1.4rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 18px rgba(15, 51, 20, 0.05);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.workflow-box:hover {
+  box-shadow: 0 10px 24px rgba(20, 54, 26, 0.08);
+}
+.workflow-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.95rem;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.workflow-box-title {
+  font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--forest);
+  letter-spacing: -0.015em;
+}
 .workflow-steps-wrap {
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr;
   align-items: center;
   gap: 12px;
-  margin-bottom: 1.35rem;
+  margin-bottom: 0 !important;
 }
 .workflow-step-card {
   background: #F8FAF9;
   border: 1px solid #D8E2DC;
   border-radius: 14px;
-  padding: 1.1rem 1.25rem;
-  box-shadow: 0 2px 8px rgba(15, 51, 20, 0.04);
+  padding: 1rem 1.15rem;
+  box-shadow: 0 2px 6px rgba(15, 51, 20, 0.03);
   transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  min-height: 130px;
+  min-height: 125px;
 }
 .workflow-step-card:hover {
   transform: translateY(-2px);
@@ -250,7 +278,7 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.5rem;
 }
 .workflow-step-num {
   width: 24px;
@@ -264,7 +292,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(27, 67, 50, 0.35);
+  box-shadow: 0 2px 5px rgba(27, 67, 50, 0.35);
   flex-shrink: 0;
 }
 .workflow-step-icon {
@@ -276,15 +304,15 @@ h1, h2, h3, h4 {
   font-size: 1.02rem;
   font-weight: 700;
   color: #1B4332;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
   letter-spacing: -0.015em;
   display: flex;
   align-items: center;
   gap: 6px;
 }
 .workflow-step-desc {
-  font-size: 0.83rem;
-  line-height: 1.48;
+  font-size: 0.82rem;
+  line-height: 1.45;
   color: #496350;
   margin: 0;
 }
